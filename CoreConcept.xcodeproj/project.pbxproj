@@ -330,7 +330,7 @@
 		34B1DE6F1FDFB7EB00EE50A6 /* TouchView1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchView1.m; sourceTree = "<group>"; };
 		34B1DE711FDFB81800EE50A6 /* TouchView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchView2.h; sourceTree = "<group>"; };
 		34B1DE721FDFB81800EE50A6 /* TouchView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchView2.m; sourceTree = "<group>"; };
-		34B6825A1F8E41B000389BF5 /* testdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B6825A1F8E41B000389BF5 /* CoreConcept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreConcept.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B6825D1F8E41B000389BF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34B6825E1F8E41B000389BF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		34B682661F8E41B000389BF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -406,6 +406,10 @@
 		341190DA20AD6EE200752304 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				341DB5901FC64BAD00E89AD9 /* TestTimeOffsetViewController.h */,
+				341DB5911FC64BAD00E89AD9 /* TestTimeOffsetViewController.m */,
+				340204FC1FBEF3C2005C087D /* AnimationCustomView.h */,
+				340204FD1FBEF3C2005C087D /* AnimationCustomView.m */,
 				341190D720AD692800752304 /* AnimationViewController.h */,
 				341190D820AD692800752304 /* AnimationViewController.m */,
 				341190DB20AD6F6E00752304 /* AnimationLayer.h */,
@@ -481,6 +485,22 @@
 			path = Block;
 			sourceTree = "<group>";
 		};
+		342123CD20BA5E52007C03DC /* source */ = {
+			isa = PBXGroup;
+			children = (
+				34F336721FCD987100E6D7C1 /* LiveCourse_question_rewardBtn@2x.png */,
+				347EE34B1FE14A360031E60E /* homework_fragement */,
+				34FDBD011FD2C1FF004770A3 /* timg@2x.jpg */,
+				341DB58B1FC469AD00E89AD9 /* chat@2x.png */,
+				34F3362B1FCD5D6D00E6D7C1 /* text1.png */,
+				34F3362C1FCD5D6D00E6D7C1 /* text2@2x.png */,
+				347EE3471FE149560031E60E /* fire@2x.jpg */,
+				34FDBCDA1FD0FF60004770A3 /* bg_4@2x.png */,
+				34F3362F1FCD8EEC00E6D7C1 /* textbig@2x.png */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
 		342283D41FD840B900BBF041 /* Lotti */ = {
 			isa = PBXGroup;
 			children = (
@@ -546,6 +566,8 @@
 		3440C3F020AD31D20062A89D /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
+				34F336281FCD5BC400E6D7C1 /* TestLayerPropertyVC.h */,
+				34F336291FCD5BC400E6D7C1 /* TestLayerPropertyVC.m */,
 				3435887C1FD019F40097B18B /* TestSolidViewController.h */,
 				3435887D1FD019F40097B18B /* TestSolidViewController.m */,
 				3435886F1FCFD8B90097B18B /* TestTranformViewController.h */,
@@ -806,7 +828,7 @@
 		34B682511F8E41B000389BF5 = {
 			isa = PBXGroup;
 			children = (
-				34B6825C1F8E41B000389BF5 /* testdown */,
+				34B6825C1F8E41B000389BF5 /* CoreConcept */,
 				34B6825B1F8E41B000389BF5 /* Products */,
 				ABB0C41967E6CA31CB79571E /* Pods */,
 				AE186C2669E3B44B8572483B /* Frameworks */,
@@ -816,12 +838,12 @@
 		34B6825B1F8E41B000389BF5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				34B6825A1F8E41B000389BF5 /* testdown.app */,
+				34B6825A1F8E41B000389BF5 /* CoreConcept.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		34B6825C1F8E41B000389BF5 /* testdown */ = {
+		34B6825C1F8E41B000389BF5 /* CoreConcept */ = {
 			isa = PBXGroup;
 			children = (
 				342123C620B978D3007C03DC /* Block */,
@@ -841,28 +863,14 @@
 				34B1DE611FDE8D4900EE50A6 /* DesignPatterns */,
 				34B6825D1F8E41B000389BF5 /* AppDelegate.h */,
 				34B6825E1F8E41B000389BF5 /* AppDelegate.m */,
-				34FDBD011FD2C1FF004770A3 /* timg@2x.jpg */,
-				341DB58B1FC469AD00E89AD9 /* chat@2x.png */,
-				347EE3471FE149560031E60E /* fire@2x.jpg */,
-				34FDBCDA1FD0FF60004770A3 /* bg_4@2x.png */,
-				34F3362F1FCD8EEC00E6D7C1 /* textbig@2x.png */,
-				347EE34B1FE14A360031E60E /* homework_fragement */,
-				34F336721FCD987100E6D7C1 /* LiveCourse_question_rewardBtn@2x.png */,
-				34F3362B1FCD5D6D00E6D7C1 /* text1.png */,
-				34F3362C1FCD5D6D00E6D7C1 /* text2@2x.png */,
+				342123CD20BA5E52007C03DC /* source */,
 				34B682731F8E447300389BF5 /* RootViewController.h */,
-				341DB5901FC64BAD00E89AD9 /* TestTimeOffsetViewController.h */,
-				341DB5911FC64BAD00E89AD9 /* TestTimeOffsetViewController.m */,
-				340204FC1FBEF3C2005C087D /* AnimationCustomView.h */,
-				340204FD1FBEF3C2005C087D /* AnimationCustomView.m */,
 				34B682741F8E447300389BF5 /* RootViewController.m */,
-				34F336281FCD5BC400E6D7C1 /* TestLayerPropertyVC.h */,
-				34F336291FCD5BC400E6D7C1 /* TestLayerPropertyVC.m */,
 				34B682661F8E41B000389BF5 /* Assets.xcassets */,
 				34B6826B1F8E41B000389BF5 /* Info.plist */,
 				34B6826C1F8E41B000389BF5 /* main.m */,
 			);
-			path = testdown;
+			path = CoreConcept;
 			sourceTree = "<group>";
 		};
 		34D1C928207E0F36005349E0 /* Event */ = {
@@ -925,9 +933,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		34B682591F8E41B000389BF5 /* testdown */ = {
+		34B682591F8E41B000389BF5 /* CoreConcept */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 34B682701F8E41B000389BF5 /* Build configuration list for PBXNativeTarget "testdown" */;
+			buildConfigurationList = 34B682701F8E41B000389BF5 /* Build configuration list for PBXNativeTarget "CoreConcept" */;
 			buildPhases = (
 				55CE831C00F9088194F3C516 /* [CP] Check Pods Manifest.lock */,
 				34B682561F8E41B000389BF5 /* Sources */,
@@ -940,9 +948,9 @@
 			);
 			dependencies = (
 			);
-			name = testdown;
+			name = CoreConcept;
 			productName = testdown;
-			productReference = 34B6825A1F8E41B000389BF5 /* testdown.app */;
+			productReference = 34B6825A1F8E41B000389BF5 /* CoreConcept.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -960,7 +968,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 34B682551F8E41B000389BF5 /* Build configuration list for PBXProject "testdown" */;
+			buildConfigurationList = 34B682551F8E41B000389BF5 /* Build configuration list for PBXProject "CoreConcept" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -973,7 +981,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				34B682591F8E41B000389BF5 /* testdown */,
+				34B682591F8E41B000389BF5 /* CoreConcept */,
 			);
 		};
 /* End PBXProject section */
@@ -1296,7 +1304,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H943X5Q87C;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
-				INFOPLIST_FILE = testdown/Info.plist;
+				INFOPLIST_FILE = CoreConcept/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.knowin.RapidCalculation;
@@ -1313,7 +1321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H943X5Q87C;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
-				INFOPLIST_FILE = testdown/Info.plist;
+				INFOPLIST_FILE = CoreConcept/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.knowin.RapidCalculation;
@@ -1325,7 +1333,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		34B682551F8E41B000389BF5 /* Build configuration list for PBXProject "testdown" */ = {
+		34B682551F8E41B000389BF5 /* Build configuration list for PBXProject "CoreConcept" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				34B6826E1F8E41B000389BF5 /* Debug */,
@@ -1334,7 +1342,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		34B682701F8E41B000389BF5 /* Build configuration list for PBXNativeTarget "testdown" */ = {
+		34B682701F8E41B000389BF5 /* Build configuration list for PBXNativeTarget "CoreConcept" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				34B682711F8E41B000389BF5 /* Debug */,
