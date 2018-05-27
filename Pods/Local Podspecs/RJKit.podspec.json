@@ -1,0 +1,26 @@
+{
+  "name": "RJKit",
+  "version": "0.0.1",
+  "summary": "A short description of RJKit.",
+  "description": "这是测试",
+  "homepage": "http://EXAMPLE/RJKit",
+  "license": "MIT",
+  "authors": {
+    "raojb@knowbox.cn": "raojb@knowbox.cn"
+  },
+  "source": {
+    "git": "",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "Classes",
+    "Classes/**/*.{h,m}"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}

@@ -1,0 +1,1 @@
+../../../KBRCategory/KBRCategory/Classes/UIImage/UIImage+ResizeMagick.h

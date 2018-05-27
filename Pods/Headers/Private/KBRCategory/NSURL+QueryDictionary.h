@@ -1,0 +1,1 @@
+../../../KBRCategory/KBRCategory/Classes/Foundatiaon/NSURL/NSURL+QueryDictionary.h
