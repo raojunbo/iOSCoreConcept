@@ -4,8 +4,8 @@ source  'git@gitee.com:BlueLegend/BlueLegendPrivateSpec.git'
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 
-target ‘testdown’ do
-	#pod 'lottie-ios'
+target ‘CoreConcept’ do
+ 	pod 'lottie-ios'
 	pod 'Masonry'
 	pod 'SDWebImage', '~> 4.3.0'
    	pod 'YYModel', '~> 1.0.4'

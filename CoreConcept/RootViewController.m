@@ -8,56 +8,71 @@
 
 #import "RootViewController.h"
 #import "AFNetworking.h"
-@interface RootViewController ()
-
+#import <Masonry.h>
+@interface RootViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic, strong)UITableView *tableView;
+@property (nonatomic, strong)NSArray *dataArray;
 @end
 
 @implementation RootViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor =[UIColor whiteColor];
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(0, 0, 100, 50 );
-    button.backgroundColor = [UIColor greenColor];
-    [button setTitle:@"点击" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(downClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
-    button.center = CGPointMake(self.view.frame.size.width/2.0, self.view.frame.size.height/2.0);
-    
-}
--(void)downClick{
-    NSURLSessionConfiguration * configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    AFURLSessionManager *  urlSessionManager =  [[AFURLSessionManager alloc]initWithSessionConfiguration:configuration];
-
-    NSURL *url = [NSURL URLWithString:@"http://knowapp.b0.upaiyun.com/ss/huiben/book/jinfagunianghesanzhixiong-shang_12061c9af9f668529d7c3dae57f1d380.bkc"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    NSURLSessionDownloadTask *downloadTask = [urlSessionManager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
-        NSLog(@"这是下载的进度%@",downloadProgress);
-    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
-        NSLog(@"这是下载的进度");
-        return targetPath;
-    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
-        NSLog(@"这是下载的进度");
-
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.dataArray = @[
+                       @"RootBlockViewController",
+                       @"ThreadViewController",
+                       @"RuntimeViewController",
+                       @"RunLoopViewController",
+                       @"AnimationViewController",
+                       @"CALayerViewController",
+                       @"TestEventViewContrller",
+                       @"TestMasViewController2",
+                       @"AnimationPauseViewController",
+                       @"LottiViewVCViewController",
+                       @"RuntimeDynamicViewController",
+                       @"RuntimeKVOCustomViewController",
+                       @"BlockReviewViewController",
+                       @"TestConstraintsViewController",
+                       @"AnimationPauseViewController",
+                       @"TestEvent2ViewController",
+                       @"AnimationPauseViewController"
+                       ];
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
     }];
-    [downloadTask resume];
     
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (UITableView *)tableView {
+    if(!_tableView){
+        _tableView = [[UITableView alloc]init];
+        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ff"];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+    }
+    return _tableView;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ff"];
+    cell.textLabel.text = [self.dataArray objectAtIndex:indexPath.row];
+    return cell;
 }
-*/
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataArray.count;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    Class class = NSClassFromString([self.dataArray objectAtIndex:indexPath.row]);
+    NSObject *objc =  [[class alloc]init];
+    [self.navigationController pushViewController:objc animated:YES];
+}
 
 @end

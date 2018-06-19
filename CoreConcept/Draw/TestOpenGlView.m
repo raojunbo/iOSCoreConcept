@@ -21,7 +21,9 @@
 //    glUniformMatrix4fv(_uniformModelViewProjectionMatrix, 1, 0, _modelViewProjectionMatrix.m);
 //    glBindVertexArrayOES(_planetMesh);
 //    glDrawElements(GL_TRIANGLE_STRIP, 256, GL_UNSIGNED_SHORT);
+
 }
+
 
 
 @end

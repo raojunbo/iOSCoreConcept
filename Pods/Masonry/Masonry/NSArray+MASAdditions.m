@@ -17,6 +17,7 @@
         NSAssert([view isKindOfClass:[MAS_VIEW class]], @"All objects in the array must be views");
         [constraints addObjectsFromArray:[view mas_makeConstraints:block]];
     }
+    
     return constraints;
 }
 

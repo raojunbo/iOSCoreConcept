@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EE7AEFF4C0594CA102AAAB4 /* libPods-CoreConcept.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 779FD14EF5940F5139E7CA4B /* libPods-CoreConcept.a */; };
 		340204FE1FBEF3C2005C087D /* AnimationCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 340204FD1FBEF3C2005C087D /* AnimationCustomView.m */; };
+		340802B020D3720D00ED4BD7 /* TestConstraintsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340802AF20D3720D00ED4BD7 /* TestConstraintsViewController.m */; };
+		340802B320D6552B00ED4BD7 /* TestMasLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340802B220D6552B00ED4BD7 /* TestMasLinkViewController.m */; };
+		340802B620D6849000ED4BD7 /* TestEvent2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340802B520D6848F00ED4BD7 /* TestEvent2ViewController.m */; };
 		340E64B0201E05C900D9CAB7 /* MethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340E64AF201E05C900D9CAB7 /* MethodViewController.m */; };
 		340E64B3201E0EFC00D9CAB7 /* MTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 340E64B2201E0EFC00D9CAB7 /* MTeacher.m */; };
 		340E64B6201E0F3900D9CAB7 /* MTeacher+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 340E64B5201E0F3900D9CAB7 /* MTeacher+Runtime.m */; };
@@ -35,6 +39,7 @@
 		341DB5921FC64BAD00E89AD9 /* TestTimeOffsetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341DB5911FC64BAD00E89AD9 /* TestTimeOffsetViewController.m */; };
 		342123C920B97911007C03DC /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342123C820B97911007C03DC /* BlockViewController.m */; };
 		342123CC20B979AE007C03DC /* BlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 342123CB20B979AE007C03DC /* BlockPerson.m */; };
+		34218BF720C699C70056C7D2 /* BlockReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34218BF620C699C70056C7D2 /* BlockReviewViewController.m */; };
 		342283D71FD840DD00BBF041 /* LottiViewVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342283D61FD840DD00BBF041 /* LottiViewVCViewController.m */; };
 		342B28DE20B17BEB00439600 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B28DD20B17BEB00439600 /* ThreadViewController.m */; };
 		342B28E220B1857A00439600 /* Thread2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B28E120B1857A00439600 /* Thread2ViewController.m */; };
@@ -42,6 +47,8 @@
 		342B28E920B26B7600439600 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B28E820B26B7600439600 /* GCDViewController.m */; };
 		342B28EC20B2759200439600 /* GCD2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B28EB20B2759200439600 /* GCD2ViewController.m */; };
 		342B28EF20B2B5FA00439600 /* GCD3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B28EE20B2B5FA00439600 /* GCD3ViewController.m */; };
+		342BF45420BB8EE300B3FD31 /* BlockCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342BF45320BB8EE300B3FD31 /* BlockCircleViewController.m */; };
+		342BF45720BB911700B3FD31 /* RootBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342BF45620BB911700B3FD31 /* RootBlockViewController.m */; };
 		343588551FCE5EB60097B18B /* Test22ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 343588541FCE5EB60097B18B /* Test22ViewController.m */; };
 		343588611FCE96490097B18B /* TestLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 343588601FCE96490097B18B /* TestLayerViewController.m */; };
 		343588651FCEA1510097B18B /* TestBorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 343588641FCEA1510097B18B /* TestBorderViewController.m */; };
@@ -93,6 +100,11 @@
 		3463294920B0137D0033A9BB /* Runtime6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3463294820B0137D0033A9BB /* Runtime6ViewController.m */; };
 		3463298720B023BB0033A9BB /* Runtime7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3463298620B023BB0033A9BB /* Runtime7ViewController.m */; };
 		3463298A20B023E10033A9BB /* RuntimePerson2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3463298920B023E10033A9BB /* RuntimePerson2.m */; };
+		34670D7C20C4CEB5004B65A1 /* RuntimeModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34670D7B20C4CEB5004B65A1 /* RuntimeModelViewController.m */; };
+		34670D7F20C4D84A004B65A1 /* RuntimeMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34670D7E20C4D84A004B65A1 /* RuntimeMessageViewController.m */; };
+		34670D8220C4F5DD004B65A1 /* RuntimeDynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34670D8120C4F5DD004B65A1 /* RuntimeDynamicViewController.m */; };
+		34670D8520C50C6B004B65A1 /* RuntimeKVOCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34670D8420C50C6B004B65A1 /* RuntimeKVOCustomViewController.m */; };
+		34670D8820C50C93004B65A1 /* NSObject+RAOKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 34670D8720C50C93004B65A1 /* NSObject+RAOKVO.m */; };
 		347EE3481FE149560031E60E /* fire@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 347EE3471FE149560031E60E /* fire@2x.jpg */; };
 		347EE3631FE1505B0031E60E /* homework_fragement_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 347EE34C1FE14A360031E60E /* homework_fragement_1@2x.png */; };
 		347EE3641FE1505E0031E60E /* homework_fragement_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 347EE34D1FE14A360031E60E /* homework_fragement_2@2x.png */; };
@@ -124,7 +136,9 @@
 		34B682671F8E41B000389BF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34B682661F8E41B000389BF5 /* Assets.xcassets */; };
 		34B6826D1F8E41B000389BF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B6826C1F8E41B000389BF5 /* main.m */; };
 		34B682751F8E447300389BF5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B682741F8E447300389BF5 /* RootViewController.m */; };
+		34B9E0DB20C3A892001B19A9 /* chat_sender_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B9E0DA20C3A892001B19A9 /* chat_sender_bg@2x.png */; };
 		34D1C92B207E0F5F005349E0 /* TestEventViewContrller.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D1C92A207E0F5F005349E0 /* TestEventViewContrller.m */; };
+		34E2009620C12BAF004FA52E /* TestMasViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E2009520C12BAF004FA52E /* TestMasViewController2.m */; };
 		34F3362A1FCD5BC400E6D7C1 /* TestLayerPropertyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F336291FCD5BC400E6D7C1 /* TestLayerPropertyVC.m */; };
 		34F3362D1FCD5D6D00E6D7C1 /* text1.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F3362B1FCD5D6D00E6D7C1 /* text1.png */; };
 		34F3362E1FCD5D6D00E6D7C1 /* text2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F3362C1FCD5D6D00E6D7C1 /* text2@2x.png */; };
@@ -142,13 +156,17 @@
 		34FDBCFC1FD273E2004770A3 /* TestContextLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FDBCFB1FD273E2004770A3 /* TestContextLineViewController.m */; };
 		34FDBD001FD2A1B7004770A3 /* TestDrawImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FDBCFF1FD2A1B7004770A3 /* TestDrawImageViewController.m */; };
 		34FDBD021FD2C6E7004770A3 /* timg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34FDBD011FD2C1FF004770A3 /* timg@2x.jpg */; };
-		C571E8F67A031FF65DE363B6 /* libPods-testdown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A356850AD109F8ABA400C5D3 /* libPods-testdown.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		23A9BD56F93A3BAA6714CB68 /* Pods-testdown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testdown.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testdown/Pods-testdown.debug.xcconfig"; sourceTree = "<group>"; };
 		340204FC1FBEF3C2005C087D /* AnimationCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationCustomView.h; sourceTree = "<group>"; };
 		340204FD1FBEF3C2005C087D /* AnimationCustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationCustomView.m; sourceTree = "<group>"; };
+		340802AE20D3720D00ED4BD7 /* TestConstraintsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestConstraintsViewController.h; sourceTree = "<group>"; };
+		340802AF20D3720D00ED4BD7 /* TestConstraintsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestConstraintsViewController.m; sourceTree = "<group>"; };
+		340802B120D6552B00ED4BD7 /* TestMasLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMasLinkViewController.h; sourceTree = "<group>"; };
+		340802B220D6552B00ED4BD7 /* TestMasLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMasLinkViewController.m; sourceTree = "<group>"; };
+		340802B420D6848F00ED4BD7 /* TestEvent2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestEvent2ViewController.h; sourceTree = "<group>"; };
+		340802B520D6848F00ED4BD7 /* TestEvent2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestEvent2ViewController.m; sourceTree = "<group>"; };
 		340E64AE201E05C900D9CAB7 /* MethodViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodViewController.h; sourceTree = "<group>"; };
 		340E64AF201E05C900D9CAB7 /* MethodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodViewController.m; sourceTree = "<group>"; };
 		340E64B1201E0EFC00D9CAB7 /* MTeacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTeacher.h; sourceTree = "<group>"; };
@@ -203,6 +221,8 @@
 		342123C820B97911007C03DC /* BlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
 		342123CA20B979AE007C03DC /* BlockPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockPerson.h; sourceTree = "<group>"; };
 		342123CB20B979AE007C03DC /* BlockPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockPerson.m; sourceTree = "<group>"; };
+		34218BF520C699C70056C7D2 /* BlockReviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockReviewViewController.h; sourceTree = "<group>"; };
+		34218BF620C699C70056C7D2 /* BlockReviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockReviewViewController.m; sourceTree = "<group>"; };
 		342283D51FD840DD00BBF041 /* LottiViewVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LottiViewVCViewController.h; sourceTree = "<group>"; };
 		342283D61FD840DD00BBF041 /* LottiViewVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LottiViewVCViewController.m; sourceTree = "<group>"; };
 		342B28DC20B17BEB00439600 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
@@ -217,6 +237,10 @@
 		342B28EB20B2759200439600 /* GCD2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD2ViewController.m; sourceTree = "<group>"; };
 		342B28ED20B2B5FA00439600 /* GCD3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD3ViewController.h; sourceTree = "<group>"; };
 		342B28EE20B2B5FA00439600 /* GCD3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD3ViewController.m; sourceTree = "<group>"; };
+		342BF45220BB8EE300B3FD31 /* BlockCircleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockCircleViewController.h; sourceTree = "<group>"; };
+		342BF45320BB8EE300B3FD31 /* BlockCircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockCircleViewController.m; sourceTree = "<group>"; };
+		342BF45520BB911600B3FD31 /* RootBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootBlockViewController.h; sourceTree = "<group>"; };
+		342BF45620BB911700B3FD31 /* RootBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootBlockViewController.m; sourceTree = "<group>"; };
 		343588531FCE5EB60097B18B /* Test22ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test22ViewController.h; sourceTree = "<group>"; };
 		343588541FCE5EB60097B18B /* Test22ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test22ViewController.m; sourceTree = "<group>"; };
 		3435885F1FCE96490097B18B /* TestLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLayerViewController.h; sourceTree = "<group>"; };
@@ -286,6 +310,16 @@
 		3463298620B023BB0033A9BB /* Runtime7ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Runtime7ViewController.m; sourceTree = "<group>"; };
 		3463298820B023E10033A9BB /* RuntimePerson2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimePerson2.h; sourceTree = "<group>"; };
 		3463298920B023E10033A9BB /* RuntimePerson2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimePerson2.m; sourceTree = "<group>"; };
+		34670D7A20C4CEB5004B65A1 /* RuntimeModelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeModelViewController.h; sourceTree = "<group>"; };
+		34670D7B20C4CEB5004B65A1 /* RuntimeModelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeModelViewController.m; sourceTree = "<group>"; };
+		34670D7D20C4D84A004B65A1 /* RuntimeMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeMessageViewController.h; sourceTree = "<group>"; };
+		34670D7E20C4D84A004B65A1 /* RuntimeMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeMessageViewController.m; sourceTree = "<group>"; };
+		34670D8020C4F5DD004B65A1 /* RuntimeDynamicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeDynamicViewController.h; sourceTree = "<group>"; };
+		34670D8120C4F5DD004B65A1 /* RuntimeDynamicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeDynamicViewController.m; sourceTree = "<group>"; };
+		34670D8320C50C6B004B65A1 /* RuntimeKVOCustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeKVOCustomViewController.h; sourceTree = "<group>"; };
+		34670D8420C50C6B004B65A1 /* RuntimeKVOCustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeKVOCustomViewController.m; sourceTree = "<group>"; };
+		34670D8620C50C93004B65A1 /* NSObject+RAOKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RAOKVO.h"; sourceTree = "<group>"; };
+		34670D8720C50C93004B65A1 /* NSObject+RAOKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RAOKVO.m"; sourceTree = "<group>"; };
 		347EE3471FE149560031E60E /* fire@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fire@2x.jpg"; sourceTree = "<group>"; };
 		347EE34C1FE14A360031E60E /* homework_fragement_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homework_fragement_1@2x.png"; sourceTree = "<group>"; };
 		347EE34D1FE14A360031E60E /* homework_fragement_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homework_fragement_2@2x.png"; sourceTree = "<group>"; };
@@ -338,8 +372,11 @@
 		34B6826C1F8E41B000389BF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34B682731F8E447300389BF5 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		34B682741F8E447300389BF5 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		34B9E0DA20C3A892001B19A9 /* chat_sender_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_sender_bg@2x.png"; sourceTree = "<group>"; };
 		34D1C929207E0F5F005349E0 /* TestEventViewContrller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestEventViewContrller.h; sourceTree = "<group>"; };
 		34D1C92A207E0F5F005349E0 /* TestEventViewContrller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestEventViewContrller.m; sourceTree = "<group>"; };
+		34E2009420C12BAF004FA52E /* TestMasViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMasViewController2.h; sourceTree = "<group>"; };
+		34E2009520C12BAF004FA52E /* TestMasViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMasViewController2.m; sourceTree = "<group>"; };
 		34F336281FCD5BC400E6D7C1 /* TestLayerPropertyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLayerPropertyVC.h; sourceTree = "<group>"; };
 		34F336291FCD5BC400E6D7C1 /* TestLayerPropertyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLayerPropertyVC.m; sourceTree = "<group>"; };
 		34F3362B1FCD5D6D00E6D7C1 /* text1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text1.png; sourceTree = "<group>"; };
@@ -368,8 +405,10 @@
 		34FDBCFE1FD2A1B7004770A3 /* TestDrawImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDrawImageViewController.h; sourceTree = "<group>"; };
 		34FDBCFF1FD2A1B7004770A3 /* TestDrawImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDrawImageViewController.m; sourceTree = "<group>"; };
 		34FDBD011FD2C1FF004770A3 /* timg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "timg@2x.jpg"; sourceTree = "<group>"; };
-		443EC184EA07DB2A48A97F5F /* Pods-testdown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testdown.release.xcconfig"; path = "Pods/Target Support Files/Pods-testdown/Pods-testdown.release.xcconfig"; sourceTree = "<group>"; };
+		779FD14EF5940F5139E7CA4B /* libPods-CoreConcept.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreConcept.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B7E29B981BB1CD2C04394D3 /* Pods-CoreConcept.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreConcept.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept.release.xcconfig"; sourceTree = "<group>"; };
 		A356850AD109F8ABA400C5D3 /* libPods-testdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testdown.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C997AA051A69B287F856D7AE /* Pods-CoreConcept.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreConcept.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,7 +420,7 @@
 				3440C3DE20AA90520062A89D /* OpenGLES.framework in Frameworks */,
 				341BCB12205DF823005DE1F5 /* LocalAuthentication.framework in Frameworks */,
 				34AA5B0F1FE7B0840053DD01 /* CoreText.framework in Frameworks */,
-				C571E8F67A031FF65DE363B6 /* libPods-testdown.a in Frameworks */,
+				1EE7AEFF4C0594CA102AAAB4 /* libPods-CoreConcept.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +485,16 @@
 				3463298620B023BB0033A9BB /* Runtime7ViewController.m */,
 				3463298820B023E10033A9BB /* RuntimePerson2.h */,
 				3463298920B023E10033A9BB /* RuntimePerson2.m */,
+				34670D7A20C4CEB5004B65A1 /* RuntimeModelViewController.h */,
+				34670D7B20C4CEB5004B65A1 /* RuntimeModelViewController.m */,
+				34670D7D20C4D84A004B65A1 /* RuntimeMessageViewController.h */,
+				34670D7E20C4D84A004B65A1 /* RuntimeMessageViewController.m */,
+				34670D8020C4F5DD004B65A1 /* RuntimeDynamicViewController.h */,
+				34670D8120C4F5DD004B65A1 /* RuntimeDynamicViewController.m */,
+				34670D8320C50C6B004B65A1 /* RuntimeKVOCustomViewController.h */,
+				34670D8420C50C6B004B65A1 /* RuntimeKVOCustomViewController.m */,
+				34670D8620C50C93004B65A1 /* NSObject+RAOKVO.h */,
+				34670D8720C50C93004B65A1 /* NSObject+RAOKVO.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -477,10 +526,16 @@
 		342123C620B978D3007C03DC /* Block */ = {
 			isa = PBXGroup;
 			children = (
+				342BF45220BB8EE300B3FD31 /* BlockCircleViewController.h */,
+				342BF45320BB8EE300B3FD31 /* BlockCircleViewController.m */,
 				342123C720B97911007C03DC /* BlockViewController.h */,
 				342123C820B97911007C03DC /* BlockViewController.m */,
 				342123CA20B979AE007C03DC /* BlockPerson.h */,
 				342123CB20B979AE007C03DC /* BlockPerson.m */,
+				342BF45520BB911600B3FD31 /* RootBlockViewController.h */,
+				342BF45620BB911700B3FD31 /* RootBlockViewController.m */,
+				34218BF520C699C70056C7D2 /* BlockReviewViewController.h */,
+				34218BF620C699C70056C7D2 /* BlockReviewViewController.m */,
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -492,6 +547,7 @@
 				347EE34B1FE14A360031E60E /* homework_fragement */,
 				34FDBD011FD2C1FF004770A3 /* timg@2x.jpg */,
 				341DB58B1FC469AD00E89AD9 /* chat@2x.png */,
+				34B9E0DA20C3A892001B19A9 /* chat_sender_bg@2x.png */,
 				34F3362B1FCD5D6D00E6D7C1 /* text1.png */,
 				34F3362C1FCD5D6D00E6D7C1 /* text2@2x.png */,
 				347EE3471FE149560031E60E /* fire@2x.jpg */,
@@ -729,6 +785,12 @@
 			children = (
 				348975FE206285D200D20026 /* TestMasViewController.h */,
 				348975FF206285D200D20026 /* TestMasViewController.m */,
+				34E2009420C12BAF004FA52E /* TestMasViewController2.h */,
+				34E2009520C12BAF004FA52E /* TestMasViewController2.m */,
+				340802AE20D3720D00ED4BD7 /* TestConstraintsViewController.h */,
+				340802AF20D3720D00ED4BD7 /* TestConstraintsViewController.m */,
+				340802B120D6552B00ED4BD7 /* TestMasLinkViewController.h */,
+				340802B220D6552B00ED4BD7 /* TestMasLinkViewController.m */,
 			);
 			path = Masonry;
 			sourceTree = "<group>";
@@ -878,6 +940,8 @@
 			children = (
 				34D1C929207E0F5F005349E0 /* TestEventViewContrller.h */,
 				34D1C92A207E0F5F005349E0 /* TestEventViewContrller.m */,
+				340802B420D6848F00ED4BD7 /* TestEvent2ViewController.h */,
+				340802B520D6848F00ED4BD7 /* TestEvent2ViewController.m */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -912,8 +976,8 @@
 		ABB0C41967E6CA31CB79571E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				23A9BD56F93A3BAA6714CB68 /* Pods-testdown.debug.xcconfig */,
-				443EC184EA07DB2A48A97F5F /* Pods-testdown.release.xcconfig */,
+				C997AA051A69B287F856D7AE /* Pods-CoreConcept.debug.xcconfig */,
+				9B7E29B981BB1CD2C04394D3 /* Pods-CoreConcept.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -926,6 +990,7 @@
 				341BCB11205DF823005DE1F5 /* LocalAuthentication.framework */,
 				34AA5B0E1FE7B0840053DD01 /* CoreText.framework */,
 				A356850AD109F8ABA400C5D3 /* libPods-testdown.a */,
+				779FD14EF5940F5139E7CA4B /* libPods-CoreConcept.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1035,6 +1100,7 @@
 				345DE1171FD845F100719FAD /* cao2_img_2.png in Resources */,
 				345DE10F1FD845F100719FAD /* guang2.json in Resources */,
 				345DE10E1FD845F100719FAD /* demo.html in Resources */,
+				34B9E0DB20C3A892001B19A9 /* chat_sender_bg@2x.png in Resources */,
 				34F3362D1FCD5D6D00E6D7C1 /* text1.png in Resources */,
 				345DE1111FD845F100719FAD /* guang2_img_1.png in Resources */,
 				345DE1121FD845F100719FAD /* guang2_img_2.png in Resources */,
@@ -1051,7 +1117,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-testdown/Pods-testdown-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -1060,7 +1126,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testdown/Pods-testdown-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55CE831C00F9088194F3C516 /* [CP] Check Pods Manifest.lock */ = {
@@ -1074,7 +1140,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-testdown-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CoreConcept-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1093,7 +1159,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testdown/Pods-testdown-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1103,6 +1169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34670D8220C4F5DD004B65A1 /* RuntimeDynamicViewController.m in Sources */,
 				3440C3D920AA56D80062A89D /* CustomOpaqueView.m in Sources */,
 				34AA5B0D1FE7AECE0053DD01 /* DrawCoreTextVC.m in Sources */,
 				341BCB1A205E17A8005DE1F5 /* EncryptionTools.m in Sources */,
@@ -1112,6 +1179,8 @@
 				34B6826D1F8E41B000389BF5 /* main.m in Sources */,
 				341190E020ADA36300752304 /* AnimationActionViewController.m in Sources */,
 				34A15EC21FC91C12002A1038 /* DrawView22.m in Sources */,
+				34218BF720C699C70056C7D2 /* BlockReviewViewController.m in Sources */,
+				34670D7F20C4D84A004B65A1 /* RuntimeMessageViewController.m in Sources */,
 				343588651FCEA1510097B18B /* TestBorderViewController.m in Sources */,
 				342B28E520B195D100439600 /* Thread3ViewController.m in Sources */,
 				340E64B3201E0EFC00D9CAB7 /* MTeacher.m in Sources */,
@@ -1125,13 +1194,16 @@
 				3463298720B023BB0033A9BB /* Runtime7ViewController.m in Sources */,
 				343588551FCE5EB60097B18B /* Test22ViewController.m in Sources */,
 				3440C3EF20AD31CA0062A89D /* CALayerViewController.m in Sources */,
+				342BF45420BB8EE300B3FD31 /* BlockCircleViewController.m in Sources */,
 				343588611FCE96490097B18B /* TestLayerViewController.m in Sources */,
 				34FDBD001FD2A1B7004770A3 /* TestDrawImageViewController.m in Sources */,
 				34B6825F1F8E41B000389BF5 /* AppDelegate.m in Sources */,
 				341A6A4A20B3E351009591F2 /* AnimationPauseViewController.m in Sources */,
 				3412CA7520B468850065A9C9 /* RunloopViewController4.m in Sources */,
+				342BF45720BB911700B3FD31 /* RootBlockViewController.m in Sources */,
 				341A6A4320B3931F009591F2 /* GCD4ViewController.m in Sources */,
 				3463294920B0137D0033A9BB /* Runtime6ViewController.m in Sources */,
+				34E2009620C12BAF004FA52E /* TestMasViewController2.m in Sources */,
 				341190D920AD692800752304 /* AnimationViewController.m in Sources */,
 				34A15EBC1FC9128C002A1038 /* DrawVC.m in Sources */,
 				341BCB1D205E1C89005DE1F5 /* RSACryptor.m in Sources */,
@@ -1139,6 +1211,7 @@
 				341190DD20AD6F6E00752304 /* AnimationLayer.m in Sources */,
 				343588771FD0090B0097B18B /* TestPerspective2ViewController.m in Sources */,
 				341A6A4720B3AA40009591F2 /* OperationViewController.m in Sources */,
+				34670D8820C50C93004B65A1 /* NSObject+RAOKVO.m in Sources */,
 				34B1DE6A1FDF881000EE50A6 /* ButtonView.m in Sources */,
 				34FDBCFC1FD273E2004770A3 /* TestContextLineViewController.m in Sources */,
 				3435887A1FD00E560097B18B /* TestPatLayerViewController.m in Sources */,
@@ -1146,9 +1219,11 @@
 				34897600206285D200D20026 /* TestMasViewController.m in Sources */,
 				342123CC20B979AE007C03DC /* BlockPerson.m in Sources */,
 				3440C3F320AD34140062A89D /* CustomCALayer.m in Sources */,
+				34670D8520C50C6B004B65A1 /* RuntimeKVOCustomViewController.m in Sources */,
 				342B28EF20B2B5FA00439600 /* GCD3ViewController.m in Sources */,
 				34B1DE641FDE8D8C00EE50A6 /* TestGerstureVC.m in Sources */,
 				342B28E920B26B7600439600 /* GCDViewController.m in Sources */,
+				340802B620D6849000ED4BD7 /* TestEvent2ViewController.m in Sources */,
 				341190E320ADA39C00752304 /* AnimationActionView.m in Sources */,
 				34AA5AF31FE2C78B0053DD01 /* BezierView.m in Sources */,
 				34FDBCF31FD2671B004770A3 /* TestContextClipViewController.m in Sources */,
@@ -1157,6 +1232,7 @@
 				341BCB15205DF89B005DE1F5 /* EnciryViewController.m in Sources */,
 				3440C3EC20AC30930062A89D /* RunLoopViewController3.m in Sources */,
 				34FDBCEA1FD1409D004770A3 /* TestContextViewController.m in Sources */,
+				340802B020D3720D00ED4BD7 /* TestConstraintsViewController.m in Sources */,
 				341190F920B00CE000752304 /* RuntimePerson.m in Sources */,
 				341190F320AFE6B700752304 /* RunTime4ViewController.m in Sources */,
 				34FDBCF91FD27378004770A3 /* ContextLineWidthView.m in Sources */,
@@ -1168,6 +1244,7 @@
 				3440C3E920AC0F0F0062A89D /* RunloopViewController2.m in Sources */,
 				340E64B9201E1BDF00D9CAB7 /* fishhook.c in Sources */,
 				34D1C92B207E0F5F005349E0 /* TestEventViewContrller.m in Sources */,
+				340802B320D6552B00ED4BD7 /* TestMasLinkViewController.m in Sources */,
 				34B1DE6D1FDF8E4300EE50A6 /* CustomGestureRecognizer.m in Sources */,
 				341190E620ADA4B100752304 /* AnimationActionLayer.m in Sources */,
 				342B28E220B1857A00439600 /* Thread2ViewController.m in Sources */,
@@ -1178,6 +1255,7 @@
 				342B28DE20B17BEB00439600 /* ThreadViewController.m in Sources */,
 				3412CA7820B46CC80065A9C9 /* RunLoopViewController5.m in Sources */,
 				3440C3E620ABC1BB0062A89D /* RunLoopViewController.m in Sources */,
+				34670D7C20C4CEB5004B65A1 /* RuntimeModelViewController.m in Sources */,
 				34AA5B021FE3C1180053DD01 /* BezierView2.m in Sources */,
 				34B1DE731FDFB81800EE50A6 /* TouchView2.m in Sources */,
 				34AA5B121FE7B4530053DD01 /* CoreTextView.m in Sources */,
@@ -1298,7 +1376,7 @@
 		};
 		34B682711F8E41B000389BF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23A9BD56F93A3BAA6714CB68 /* Pods-testdown.debug.xcconfig */;
+			baseConfigurationReference = C997AA051A69B287F856D7AE /* Pods-CoreConcept.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1315,7 +1393,7 @@
 		};
 		34B682721F8E41B000389BF5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 443EC184EA07DB2A48A97F5F /* Pods-testdown.release.xcconfig */;
+			baseConfigurationReference = 9B7E29B981BB1CD2C04394D3 /* Pods-CoreConcept.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

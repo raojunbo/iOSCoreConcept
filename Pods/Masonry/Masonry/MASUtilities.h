@@ -73,6 +73,11 @@
  *  Given a scalar or struct value, wraps it in NSValue
  *  Based on EXPObjectify: https://github.com/specta/expecta
  */
+
+/*
+ rao，对一些数值类型的值，进行包装
+ 
+ */
 static inline id _MASBoxValue(const char *type, ...) {
     va_list v;
     va_start(v, type);

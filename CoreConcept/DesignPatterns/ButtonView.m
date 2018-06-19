@@ -32,4 +32,13 @@
     self.action = action;
 }
 
+- (UIView*)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    return nil;
+}
+
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+    return YES;
+}
+
+
 @end

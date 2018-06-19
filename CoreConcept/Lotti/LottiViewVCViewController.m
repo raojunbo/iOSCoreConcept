@@ -7,9 +7,9 @@
 //
 
 #import "LottiViewVCViewController.h"
-//#import <Lottie/Lottie.h>
+#import <Lottie/Lottie.h>
 @interface LottiViewVCViewController ()
-//@property (nonatomic,strong) LOTAnimationView *cao1AnimtaionView;
+@property (nonatomic,strong) LOTAnimationView *cao1AnimtaionView;
 //@property (nonatomic,strong) LOTAnimationView *cao2AnimtaionView;
 
 //@property (nonatomic,strong) LOTAnimationView *guan1AnimtaionView;
@@ -26,13 +26,13 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-//    self.cao1AnimtaionView = [LOTAnimationView animationNamed:@"cao1"];//,LottieLogo1
-//    self.cao1AnimtaionView.contentMode = UIViewContentModeScaleAspectFill;
-//    self.cao1AnimtaionView.loopAnimation = YES;
-//    self.cao1AnimtaionView.frame = CGRectMake(0, 0, 204/2.0, 82/2.0);
-//    self.cao1AnimtaionView.backgroundColor = [UIColor greenColor];
-//    [self.cao1AnimtaionView play];
-//    [self.view addSubview:self.cao1AnimtaionView];
+    self.cao1AnimtaionView = [LOTAnimationView animationNamed:@"cao1"];//,LottieLogo1
+    self.cao1AnimtaionView.contentMode = UIViewContentModeScaleAspectFill;
+    self.cao1AnimtaionView.loopAnimation = YES;
+    self.cao1AnimtaionView.frame = CGRectMake(0, 60, 204/2.0, 82/2.0);
+    self.cao1AnimtaionView.backgroundColor = [UIColor greenColor];
+    [self.cao1AnimtaionView play];
+    [self.view addSubview:self.cao1AnimtaionView];
 //
 //
 //    self.cao2AnimtaionView = [LOTAnimationView animationNamed:@"cao2"];//,LottieLogo1

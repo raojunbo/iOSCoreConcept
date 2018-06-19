@@ -11,7 +11,6 @@
 @implementation CustomCALayer
 
 - (void)drawInContext:(CGContextRef)ctx {
-    NSLog(@"执行了吗");
     CGMutablePathRef thePath = CGPathCreateMutable();
     CGPathMoveToPoint(thePath,NULL,15.0f,15.f);
     CGPathAddCurveToPoint(thePath,
@@ -30,5 +29,10 @@
     CGContextDrawImage(ctx, CGRectMake(0, 0, 20, 20), cgImage);
     CFRelease(thePath);
 }
+
+- (CALayer *)hitTest:(CGPoint)p {
+    return self;
+}
+
 
 @end

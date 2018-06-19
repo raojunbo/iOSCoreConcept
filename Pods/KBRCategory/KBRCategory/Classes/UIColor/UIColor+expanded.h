@@ -56,6 +56,7 @@
 // 高亮颜色
 - (UIColor *)colorByAddingBrightness:(CGFloat)brightness;
 - (UIColor *)highlightedColor;
++ (UIColor *)LOT_colorByLerpingFromColor:(UIColor *)fromColor toColor:(UIColor *)toColor amount:(CGFloat)amount;
 
 @end
 

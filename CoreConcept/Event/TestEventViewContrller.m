@@ -22,9 +22,6 @@
  3.事件在响应者间传递(响应式按响应链条回溯)
  UIResponder里面touch四个阶段的方法里面，实际上是什么事都没有做的，UIView继承了它进行重写，重写的内容也是没有什么东西，就是把事件传递给nextResponder，比如：[self.nextResponder touchesBegan:touches withEvent:event]。所以当一个view或者controller里面没有重写touch事件，那么这个事件就会一直传递下去，直到UIApplication，这也就是事件往上冒泡的原理
  如果view重写了touch方法，我们一般会看到的效果是，这个view响应了事件之后，事件就被截断了
- 
- 
- 手势又是对事件的又一次包装；
  */
 
 @interface AView : UIView

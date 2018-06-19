@@ -36,6 +36,10 @@
     self.shipLayer.position = CGPointMake(0, 150);
     self.shipLayer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"chat"].CGImage);
     [self.view.layer addSublayer:self.shipLayer];
+    
+    
+    CACurrentMediaTime();
+    
 }
 
 -(void)buttonClick{

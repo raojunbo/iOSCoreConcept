@@ -8,6 +8,10 @@
 
 #import "BlockPerson.h"
 
+@interface BlockPerson()
+@property (nonatomic, strong) NSString *foot;
+@end
+
 @implementation BlockPerson
 
 - (void)eat:(void (^)(NSString *))eatBlock {
