@@ -143,6 +143,7 @@
 		34FDBD001FD2A1B7004770A3 /* TestDrawImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FDBCFF1FD2A1B7004770A3 /* TestDrawImageViewController.m */; };
 		34FDBD021FD2C6E7004770A3 /* timg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34FDBD011FD2C1FF004770A3 /* timg@2x.jpg */; };
 		C571E8F67A031FF65DE363B6 /* libPods-testdown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A356850AD109F8ABA400C5D3 /* libPods-testdown.a */; };
+		C6614EDE212DBCA900F91725 /* NSTimer+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = C6614EDD212DBCA900F91725 /* NSTimer+Block.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -370,6 +371,8 @@
 		34FDBD011FD2C1FF004770A3 /* timg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "timg@2x.jpg"; sourceTree = "<group>"; };
 		443EC184EA07DB2A48A97F5F /* Pods-testdown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testdown.release.xcconfig"; path = "Pods/Target Support Files/Pods-testdown/Pods-testdown.release.xcconfig"; sourceTree = "<group>"; };
 		A356850AD109F8ABA400C5D3 /* libPods-testdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testdown.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6614EDC212DBCA900F91725 /* NSTimer+Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Block.h"; sourceTree = "<group>"; };
+		C6614EDD212DBCA900F91725 /* NSTimer+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Block.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -477,6 +480,8 @@
 				342123C820B97911007C03DC /* BlockViewController.m */,
 				342123CA20B979AE007C03DC /* BlockPerson.h */,
 				342123CB20B979AE007C03DC /* BlockPerson.m */,
+				C6614EDC212DBCA900F91725 /* NSTimer+Block.h */,
+				C6614EDD212DBCA900F91725 /* NSTimer+Block.m */,
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -1153,6 +1158,7 @@
 				341190F320AFE6B700752304 /* RunTime4ViewController.m in Sources */,
 				34FDBCF91FD27378004770A3 /* ContextLineWidthView.m in Sources */,
 				342123C920B97911007C03DC /* BlockViewController.m in Sources */,
+				C6614EDE212DBCA900F91725 /* NSTimer+Block.m in Sources */,
 				3435887E1FD019F50097B18B /* TestSolidViewController.m in Sources */,
 				341DB5921FC64BAD00E89AD9 /* TestTimeOffsetViewController.m in Sources */,
 				343588711FCFD8B90097B18B /* TestTranformViewController.m in Sources */,

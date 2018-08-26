@@ -8,8 +8,9 @@
 
 #import "RootViewController.h"
 #import "AFNetworking.h"
+#import "BlockViewController.h"
 @interface RootViewController ()
-
+@property (nonatomic, strong)BlockViewController *blockvc;
 @end
 
 @implementation RootViewController
@@ -27,22 +28,19 @@
     button.center = CGPointMake(self.view.frame.size.width/2.0, self.view.frame.size.height/2.0);
     
 }
+
 -(void)downClick{
-    NSURLSessionConfiguration * configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    AFURLSessionManager *  urlSessionManager =  [[AFURLSessionManager alloc]initWithSessionConfiguration:configuration];
+    //block捕获self.
+    //当self幷不拥有block
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.navigationController pushViewController:self.blockvc animated:YES];
+    });
+    
+    [NSTimer timerWithTimeInterval:1 target:self selector:@selector(timeTick) userInfo:nil repeats:YES];
+    
+}
 
-    NSURL *url = [NSURL URLWithString:@"http://knowapp.b0.upaiyun.com/ss/huiben/book/jinfagunianghesanzhixiong-shang_12061c9af9f668529d7c3dae57f1d380.bkc"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    NSURLSessionDownloadTask *downloadTask = [urlSessionManager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
-        NSLog(@"这是下载的进度%@",downloadProgress);
-    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
-        NSLog(@"这是下载的进度");
-        return targetPath;
-    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
-        NSLog(@"这是下载的进度");
-
-    }];
-    [downloadTask resume];
+- (void)timeTick {
     
 }
 - (void)didReceiveMemoryWarning {
