@@ -68,6 +68,7 @@
     CGMutablePathRef path = CGPathCreateMutable();
     CGPathMoveToPoint(path, NULL, 0, 0);
     CGPathAddCurveToPoint(path, NULL, 11, 86, 81, 16, 200, 200);
+    //修改2
     return path;
 }
 
