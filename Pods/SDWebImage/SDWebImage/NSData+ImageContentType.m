@@ -29,6 +29,7 @@
     // File signatures table: http://www.garykessler.net/library/file_sigs.html
     uint8_t c;
     [data getBytes:&c length:1];
+    //通过前一个字节。来判定图片的类型
     switch (c) {
         case 0xFF:
             return SDImageFormatJPEG;

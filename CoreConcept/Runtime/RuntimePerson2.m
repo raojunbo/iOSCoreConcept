@@ -30,7 +30,16 @@
 //- (void)forwardInvocation {
 
 //}
+
+- (id)forwardingTargetForSelector:(SEL)aSelector{
+    return nil;
+}
+
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
   NSLog(@"我来了");
+    /*
+     我的理解NSInvocation也是一种命令模式
+     */
 }
+
 @end

@@ -9,6 +9,13 @@
 #import "AnimationCustomView.h"
 
 @implementation AnimationCustomView
+/*
+ 动画事务的基本概念
+ */
+//创建动画事务的目的是为了操作的原子性，保证动画的所有修改能同时生效。
+//CATransaction 就是动画事务的操作类。
+
+//在创建隐式动画的时候，系统也会隐式的创建一个动画事务，以保证所有的动画能同时进行。
 
 //- (void)drawRect:(CGRect)rect{
 //    NSLog(@"我：drawRect");
@@ -41,11 +48,21 @@
 //    NSLog(@"我：layoutSublayersOfLayer");
 //}
 //
+
+/*
+ UIView是CALayer的代理。
+ - (id<CAAction>)actionForLayer:(CALayer *)layer forKey:(NSString *)event{
+是其中一个代理方法
+ UIViewd的内部默认实现了这个方法，实现的方法是给CALayer去掉了隐式动画
+ 如果我们想自己给其添加隐式动画，可以实现整个代理方法
+ CALayer 通过 - actionForKey: 来查询某个属性被修改时，需要调用哪个动画去展现这个变化。
+ 一般默认返回的是 CABasicAnimation ，默认动画时间 0.25秒
+ */
+
 - (id<CAAction>)actionForLayer:(CALayer *)layer forKey:(NSString *)event{
     //我可以在这里做些什么,好像是对动画属性动画做自定会的动画//
     CABasicAnimation *basiani = [[CABasicAnimation alloc]init];
     [layer addAnimation:basiani forKey:@"backgroundColor"];
-    NSLog(@"这是返回的");
     return basiani;
 }
 
@@ -57,5 +74,8 @@
 - (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx{
     
 }
+
+
+
 
 @end

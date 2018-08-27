@@ -49,9 +49,7 @@
 }
 
 #pragma mark - MASConstraintDelegate
-/*
-此处的工厂方法，并没有用继承，而是采用协议来实现工厂方法
- */
+
 - (void)constraint:(MASConstraint *)constraint shouldBeReplacedWithConstraint:(MASConstraint *)replacementConstraint {
     NSUInteger index = [self.constraints indexOfObject:constraint];
     NSAssert(index != NSNotFound, @"Could not find constraint %@", constraint);

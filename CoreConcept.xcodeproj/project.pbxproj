@@ -12,6 +12,17 @@
 		340802B020D3720D00ED4BD7 /* TestConstraintsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340802AF20D3720D00ED4BD7 /* TestConstraintsViewController.m */; };
 		340802B320D6552B00ED4BD7 /* TestMasLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340802B220D6552B00ED4BD7 /* TestMasLinkViewController.m */; };
 		340802B620D6849000ED4BD7 /* TestEvent2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340802B520D6848F00ED4BD7 /* TestEvent2ViewController.m */; };
+		3408AA5620ECCD7D009ED572 /* CopyingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3408AA5520ECCD7D009ED572 /* CopyingViewController.m */; };
+		3408AA5920ECD856009ED572 /* PropertyDecorateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3408AA5820ECD856009ED572 /* PropertyDecorateViewController.m */; };
+		3408AA5C20ED9821009ED572 /* ACodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3408AA5B20ED9821009ED572 /* ACodeViewController.m */; };
+		3408AA5F20EDCB37009ED572 /* InterviewKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3408AA5E20EDCB37009ED572 /* InterviewKVOViewController.m */; };
+		3408AA6220EDFEE0009ED572 /* KVOImplementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3408AA6120EDFEE0009ED572 /* KVOImplementViewController.m */; };
+		3408AA6B20EE0DCA009ED572 /* NSObject+RAO2KVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3408AA6A20EE0DCA009ED572 /* NSObject+RAO2KVC.m */; };
+		340C26CC20E36C43001BDC21 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340C26CB20E36C43001BDC21 /* BasicViewController.m */; };
+		340C26CF20E370B0001BDC21 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 340C26CE20E370B0001BDC21 /* Animal.m */; };
+		340C26D220E370D6001BDC21 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 340C26D120E370D6001BDC21 /* Dog.m */; };
+		340C26D820E3724B001BDC21 /* Animal+AnimalCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 340C26D720E3724B001BDC21 /* Animal+AnimalCategory.m */; };
+		340C26DB20E3725D001BDC21 /* Dog+DogCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 340C26DA20E3725D001BDC21 /* Dog+DogCategory.m */; };
 		340E64B0201E05C900D9CAB7 /* MethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340E64AF201E05C900D9CAB7 /* MethodViewController.m */; };
 		340E64B3201E0EFC00D9CAB7 /* MTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 340E64B2201E0EFC00D9CAB7 /* MTeacher.m */; };
 		340E64B6201E0F3900D9CAB7 /* MTeacher+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 340E64B5201E0F3900D9CAB7 /* MTeacher+Runtime.m */; };
@@ -41,6 +52,23 @@
 		342123CC20B979AE007C03DC /* BlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 342123CB20B979AE007C03DC /* BlockPerson.m */; };
 		34218BF720C699C70056C7D2 /* BlockReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34218BF620C699C70056C7D2 /* BlockReviewViewController.m */; };
 		342283D71FD840DD00BBF041 /* LottiViewVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342283D61FD840DD00BBF041 /* LottiViewVCViewController.m */; };
+		34259C3B20E60D9D006FF740 /* BlockYinyongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34259C3A20E60D9D006FF740 /* BlockYinyongViewController.m */; };
+		34259C3F20E6354A006FF740 /* ReadSDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34259C3E20E6354A006FF740 /* ReadSDWebViewController.m */; };
+		3429908A20E87CF80093A58E /* OperationCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3429908920E87CF80093A58E /* OperationCustomViewController.m */; };
+		3429909020E87D310093A58E /* CustomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3429908F20E87D310093A58E /* CustomOperation.m */; };
+		3429909420E8E7190093A58E /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3429909320E8E7190093A58E /* ImageViewController.m */; };
+		3429909620E8E7F10093A58E /* check_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 3429909520E8E7DA0093A58E /* check_green.png */; };
+		3429909A20E8F2FA0093A58E /* BlockKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3429909920E8F2FA0093A58E /* BlockKitViewController.m */; };
+		342AD2F520EB191E0051CC57 /* TestGerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342AD2F420EB191E0051CC57 /* TestGerViewController.m */; };
+		342AD2F820EBD0110051CC57 /* RunloopHuizhiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342AD2F720EBD0110051CC57 /* RunloopHuizhiViewController.m */; };
+		342B00C020E478CB00FA08CB /* GCDDispatchGroupVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B00BF20E478CB00FA08CB /* GCDDispatchGroupVc.m */; };
+		342B00C320E47F4C00FA08CB /* GCDBarrierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B00C220E47F4C00FA08CB /* GCDBarrierViewController.m */; };
+		342B00C620E4832100FA08CB /* DispatchSyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B00C520E4832100FA08CB /* DispatchSyncViewController.m */; };
+		342B00C920E48ACC00FA08CB /* DispatchSemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B00C820E48ACC00FA08CB /* DispatchSemaphoreViewController.m */; };
+		342B00CC20E493C500FA08CB /* DispatchIOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B00CB20E493C500FA08CB /* DispatchIOViewController.m */; };
+		342B00CF20E4B4CD00FA08CB /* DispatchSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B00CE20E4B4CD00FA08CB /* DispatchSourceViewController.m */; };
+		342B00D620E4D17000FA08CB /* ThreadLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B00D520E4D17000FA08CB /* ThreadLockViewController.m */; };
+		342B00D920E4E94800FA08CB /* BlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B00D820E4E94800FA08CB /* BlockTestViewController.m */; };
 		342B28DE20B17BEB00439600 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B28DD20B17BEB00439600 /* ThreadViewController.m */; };
 		342B28E220B1857A00439600 /* Thread2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B28E120B1857A00439600 /* Thread2ViewController.m */; };
 		342B28E520B195D100439600 /* Thread3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B28E420B195D100439600 /* Thread3ViewController.m */; };
@@ -49,6 +77,7 @@
 		342B28EF20B2B5FA00439600 /* GCD3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B28EE20B2B5FA00439600 /* GCD3ViewController.m */; };
 		342BF45420BB8EE300B3FD31 /* BlockCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342BF45320BB8EE300B3FD31 /* BlockCircleViewController.m */; };
 		342BF45720BB911700B3FD31 /* RootBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342BF45620BB911700B3FD31 /* RootBlockViewController.m */; };
+		342E734820F42F4A00074309 /* MemoryLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342E734720F42F4A00074309 /* MemoryLeakViewController.m */; };
 		343588551FCE5EB60097B18B /* Test22ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 343588541FCE5EB60097B18B /* Test22ViewController.m */; };
 		343588611FCE96490097B18B /* TestLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 343588601FCE96490097B18B /* TestLayerViewController.m */; };
 		343588651FCEA1510097B18B /* TestBorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 343588641FCEA1510097B18B /* TestBorderViewController.m */; };
@@ -66,6 +95,12 @@
 		3440C3EC20AC30930062A89D /* RunLoopViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 3440C3EB20AC30930062A89D /* RunLoopViewController3.m */; };
 		3440C3EF20AD31CA0062A89D /* CALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3440C3EE20AD31CA0062A89D /* CALayerViewController.m */; };
 		3440C3F320AD34140062A89D /* CustomCALayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3440C3F220AD34140062A89D /* CustomCALayer.m */; };
+		344A950920F2148A000EE752 /* SwizzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 344A950820F2148A000EE752 /* SwizzViewController.m */; };
+		344A950C20F215D4000EE752 /* SwizzView.m in Sources */ = {isa = PBXBuildFile; fileRef = 344A950B20F215D4000EE752 /* SwizzView.m */; };
+		344A950F20F2163B000EE752 /* SwizzView+swizz.m in Sources */ = {isa = PBXBuildFile; fileRef = 344A950E20F2163B000EE752 /* SwizzView+swizz.m */; };
+		345363DE20DF9B8D007C921D /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345363DD20DF9B8D007C921D /* MVPViewController.m */; };
+		345363E120DF9BA5007C921D /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 345363E020DF9BA5007C921D /* User.m */; };
+		345363E420DF9F14007C921D /* UserPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 345363E320DF9F14007C921D /* UserPresenter.m */; };
 		345DE10E1FD845F100719FAD /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 345DE0E41FD845F000719FAD /* demo.html */; };
 		345DE10F1FD845F100719FAD /* guang2.json in Resources */ = {isa = PBXBuildFile; fileRef = 345DE0E51FD845F000719FAD /* guang2.json */; };
 		345DE1101FD845F100719FAD /* guang2_img_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 345DE0E71FD845F000719FAD /* guang2_img_0.png */; };
@@ -137,8 +172,10 @@
 		34B6826D1F8E41B000389BF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B6826C1F8E41B000389BF5 /* main.m */; };
 		34B682751F8E447300389BF5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B682741F8E447300389BF5 /* RootViewController.m */; };
 		34B9E0DB20C3A892001B19A9 /* chat_sender_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B9E0DA20C3A892001B19A9 /* chat_sender_bg@2x.png */; };
+		34CD80FF20EF5371005AB4B1 /* NetDesignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CD80FE20EF5371005AB4B1 /* NetDesignViewController.m */; };
 		34D1C92B207E0F5F005349E0 /* TestEventViewContrller.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D1C92A207E0F5F005349E0 /* TestEventViewContrller.m */; };
 		34E2009620C12BAF004FA52E /* TestMasViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E2009520C12BAF004FA52E /* TestMasViewController2.m */; };
+		34EB66E220EE715F00D6BF81 /* InterViewMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EB66E120EE715F00D6BF81 /* InterViewMessageViewController.m */; };
 		34F3362A1FCD5BC400E6D7C1 /* TestLayerPropertyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F336291FCD5BC400E6D7C1 /* TestLayerPropertyVC.m */; };
 		34F3362D1FCD5D6D00E6D7C1 /* text1.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F3362B1FCD5D6D00E6D7C1 /* text1.png */; };
 		34F3362E1FCD5D6D00E6D7C1 /* text2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F3362C1FCD5D6D00E6D7C1 /* text2@2x.png */; };
@@ -167,6 +204,28 @@
 		340802B220D6552B00ED4BD7 /* TestMasLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMasLinkViewController.m; sourceTree = "<group>"; };
 		340802B420D6848F00ED4BD7 /* TestEvent2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestEvent2ViewController.h; sourceTree = "<group>"; };
 		340802B520D6848F00ED4BD7 /* TestEvent2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestEvent2ViewController.m; sourceTree = "<group>"; };
+		3408AA5420ECCD7D009ED572 /* CopyingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyingViewController.h; sourceTree = "<group>"; };
+		3408AA5520ECCD7D009ED572 /* CopyingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyingViewController.m; sourceTree = "<group>"; };
+		3408AA5720ECD856009ED572 /* PropertyDecorateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyDecorateViewController.h; sourceTree = "<group>"; };
+		3408AA5820ECD856009ED572 /* PropertyDecorateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropertyDecorateViewController.m; sourceTree = "<group>"; };
+		3408AA5A20ED9821009ED572 /* ACodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACodeViewController.h; sourceTree = "<group>"; };
+		3408AA5B20ED9821009ED572 /* ACodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACodeViewController.m; sourceTree = "<group>"; };
+		3408AA5D20EDCB37009ED572 /* InterviewKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterviewKVOViewController.h; sourceTree = "<group>"; };
+		3408AA5E20EDCB37009ED572 /* InterviewKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewKVOViewController.m; sourceTree = "<group>"; };
+		3408AA6020EDFEE0009ED572 /* KVOImplementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOImplementViewController.h; sourceTree = "<group>"; };
+		3408AA6120EDFEE0009ED572 /* KVOImplementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOImplementViewController.m; sourceTree = "<group>"; };
+		3408AA6920EE0DCA009ED572 /* NSObject+RAO2KVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RAO2KVC.h"; sourceTree = "<group>"; };
+		3408AA6A20EE0DCA009ED572 /* NSObject+RAO2KVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RAO2KVC.m"; sourceTree = "<group>"; };
+		340C26CA20E36C43001BDC21 /* BasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
+		340C26CB20E36C43001BDC21 /* BasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
+		340C26CD20E370B0001BDC21 /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		340C26CE20E370B0001BDC21 /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		340C26D020E370D6001BDC21 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		340C26D120E370D6001BDC21 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		340C26D620E3724B001BDC21 /* Animal+AnimalCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Animal+AnimalCategory.h"; sourceTree = "<group>"; };
+		340C26D720E3724B001BDC21 /* Animal+AnimalCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Animal+AnimalCategory.m"; sourceTree = "<group>"; };
+		340C26D920E3725D001BDC21 /* Dog+DogCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dog+DogCategory.h"; sourceTree = "<group>"; };
+		340C26DA20E3725D001BDC21 /* Dog+DogCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Dog+DogCategory.m"; sourceTree = "<group>"; };
 		340E64AE201E05C900D9CAB7 /* MethodViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodViewController.h; sourceTree = "<group>"; };
 		340E64AF201E05C900D9CAB7 /* MethodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodViewController.m; sourceTree = "<group>"; };
 		340E64B1201E0EFC00D9CAB7 /* MTeacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTeacher.h; sourceTree = "<group>"; };
@@ -225,6 +284,39 @@
 		34218BF620C699C70056C7D2 /* BlockReviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockReviewViewController.m; sourceTree = "<group>"; };
 		342283D51FD840DD00BBF041 /* LottiViewVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LottiViewVCViewController.h; sourceTree = "<group>"; };
 		342283D61FD840DD00BBF041 /* LottiViewVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LottiViewVCViewController.m; sourceTree = "<group>"; };
+		34259C3920E60D9D006FF740 /* BlockYinyongViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockYinyongViewController.h; sourceTree = "<group>"; };
+		34259C3A20E60D9D006FF740 /* BlockYinyongViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockYinyongViewController.m; sourceTree = "<group>"; };
+		34259C3D20E6354A006FF740 /* ReadSDWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadSDWebViewController.h; sourceTree = "<group>"; };
+		34259C3E20E6354A006FF740 /* ReadSDWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadSDWebViewController.m; sourceTree = "<group>"; };
+		3429908820E87CF80093A58E /* OperationCustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationCustomViewController.h; sourceTree = "<group>"; };
+		3429908920E87CF80093A58E /* OperationCustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationCustomViewController.m; sourceTree = "<group>"; };
+		3429908E20E87D310093A58E /* CustomOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomOperation.h; sourceTree = "<group>"; };
+		3429908F20E87D310093A58E /* CustomOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomOperation.m; sourceTree = "<group>"; };
+		3429909220E8E7190093A58E /* ImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		3429909320E8E7190093A58E /* ImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		3429909520E8E7DA0093A58E /* check_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_green.png; sourceTree = "<group>"; };
+		3429909820E8F2FA0093A58E /* BlockKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockKitViewController.h; sourceTree = "<group>"; };
+		3429909920E8F2FA0093A58E /* BlockKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockKitViewController.m; sourceTree = "<group>"; };
+		342AD2F320EB191E0051CC57 /* TestGerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestGerViewController.h; sourceTree = "<group>"; };
+		342AD2F420EB191E0051CC57 /* TestGerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGerViewController.m; sourceTree = "<group>"; };
+		342AD2F620EBD0110051CC57 /* RunloopHuizhiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopHuizhiViewController.h; sourceTree = "<group>"; };
+		342AD2F720EBD0110051CC57 /* RunloopHuizhiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopHuizhiViewController.m; sourceTree = "<group>"; };
+		342B00BE20E478CB00FA08CB /* GCDDispatchGroupVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDispatchGroupVc.h; sourceTree = "<group>"; };
+		342B00BF20E478CB00FA08CB /* GCDDispatchGroupVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDispatchGroupVc.m; sourceTree = "<group>"; };
+		342B00C120E47F4C00FA08CB /* GCDBarrierViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDBarrierViewController.h; sourceTree = "<group>"; };
+		342B00C220E47F4C00FA08CB /* GCDBarrierViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDBarrierViewController.m; sourceTree = "<group>"; };
+		342B00C420E4832000FA08CB /* DispatchSyncViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchSyncViewController.h; sourceTree = "<group>"; };
+		342B00C520E4832100FA08CB /* DispatchSyncViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSyncViewController.m; sourceTree = "<group>"; };
+		342B00C720E48ACC00FA08CB /* DispatchSemaphoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchSemaphoreViewController.h; sourceTree = "<group>"; };
+		342B00C820E48ACC00FA08CB /* DispatchSemaphoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSemaphoreViewController.m; sourceTree = "<group>"; };
+		342B00CA20E493C500FA08CB /* DispatchIOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchIOViewController.h; sourceTree = "<group>"; };
+		342B00CB20E493C500FA08CB /* DispatchIOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchIOViewController.m; sourceTree = "<group>"; };
+		342B00CD20E4B4CD00FA08CB /* DispatchSourceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchSourceViewController.h; sourceTree = "<group>"; };
+		342B00CE20E4B4CD00FA08CB /* DispatchSourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSourceViewController.m; sourceTree = "<group>"; };
+		342B00D420E4D17000FA08CB /* ThreadLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadLockViewController.h; sourceTree = "<group>"; };
+		342B00D520E4D17000FA08CB /* ThreadLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadLockViewController.m; sourceTree = "<group>"; };
+		342B00D720E4E94800FA08CB /* BlockTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockTestViewController.h; sourceTree = "<group>"; };
+		342B00D820E4E94800FA08CB /* BlockTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockTestViewController.m; sourceTree = "<group>"; };
 		342B28DC20B17BEB00439600 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		342B28DD20B17BEB00439600 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 		342B28E020B1857A00439600 /* Thread2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Thread2ViewController.h; sourceTree = "<group>"; };
@@ -241,6 +333,8 @@
 		342BF45320BB8EE300B3FD31 /* BlockCircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockCircleViewController.m; sourceTree = "<group>"; };
 		342BF45520BB911600B3FD31 /* RootBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootBlockViewController.h; sourceTree = "<group>"; };
 		342BF45620BB911700B3FD31 /* RootBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootBlockViewController.m; sourceTree = "<group>"; };
+		342E734620F42F4A00074309 /* MemoryLeakViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryLeakViewController.h; sourceTree = "<group>"; };
+		342E734720F42F4A00074309 /* MemoryLeakViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryLeakViewController.m; sourceTree = "<group>"; };
 		343588531FCE5EB60097B18B /* Test22ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test22ViewController.h; sourceTree = "<group>"; };
 		343588541FCE5EB60097B18B /* Test22ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test22ViewController.m; sourceTree = "<group>"; };
 		3435885F1FCE96490097B18B /* TestLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLayerViewController.h; sourceTree = "<group>"; };
@@ -273,6 +367,18 @@
 		3440C3EE20AD31CA0062A89D /* CALayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerViewController.m; sourceTree = "<group>"; };
 		3440C3F120AD34140062A89D /* CustomCALayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCALayer.h; sourceTree = "<group>"; };
 		3440C3F220AD34140062A89D /* CustomCALayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCALayer.m; sourceTree = "<group>"; };
+		344A950720F2148A000EE752 /* SwizzViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwizzViewController.h; sourceTree = "<group>"; };
+		344A950820F2148A000EE752 /* SwizzViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzViewController.m; sourceTree = "<group>"; };
+		344A950A20F215D4000EE752 /* SwizzView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwizzView.h; sourceTree = "<group>"; };
+		344A950B20F215D4000EE752 /* SwizzView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzView.m; sourceTree = "<group>"; };
+		344A950D20F2163B000EE752 /* SwizzView+swizz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwizzView+swizz.h"; sourceTree = "<group>"; };
+		344A950E20F2163B000EE752 /* SwizzView+swizz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SwizzView+swizz.m"; sourceTree = "<group>"; };
+		345363DC20DF9B8D007C921D /* MVPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPViewController.h; sourceTree = "<group>"; };
+		345363DD20DF9B8D007C921D /* MVPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPViewController.m; sourceTree = "<group>"; };
+		345363DF20DF9BA5007C921D /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		345363E020DF9BA5007C921D /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		345363E220DF9F14007C921D /* UserPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserPresenter.h; sourceTree = "<group>"; };
+		345363E320DF9F14007C921D /* UserPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPresenter.m; sourceTree = "<group>"; };
 		345DE0E41FD845F000719FAD /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
 		345DE0E51FD845F000719FAD /* guang2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guang2.json; sourceTree = "<group>"; };
 		345DE0E71FD845F000719FAD /* guang2_img_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guang2_img_0.png; sourceTree = "<group>"; };
@@ -373,10 +479,14 @@
 		34B682731F8E447300389BF5 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		34B682741F8E447300389BF5 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		34B9E0DA20C3A892001B19A9 /* chat_sender_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_sender_bg@2x.png"; sourceTree = "<group>"; };
+		34CD80FD20EF5371005AB4B1 /* NetDesignViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetDesignViewController.h; sourceTree = "<group>"; };
+		34CD80FE20EF5371005AB4B1 /* NetDesignViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetDesignViewController.m; sourceTree = "<group>"; };
 		34D1C929207E0F5F005349E0 /* TestEventViewContrller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestEventViewContrller.h; sourceTree = "<group>"; };
 		34D1C92A207E0F5F005349E0 /* TestEventViewContrller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestEventViewContrller.m; sourceTree = "<group>"; };
 		34E2009420C12BAF004FA52E /* TestMasViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMasViewController2.h; sourceTree = "<group>"; };
 		34E2009520C12BAF004FA52E /* TestMasViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMasViewController2.m; sourceTree = "<group>"; };
+		34EB66E020EE715F00D6BF81 /* InterViewMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterViewMessageViewController.h; sourceTree = "<group>"; };
+		34EB66E120EE715F00D6BF81 /* InterViewMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterViewMessageViewController.m; sourceTree = "<group>"; };
 		34F336281FCD5BC400E6D7C1 /* TestLayerPropertyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLayerPropertyVC.h; sourceTree = "<group>"; };
 		34F336291FCD5BC400E6D7C1 /* TestLayerPropertyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLayerPropertyVC.m; sourceTree = "<group>"; };
 		34F3362B1FCD5D6D00E6D7C1 /* text1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text1.png; sourceTree = "<group>"; };
@@ -427,6 +537,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3408AA5320ECCD67009ED572 /* interview */ = {
+			isa = PBXGroup;
+			children = (
+				3408AA5420ECCD7D009ED572 /* CopyingViewController.h */,
+				3408AA5520ECCD7D009ED572 /* CopyingViewController.m */,
+				3408AA5720ECD856009ED572 /* PropertyDecorateViewController.h */,
+				3408AA5820ECD856009ED572 /* PropertyDecorateViewController.m */,
+				3408AA5A20ED9821009ED572 /* ACodeViewController.h */,
+				3408AA5B20ED9821009ED572 /* ACodeViewController.m */,
+				3408AA5D20EDCB37009ED572 /* InterviewKVOViewController.h */,
+				3408AA5E20EDCB37009ED572 /* InterviewKVOViewController.m */,
+				3408AA6020EDFEE0009ED572 /* KVOImplementViewController.h */,
+				3408AA6120EDFEE0009ED572 /* KVOImplementViewController.m */,
+				3408AA6920EE0DCA009ED572 /* NSObject+RAO2KVC.h */,
+				3408AA6A20EE0DCA009ED572 /* NSObject+RAO2KVC.m */,
+				34EB66E020EE715F00D6BF81 /* InterViewMessageViewController.h */,
+				34EB66E120EE715F00D6BF81 /* InterViewMessageViewController.m */,
+				34CD80FD20EF5371005AB4B1 /* NetDesignViewController.h */,
+				34CD80FE20EF5371005AB4B1 /* NetDesignViewController.m */,
+				342E734620F42F4A00074309 /* MemoryLeakViewController.h */,
+				342E734720F42F4A00074309 /* MemoryLeakViewController.m */,
+			);
+			path = interview;
+			sourceTree = "<group>";
+		};
+		340C26C920E36C03001BDC21 /* basic */ = {
+			isa = PBXGroup;
+			children = (
+				340C26CA20E36C43001BDC21 /* BasicViewController.h */,
+				340C26CB20E36C43001BDC21 /* BasicViewController.m */,
+				340C26CD20E370B0001BDC21 /* Animal.h */,
+				340C26CE20E370B0001BDC21 /* Animal.m */,
+				340C26D620E3724B001BDC21 /* Animal+AnimalCategory.h */,
+				340C26D720E3724B001BDC21 /* Animal+AnimalCategory.m */,
+				340C26D020E370D6001BDC21 /* Dog.h */,
+				340C26D120E370D6001BDC21 /* Dog.m */,
+				340C26D920E3725D001BDC21 /* Dog+DogCategory.h */,
+				340C26DA20E3725D001BDC21 /* Dog+DogCategory.m */,
+			);
+			path = basic;
+			sourceTree = "<group>";
+		};
 		340E64AD201E05AC00D9CAB7 /* methodswizz */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,6 +590,12 @@
 				340E64B2201E0EFC00D9CAB7 /* MTeacher.m */,
 				340E64B4201E0F3900D9CAB7 /* MTeacher+Runtime.h */,
 				340E64B5201E0F3900D9CAB7 /* MTeacher+Runtime.m */,
+				344A950720F2148A000EE752 /* SwizzViewController.h */,
+				344A950820F2148A000EE752 /* SwizzViewController.m */,
+				344A950D20F2163B000EE752 /* SwizzView+swizz.h */,
+				344A950E20F2163B000EE752 /* SwizzView+swizz.m */,
+				344A950B20F215D4000EE752 /* SwizzView.m */,
+				344A950A20F215D4000EE752 /* SwizzView.h */,
 			);
 			path = methodswizz;
 			sourceTree = "<group>";
@@ -504,6 +662,10 @@
 			children = (
 				341A6A4520B3AA40009591F2 /* OperationViewController.h */,
 				341A6A4620B3AA40009591F2 /* OperationViewController.m */,
+				3429908820E87CF80093A58E /* OperationCustomViewController.h */,
+				3429908920E87CF80093A58E /* OperationCustomViewController.m */,
+				3429908E20E87D310093A58E /* CustomOperation.h */,
+				3429908F20E87D310093A58E /* CustomOperation.m */,
 			);
 			path = NSOpertion;
 			sourceTree = "<group>";
@@ -536,6 +698,10 @@
 				342BF45620BB911700B3FD31 /* RootBlockViewController.m */,
 				34218BF520C699C70056C7D2 /* BlockReviewViewController.h */,
 				34218BF620C699C70056C7D2 /* BlockReviewViewController.m */,
+				342B00D720E4E94800FA08CB /* BlockTestViewController.h */,
+				342B00D820E4E94800FA08CB /* BlockTestViewController.m */,
+				34259C3920E60D9D006FF740 /* BlockYinyongViewController.h */,
+				34259C3A20E60D9D006FF740 /* BlockYinyongViewController.m */,
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -548,6 +714,7 @@
 				34FDBD011FD2C1FF004770A3 /* timg@2x.jpg */,
 				341DB58B1FC469AD00E89AD9 /* chat@2x.png */,
 				34B9E0DA20C3A892001B19A9 /* chat_sender_bg@2x.png */,
+				3429909520E8E7DA0093A58E /* check_green.png */,
 				34F3362B1FCD5D6D00E6D7C1 /* text1.png */,
 				34F3362C1FCD5D6D00E6D7C1 /* text2@2x.png */,
 				347EE3471FE149560031E60E /* fire@2x.jpg */,
@@ -572,9 +739,46 @@
 			path = Lotti;
 			sourceTree = "<group>";
 		};
+		34259C3C20E63532006FF740 /* ReadSDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				34259C3D20E6354A006FF740 /* ReadSDWebViewController.h */,
+				34259C3E20E6354A006FF740 /* ReadSDWebViewController.m */,
+			);
+			path = ReadSDWebImage;
+			sourceTree = "<group>";
+		};
+		3429909120E8E6FC0093A58E /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				3429909220E8E7190093A58E /* ImageViewController.h */,
+				3429909320E8E7190093A58E /* ImageViewController.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		3429909720E8F2EC0093A58E /* BlockKit */ = {
+			isa = PBXGroup;
+			children = (
+				3429909820E8F2FA0093A58E /* BlockKitViewController.h */,
+				3429909920E8F2FA0093A58E /* BlockKitViewController.m */,
+			);
+			path = BlockKit;
+			sourceTree = "<group>";
+		};
+		342B00D320E4D15E00FA08CB /* lock */ = {
+			isa = PBXGroup;
+			children = (
+				342B00D420E4D17000FA08CB /* ThreadLockViewController.h */,
+				342B00D520E4D17000FA08CB /* ThreadLockViewController.m */,
+			);
+			path = lock;
+			sourceTree = "<group>";
+		};
 		342B28DF20B1850200439600 /* Thread */ = {
 			isa = PBXGroup;
 			children = (
+				342B00D320E4D15E00FA08CB /* lock */,
 				341A6A4420B3AA24009591F2 /* NSOpertion */,
 				342B28E620B26B6500439600 /* gcd */,
 				342B28DC20B17BEB00439600 /* ThreadViewController.h */,
@@ -598,6 +802,18 @@
 				342B28EE20B2B5FA00439600 /* GCD3ViewController.m */,
 				341A6A4120B3931F009591F2 /* GCD4ViewController.h */,
 				341A6A4220B3931F009591F2 /* GCD4ViewController.m */,
+				342B00BE20E478CB00FA08CB /* GCDDispatchGroupVc.h */,
+				342B00BF20E478CB00FA08CB /* GCDDispatchGroupVc.m */,
+				342B00C120E47F4C00FA08CB /* GCDBarrierViewController.h */,
+				342B00C220E47F4C00FA08CB /* GCDBarrierViewController.m */,
+				342B00C420E4832000FA08CB /* DispatchSyncViewController.h */,
+				342B00C520E4832100FA08CB /* DispatchSyncViewController.m */,
+				342B00C720E48ACC00FA08CB /* DispatchSemaphoreViewController.h */,
+				342B00C820E48ACC00FA08CB /* DispatchSemaphoreViewController.m */,
+				342B00CA20E493C500FA08CB /* DispatchIOViewController.h */,
+				342B00CB20E493C500FA08CB /* DispatchIOViewController.m */,
+				342B00CD20E4B4CD00FA08CB /* DispatchSourceViewController.h */,
+				342B00CE20E4B4CD00FA08CB /* DispatchSourceViewController.m */,
 			);
 			path = gcd;
 			sourceTree = "<group>";
@@ -615,6 +831,8 @@
 				3412CA7420B468850065A9C9 /* RunloopViewController4.m */,
 				3412CA7620B46CC80065A9C9 /* RunLoopViewController5.h */,
 				3412CA7720B46CC80065A9C9 /* RunLoopViewController5.m */,
+				342AD2F620EBD0110051CC57 /* RunloopHuizhiViewController.h */,
+				342AD2F720EBD0110051CC57 /* RunloopHuizhiViewController.m */,
 			);
 			path = Runloop;
 			sourceTree = "<group>";
@@ -642,6 +860,19 @@
 				3440C3F120AD34140062A89D /* CustomCALayer.h */,
 			);
 			path = CALayer;
+			sourceTree = "<group>";
+		};
+		345363DB20DF9B75007C921D /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				345363DC20DF9B8D007C921D /* MVPViewController.h */,
+				345363DD20DF9B8D007C921D /* MVPViewController.m */,
+				345363DF20DF9BA5007C921D /* User.h */,
+				345363E020DF9BA5007C921D /* User.m */,
+				345363E220DF9F14007C921D /* UserPresenter.h */,
+				345363E320DF9F14007C921D /* UserPresenter.m */,
+			);
+			path = MVP;
 			sourceTree = "<group>";
 		};
 		345DE0E31FD845F000719FAD /* guang2 */ = {
@@ -908,6 +1139,12 @@
 		34B6825C1F8E41B000389BF5 /* CoreConcept */ = {
 			isa = PBXGroup;
 			children = (
+				3408AA5320ECCD67009ED572 /* interview */,
+				3429909720E8F2EC0093A58E /* BlockKit */,
+				3429909120E8E6FC0093A58E /* UIImage */,
+				34259C3C20E63532006FF740 /* ReadSDWebImage */,
+				340C26C920E36C03001BDC21 /* basic */,
+				345363DB20DF9B75007C921D /* MVP */,
 				342123C620B978D3007C03DC /* Block */,
 				342B28DF20B1850200439600 /* Thread */,
 				341190E720AE86BA00752304 /* Runtime */,
@@ -942,6 +1179,8 @@
 				34D1C92A207E0F5F005349E0 /* TestEventViewContrller.m */,
 				340802B420D6848F00ED4BD7 /* TestEvent2ViewController.h */,
 				340802B520D6848F00ED4BD7 /* TestEvent2ViewController.m */,
+				342AD2F320EB191E0051CC57 /* TestGerViewController.h */,
+				342AD2F420EB191E0051CC57 /* TestGerViewController.m */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -1090,6 +1329,7 @@
 				345DE11D1FD845F100719FAD /* cao1.json in Resources */,
 				347EE3481FE149560031E60E /* fire@2x.jpg in Resources */,
 				34FDBD021FD2C6E7004770A3 /* timg@2x.jpg in Resources */,
+				3429909620E8E7F10093A58E /* check_green.png in Resources */,
 				345DE11C1FD845F100719FAD /* yezi1.json in Resources */,
 				347EE36A1FE1506A0031E60E /* homework_fragement_8@2x.png in Resources */,
 				345DE1231FD845F100719FAD /* yezi2_img_0.png in Resources */,
@@ -1153,9 +1393,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept-frameworks.sh",
+				"${PODS_ROOT}/HyphenateLite/iOS_Pods_IMSDK_V3.4.2/HyphenateLite.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HyphenateLite.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1169,8 +1412,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345363DE20DF9B8D007C921D /* MVPViewController.m in Sources */,
 				34670D8220C4F5DD004B65A1 /* RuntimeDynamicViewController.m in Sources */,
 				3440C3D920AA56D80062A89D /* CustomOpaqueView.m in Sources */,
+				3408AA5F20EDCB37009ED572 /* InterviewKVOViewController.m in Sources */,
 				34AA5B0D1FE7AECE0053DD01 /* DrawCoreTextVC.m in Sources */,
 				341BCB1A205E17A8005DE1F5 /* EncryptionTools.m in Sources */,
 				34FDBCF01FD1966D004770A3 /* TestPainterModelVC.m in Sources */,
@@ -1184,20 +1429,29 @@
 				343588651FCEA1510097B18B /* TestBorderViewController.m in Sources */,
 				342B28E520B195D100439600 /* Thread3ViewController.m in Sources */,
 				340E64B3201E0EFC00D9CAB7 /* MTeacher.m in Sources */,
+				340C26DB20E3725D001BDC21 /* Dog+DogCategory.m in Sources */,
 				341190ED20AED81000752304 /* Runtime2ViewController.m in Sources */,
+				345363E420DF9F14007C921D /* UserPresenter.m in Sources */,
 				340E64B6201E0F3900D9CAB7 /* MTeacher+Runtime.m in Sources */,
 				34AA5B091FE6052C0053DD01 /* DrawTextView.m in Sources */,
+				344A950920F2148A000EE752 /* SwizzViewController.m in Sources */,
 				343588741FD0042E0097B18B /* TestPerspectiveViewController.m in Sources */,
 				342B28EC20B2759200439600 /* GCD2ViewController.m in Sources */,
 				34B1DE701FDFB7EB00EE50A6 /* TouchView1.m in Sources */,
 				3440C3E320AB278D0062A89D /* TestOpenGlView.m in Sources */,
+				3408AA6B20EE0DCA009ED572 /* NSObject+RAO2KVC.m in Sources */,
 				3463298720B023BB0033A9BB /* Runtime7ViewController.m in Sources */,
 				343588551FCE5EB60097B18B /* Test22ViewController.m in Sources */,
 				3440C3EF20AD31CA0062A89D /* CALayerViewController.m in Sources */,
+				344A950C20F215D4000EE752 /* SwizzView.m in Sources */,
+				342B00CC20E493C500FA08CB /* DispatchIOViewController.m in Sources */,
 				342BF45420BB8EE300B3FD31 /* BlockCircleViewController.m in Sources */,
+				3408AA5920ECD856009ED572 /* PropertyDecorateViewController.m in Sources */,
 				343588611FCE96490097B18B /* TestLayerViewController.m in Sources */,
 				34FDBD001FD2A1B7004770A3 /* TestDrawImageViewController.m in Sources */,
+				340C26D220E370D6001BDC21 /* Dog.m in Sources */,
 				34B6825F1F8E41B000389BF5 /* AppDelegate.m in Sources */,
+				342B00C320E47F4C00FA08CB /* GCDBarrierViewController.m in Sources */,
 				341A6A4A20B3E351009591F2 /* AnimationPauseViewController.m in Sources */,
 				3412CA7520B468850065A9C9 /* RunloopViewController4.m in Sources */,
 				342BF45720BB911700B3FD31 /* RootBlockViewController.m in Sources */,
@@ -1206,34 +1460,51 @@
 				34E2009620C12BAF004FA52E /* TestMasViewController2.m in Sources */,
 				341190D920AD692800752304 /* AnimationViewController.m in Sources */,
 				34A15EBC1FC9128C002A1038 /* DrawVC.m in Sources */,
+				342AD2F820EBD0110051CC57 /* RunloopHuizhiViewController.m in Sources */,
 				341BCB1D205E1C89005DE1F5 /* RSACryptor.m in Sources */,
 				34FDBCE21FD12CD3004770A3 /* TestShapeLayerVCV.m in Sources */,
+				342B00D620E4D17000FA08CB /* ThreadLockViewController.m in Sources */,
 				341190DD20AD6F6E00752304 /* AnimationLayer.m in Sources */,
+				34259C3F20E6354A006FF740 /* ReadSDWebViewController.m in Sources */,
 				343588771FD0090B0097B18B /* TestPerspective2ViewController.m in Sources */,
 				341A6A4720B3AA40009591F2 /* OperationViewController.m in Sources */,
+				34CD80FF20EF5371005AB4B1 /* NetDesignViewController.m in Sources */,
+				34EB66E220EE715F00D6BF81 /* InterViewMessageViewController.m in Sources */,
 				34670D8820C50C93004B65A1 /* NSObject+RAOKVO.m in Sources */,
+				3429908A20E87CF80093A58E /* OperationCustomViewController.m in Sources */,
 				34B1DE6A1FDF881000EE50A6 /* ButtonView.m in Sources */,
 				34FDBCFC1FD273E2004770A3 /* TestContextLineViewController.m in Sources */,
+				3429909420E8E7190093A58E /* ImageViewController.m in Sources */,
 				3435887A1FD00E560097B18B /* TestPatLayerViewController.m in Sources */,
 				341190EA20AE8A4A00752304 /* RuntimeViewController.m in Sources */,
+				3408AA5C20ED9821009ED572 /* ACodeViewController.m in Sources */,
+				342B00C020E478CB00FA08CB /* GCDDispatchGroupVc.m in Sources */,
 				34897600206285D200D20026 /* TestMasViewController.m in Sources */,
 				342123CC20B979AE007C03DC /* BlockPerson.m in Sources */,
 				3440C3F320AD34140062A89D /* CustomCALayer.m in Sources */,
 				34670D8520C50C6B004B65A1 /* RuntimeKVOCustomViewController.m in Sources */,
 				342B28EF20B2B5FA00439600 /* GCD3ViewController.m in Sources */,
+				344A950F20F2163B000EE752 /* SwizzView+swizz.m in Sources */,
+				342E734820F42F4A00074309 /* MemoryLeakViewController.m in Sources */,
+				342B00CF20E4B4CD00FA08CB /* DispatchSourceViewController.m in Sources */,
 				34B1DE641FDE8D8C00EE50A6 /* TestGerstureVC.m in Sources */,
 				342B28E920B26B7600439600 /* GCDViewController.m in Sources */,
 				340802B620D6849000ED4BD7 /* TestEvent2ViewController.m in Sources */,
+				340C26CF20E370B0001BDC21 /* Animal.m in Sources */,
 				341190E320ADA39C00752304 /* AnimationActionView.m in Sources */,
+				3408AA6220EDFEE0009ED572 /* KVOImplementViewController.m in Sources */,
 				34AA5AF31FE2C78B0053DD01 /* BezierView.m in Sources */,
 				34FDBCF31FD2671B004770A3 /* TestContextClipViewController.m in Sources */,
 				34F3362A1FCD5BC400E6D7C1 /* TestLayerPropertyVC.m in Sources */,
 				34AA5B061FE605140053DD01 /* DrawTextViewController.m in Sources */,
+				340C26D820E3724B001BDC21 /* Animal+AnimalCategory.m in Sources */,
 				341BCB15205DF89B005DE1F5 /* EnciryViewController.m in Sources */,
 				3440C3EC20AC30930062A89D /* RunLoopViewController3.m in Sources */,
 				34FDBCEA1FD1409D004770A3 /* TestContextViewController.m in Sources */,
 				340802B020D3720D00ED4BD7 /* TestConstraintsViewController.m in Sources */,
+				342B00C920E48ACC00FA08CB /* DispatchSemaphoreViewController.m in Sources */,
 				341190F920B00CE000752304 /* RuntimePerson.m in Sources */,
+				342B00C620E4832100FA08CB /* DispatchSyncViewController.m in Sources */,
 				341190F320AFE6B700752304 /* RunTime4ViewController.m in Sources */,
 				34FDBCF91FD27378004770A3 /* ContextLineWidthView.m in Sources */,
 				342123C920B97911007C03DC /* BlockViewController.m in Sources */,
@@ -1242,27 +1513,35 @@
 				343588711FCFD8B90097B18B /* TestTranformViewController.m in Sources */,
 				34AA5AF01FE2C5640053DD01 /* BezierPathViewController.m in Sources */,
 				3440C3E920AC0F0F0062A89D /* RunloopViewController2.m in Sources */,
+				342AD2F520EB191E0051CC57 /* TestGerViewController.m in Sources */,
 				340E64B9201E1BDF00D9CAB7 /* fishhook.c in Sources */,
 				34D1C92B207E0F5F005349E0 /* TestEventViewContrller.m in Sources */,
 				340802B320D6552B00ED4BD7 /* TestMasLinkViewController.m in Sources */,
 				34B1DE6D1FDF8E4300EE50A6 /* CustomGestureRecognizer.m in Sources */,
 				341190E620ADA4B100752304 /* AnimationActionLayer.m in Sources */,
+				342B00D920E4E94800FA08CB /* BlockTestViewController.m in Sources */,
 				342B28E220B1857A00439600 /* Thread2ViewController.m in Sources */,
+				3408AA5620ECCD7D009ED572 /* CopyingViewController.m in Sources */,
 				34FDBCE61FD13305004770A3 /* TestShapeLayer2ViewController.m in Sources */,
 				340E64B0201E05C900D9CAB7 /* MethodViewController.m in Sources */,
+				345363E120DF9BA5007C921D /* User.m in Sources */,
 				341190F020AEE41400752304 /* Runtime3ViewController.m in Sources */,
 				34FDBCED1FD15CC2004770A3 /* TestContextView.m in Sources */,
+				340C26CC20E36C43001BDC21 /* BasicViewController.m in Sources */,
 				342B28DE20B17BEB00439600 /* ThreadViewController.m in Sources */,
 				3412CA7820B46CC80065A9C9 /* RunLoopViewController5.m in Sources */,
 				3440C3E620ABC1BB0062A89D /* RunLoopViewController.m in Sources */,
+				3429909020E87D310093A58E /* CustomOperation.m in Sources */,
 				34670D7C20C4CEB5004B65A1 /* RuntimeModelViewController.m in Sources */,
 				34AA5B021FE3C1180053DD01 /* BezierView2.m in Sources */,
 				34B1DE731FDFB81800EE50A6 /* TouchView2.m in Sources */,
 				34AA5B121FE7B4530053DD01 /* CoreTextView.m in Sources */,
+				3429909A20E8F2FA0093A58E /* BlockKitViewController.m in Sources */,
 				34FDBCF61FD2733C004770A3 /* TestLineWidthViewController.m in Sources */,
 				34B682751F8E447300389BF5 /* RootViewController.m in Sources */,
 				340204FE1FBEF3C2005C087D /* AnimationCustomView.m in Sources */,
 				342283D71FD840DD00BBF041 /* LottiViewVCViewController.m in Sources */,
+				34259C3B20E60D9D006FF740 /* BlockYinyongViewController.m in Sources */,
 				34A15EBF1FC9143F002A1038 /* DrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

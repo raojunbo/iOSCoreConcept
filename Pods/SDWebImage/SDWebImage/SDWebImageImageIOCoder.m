@@ -92,6 +92,7 @@ static const CGFloat kDestSeemOverlap = 2.0f;   // the numbers of pixels to over
 }
 
 - (UIImage *)decodedImageWithData:(NSData *)data {
+    //
     if (!data) {
         return nil;
     }
@@ -113,6 +114,10 @@ static const CGFloat kDestSeemOverlap = 2.0f;   // the numbers of pixels to over
     return image;
 #endif
 }
+
+/*
+ 渐渐式的解码
+ */
 
 - (UIImage *)incrementallyDecodedImageWithData:(NSData *)data finished:(BOOL)finished {
     if (!_imageSource) {
@@ -225,6 +230,12 @@ static const CGFloat kDestSeemOverlap = 2.0f;   // the numbers of pixels to over
 #endif
 }
 
+/*
+ 解压缩图片原理
+ 创建CGBitmapContext并将图片绘制到上面
+ 取位图
+ 
+ */
 #if SD_UIKIT || SD_WATCH
 - (nullable UIImage *)sd_decompressedImageWithImage:(nullable UIImage *)image {
     if (![[self class] shouldDecodeImage:image]) {
@@ -518,6 +529,7 @@ static const CGFloat kDestSeemOverlap = 2.0f;   // the numbers of pixels to over
 #if SD_UIKIT || SD_WATCH
 #pragma mark EXIF orientation tag converter
 + (UIImageOrientation)sd_imageOrientationFromImageData:(nonnull NSData *)imageData {
+    
     UIImageOrientation result = UIImageOrientationUp;
     CGImageSourceRef imageSource = CGImageSourceCreateWithData((__bridge CFDataRef)imageData, NULL);
     if (imageSource) {

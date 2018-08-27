@@ -17,7 +17,7 @@
     return self;
 }
 
-- (void) drawRect:(CGRect)rect{
+- (void)drawRect:(CGRect)rect{
     //取得当前上下文
     CGContextRef context = UIGraphicsGetCurrentContext();
     UIBezierPath *path = [UIBezierPath bezierPathWithRect:rect];

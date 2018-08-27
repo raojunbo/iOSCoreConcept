@@ -9,6 +9,10 @@ target ‘CoreConcept’ do
 	pod 'Masonry'
 	pod 'SDWebImage', '~> 4.3.0'
    	pod 'YYModel', '~> 1.0.4'
+   	pod 'YYCache', '~> 1.0.4'
+   	pod 'YYText', '~> 1.0.7'
+   	 pod 'BlocksKit', '~> 2.2.5'
     pod 'MJRefresh', '~> 3.1.15.3'
  	pod 'KBRCategory'
+ 	pod 'HyphenateLite'
 end

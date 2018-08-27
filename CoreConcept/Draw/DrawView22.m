@@ -57,6 +57,7 @@
 //    [[UIColor clearColor]setFill];
 //    [[UIColor redColor]setStroke];
     [self.bpath stroke];
+    
 }
 
 

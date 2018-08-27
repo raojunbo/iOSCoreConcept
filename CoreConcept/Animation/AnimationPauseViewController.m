@@ -64,10 +64,9 @@
     layer2.timeOffset = 5;
     //获取图层在此刻的本地时间
     
-    CFTimeInterval absoluteTime  = CACurrentMediaTime();
-    CFTimeInterval t = [layer1 convertTime:absoluteTime fromLayer:nil];
-    CFTimeInterval tp = [layer2 convertTime:absoluteTime toLayer:nil];
-    CFTimeInterval t0 = (tp - layer2)
+//    CFTimeInterval absoluteTime  = CACurrentMediaTime();
+//    CFTimeInterval t = [layer1 convertTime:absoluteTime fromLayer:nil];
+//    CFTimeInterval tp = [layer2 convertTime:absoluteTime toLayer:nil]
     
 }
 

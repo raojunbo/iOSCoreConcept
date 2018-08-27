@@ -19,24 +19,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    NSLog(@"这是目录%@",NSHomeDirectory());
+
     self.dataArray = @[
                        @"RootBlockViewController",
                        @"ThreadViewController",
                        @"RuntimeViewController",
                        @"RunLoopViewController",
-                       @"AnimationViewController",
-                       @"CALayerViewController",
-                       @"TestEventViewContrller",
-                       @"TestMasViewController2",
-                       @"AnimationPauseViewController",
-                       @"LottiViewVCViewController",
-                       @"RuntimeDynamicViewController",
-                       @"RuntimeKVOCustomViewController",
-                       @"BlockReviewViewController",
-                       @"TestConstraintsViewController",
-                       @"AnimationPauseViewController",
-                       @"TestEvent2ViewController",
-                       @"AnimationPauseViewController"
+                       @"GCDBarrierViewController",
+                       @"ReadSDWebViewController",
+                       @"OperationCustomViewController",
+                       @"ImageViewController",
+                       @"BlockKitViewController",
+                       @"MemoryLeakViewController",
+                       @"BlockTestViewController"
                        ];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {

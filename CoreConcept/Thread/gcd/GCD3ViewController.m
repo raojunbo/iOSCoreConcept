@@ -20,10 +20,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    dispatch_time_t tim = dispatch_time(DISPATCH_TIME_NOW,  (int64_t)(1.0 * NSEC_PER_SEC));
-//    dispatch_after(tim, dispatch_get_main_queue(), ^{
-//
-//    });
     [self testOnce];
 }
 

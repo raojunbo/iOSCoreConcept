@@ -9,9 +9,10 @@
 #import "RunloopViewController4.h"
 
 /*
+ timer事件源
  Source:事件源
- Source0:非Source1,比如触摸
- Source1:系统内核事件
+ Source0:非Source1
+ Source1:系统内核事件,触摸
  */
 @interface RunloopViewController4 ()
 @property (nonatomic, strong) dispatch_source_t sourceTimer;
@@ -35,24 +36,14 @@
         NSLog(@"r%@",[NSThread currentThread]);
     });
     dispatch_resume(self.sourceTimer);
-   
+
 }
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
-}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

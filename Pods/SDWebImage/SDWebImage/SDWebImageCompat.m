@@ -25,7 +25,7 @@ inline UIImage *SDScaledImageForKey(NSString * _Nullable key, UIImage * _Nullabl
 #if SD_MAC
     return image;
 #elif SD_UIKIT || SD_WATCH
-    if ((image.images).count > 0) {
+    if ((image.images).count > 0) {//如果是动图
         NSMutableArray<UIImage *> *scaledImages = [NSMutableArray array];
 
         for (UIImage *tempImage in image.images) {

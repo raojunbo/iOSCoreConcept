@@ -86,6 +86,9 @@ typedef NSMutableDictionary<NSString *, id> SDCallbacksDictionary;
     return self;
 }
 
+/*
+ 这个函数比较奇怪
+ */
 - (nullable id)addHandlersForProgress:(nullable SDWebImageDownloaderProgressBlock)progressBlock
                             completed:(nullable SDWebImageDownloaderCompletedBlock)completedBlock {
     SDCallbacksDictionary *callbacks = [NSMutableDictionary new];
@@ -94,7 +97,7 @@ typedef NSMutableDictionary<NSString *, id> SDCallbacksDictionary;
     LOCK(self.callbacksLock);
     [self.callbackBlocks addObject:callbacks];
     UNLOCK(self.callbacksLock);
-    return callbacks;
+    return callbacks;//progressCallbackKey与completeCallbackKey
 }
 
 - (nullable NSArray<id> *)callbacksForKey:(NSString *)key {
@@ -120,7 +123,9 @@ typedef NSMutableDictionary<NSString *, id> SDCallbacksDictionary;
     return shouldCancel;
 }
 
+//重写start方法
 - (void)start {
+    //在开始之前，先检测是否自己已经取消
     @synchronized (self) {
         if (self.isCancelled) {
             self.finished = YES;
@@ -129,6 +134,8 @@ typedef NSMutableDictionary<NSString *, id> SDCallbacksDictionary;
         }
 
 #if SD_UIKIT
+        //有意思，通过反射机制,找到UIApplication。在程序突然进入后台时，处理取消请求
+        //这里可以明显考虑到在处理网络时，在进入后台时，可以进行取消的操作
         Class UIApplicationClass = NSClassFromString(@"UIApplication");
         BOOL hasApplication = UIApplicationClass && [UIApplicationClass respondsToSelector:@selector(sharedApplication)];
         if (hasApplication && [self shouldContinueWhenAppEntersBackground]) {
@@ -162,6 +169,7 @@ typedef NSMutableDictionary<NSString *, id> SDCallbacksDictionary;
             self.ownedSession = session;
         }
         
+        
         if (self.options & SDWebImageDownloaderIgnoreCachedResponse) {
             // Grab the cached data for later check
             NSURLCache *URLCache = session.configuration.URLCache;
@@ -179,7 +187,7 @@ typedef NSMutableDictionary<NSString *, id> SDCallbacksDictionary;
         }
         
         self.dataTask = [session dataTaskWithRequest:self.request];
-        self.executing = YES;
+        self.executing = YES;//标识正在执行
     }
 
     if (self.dataTask) {
@@ -193,7 +201,7 @@ typedef NSMutableDictionary<NSString *, id> SDCallbacksDictionary;
             }
         }
 #pragma clang diagnostic pop
-        [self.dataTask resume];
+        [self.dataTask resume];//任务开始执行
         for (SDWebImageDownloaderProgressBlock progressBlock in [self callbacksForKey:kProgressCallbackKey]) {
             progressBlock(0, NSURLResponseUnknownLength, self.request.URL);
         }
@@ -287,7 +295,7 @@ typedef NSMutableDictionary<NSString *, id> SDCallbacksDictionary;
 didReceiveResponse:(NSURLResponse *)response
  completionHandler:(void (^)(NSURLSessionResponseDisposition disposition))completionHandler {
     NSURLSessionResponseDisposition disposition = NSURLSessionResponseAllow;
-    NSInteger expected = (NSInteger)response.expectedContentLength;
+    NSInteger expected = (NSInteger)response.expectedContentLength;//期待的大小
     expected = expected > 0 ? expected : 0;
     self.expectedSize = expected;
     self.response = response;
@@ -300,6 +308,7 @@ didReceiveResponse:(NSURLResponse *)response
     }
     
     if (valid) {
+        //处理进度
         for (SDWebImageDownloaderProgressBlock progressBlock in [self callbacksForKey:kProgressCallbackKey]) {
             progressBlock(0, expected, self.request.URL);
         }
@@ -322,11 +331,11 @@ didReceiveResponse:(NSURLResponse *)response
     if (!self.imageData) {
         self.imageData = [[NSMutableData alloc] initWithCapacity:self.expectedSize];
     }
-    [self.imageData appendData:data];
-
+    [self.imageData appendData:data];//将imageData连接起来
+    //如果是渐渐式下载
     if ((self.options & SDWebImageDownloaderProgressiveDownload) && self.expectedSize > 0) {
         // Get the image data
-        __block NSData *imageData = [self.imageData copy];
+        __block NSData *imageData = [self.imageData copy];//取得下载的data
         // Get the total bytes downloaded
         const NSInteger totalSize = imageData.length;
         // Get the finish status
@@ -360,6 +369,7 @@ didReceiveResponse:(NSURLResponse *)response
         });
     }
 
+    
     for (SDWebImageDownloaderProgressBlock progressBlock in [self callbacksForKey:kProgressCallbackKey]) {
         progressBlock(self.imageData.length, self.expectedSize, self.request.URL);
     }
@@ -400,10 +410,12 @@ didReceiveResponse:(NSURLResponse *)response
         [self callCompletionBlocksWithError:error];
         [self done];
     } else {
+        //确保，compleeCallback是存在的
         if ([self callbacksForKey:kCompletedCallbackKey].count > 0) {
             /**
              *  If you specified to use `NSURLCache`, then the response you get here is what you need.
              */
+            //处理确实需要NSURLCache的情况
             __block NSData *imageData = [self.imageData copy];
             if (imageData) {
                 /**  if you specified to only use cached data via `SDWebImageDownloaderIgnoreCachedResponse`,
@@ -415,8 +427,11 @@ didReceiveResponse:(NSURLResponse *)response
                     [self done];
                 } else {
                     // decode the image in coder queue
+#warning 这里还没有分析完。对于图片的解码。
                     dispatch_async(self.coderQueue, ^{
+                        //将NSData解码成
                         UIImage *image = [[SDWebImageCodersManager sharedInstance] decodedImageWithData:imageData];
+                        //这里里为什么不从SDCache里取呢，哈哈，使此类完全与cache解耦
                         NSString *key = [[SDWebImageManager sharedManager] cacheKeyForURL:self.request.URL];
                         image = [self scaledImageForKey:key image:image];
                         
@@ -434,7 +449,7 @@ didReceiveResponse:(NSURLResponse *)response
                         }
                         
                         if (shouldDecode) {
-                            if (self.shouldDecompressImages) {
+                            if (self.shouldDecompressImages) {//解压图片
                                 BOOL shouldScaleDown = self.options & SDWebImageDownloaderScaleDownLargeImages;
                                 image = [[SDWebImageCodersManager sharedInstance] decompressedImageWithImage:image data:&imageData options:@{SDWebImageCoderScaleDownLargeImagesKey: @(shouldScaleDown)}];
                             }
@@ -457,6 +472,12 @@ didReceiveResponse:(NSURLResponse *)response
         }
     }
 }
+
+/*
+ 这个函数时专门处理授权的
+ */
+
+#warning 关于http的授权，需要http相关知识的补充
 
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition disposition, NSURLCredential *credential))completionHandler {
     

@@ -7,7 +7,7 @@
 //
 
 #import "BlockCircleViewController.h"
-#import <Masonry.h>
+
 
 @interface BlockCircleViewController ()
 @property (nonatomic, strong)UIButton *button;
@@ -25,13 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    /*
-     循环引用
-     1.将block看做一个对象，因为block的特殊性，可以在里面引用self，而block是全局的变量时，也就是self对block引用时，
-     就会造成循环的引用
-     2.在block做为局部变量，对self的引用时，是不会造成的。因为，在一个函数时一个栈，在执行完后就释放block；
-     3.所以对于循环引用的排查，还会从最本质的。你强引用我，我强引用你
-     */
+    
     __weak typeof  (self) tmpself = self;
     NSLog(@"这是self:%@",self);
     NSLog(@"这是tmpself:%@",tmpself);
@@ -48,10 +42,7 @@
     raoBlockB();
     
     [self.view addSubview:self.button];
-    [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(100, 40));
-        make.center.equalTo(self.view);
-    }];
+   
 }
 
 

@@ -27,8 +27,7 @@
  - 开几条线程，取决于队列，串行开一条，并发开多条
  
  //思考问题，线程队列在这里起到什么作用
- 
- 
+
  */
 
 
@@ -41,8 +40,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self gcdDemo8];
+    [self gcdDemo2];
     // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
