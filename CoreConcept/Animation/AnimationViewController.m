@@ -49,6 +49,7 @@
     [self.customLayer addAnimation:theAnimation forKey:@"position"];
 //    CAAction
 //    theAnimation runActionForKey:<#(nonnull NSString *)#> object:<#(nonnull id)#> arguments:<#(nullable NSDictionary *)#>
+    //我在master修改的bug6：
 }
 
 - (void)viewWillAppear:(BOOL)animated {
