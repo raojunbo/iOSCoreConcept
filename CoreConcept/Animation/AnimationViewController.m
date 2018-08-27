@@ -82,6 +82,7 @@
 //- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 //    [self addAin];
 //    [self.customLayer setNeedsDisplay];
+
 //}
 
 @end
