@@ -55,6 +55,11 @@
     
     //修改bug4
 
+
+
+    
+    //修改bug5
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
