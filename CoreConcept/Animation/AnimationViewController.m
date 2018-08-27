@@ -62,6 +62,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self addAin];
+    //这是master的一个修改
 }
 
 - (CGMutablePathRef)customPath {
