@@ -30,7 +30,7 @@
     [self.view addSubview:self.aniamtionView];
     
     [self.view addSubview:self.button];
-    NSRunLoop
+    
 }
 
 - (UIButton *)button {
