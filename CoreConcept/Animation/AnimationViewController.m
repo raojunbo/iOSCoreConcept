@@ -73,6 +73,7 @@
 }
 
 - (void)didReceiveMemoryWarning {
+    //修噶3
     [super didReceiveMemoryWarning];
 }
 
