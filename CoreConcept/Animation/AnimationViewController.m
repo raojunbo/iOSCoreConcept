@@ -43,6 +43,7 @@
 }
 
 - (void)addAin {
+    //修改8
     CAKeyframeAnimation *theAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     theAnimation.duration = 5.0;
     theAnimation.path = self.customPath;
