@@ -90,6 +90,7 @@ void attribute0Setter(id classInstance, SEL _cmd, NSString *newName) {
 
 
 - (void)didReceiveMemoryWarning {
+
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

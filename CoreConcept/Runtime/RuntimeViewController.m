@@ -45,10 +45,11 @@
 //
 //    } OBJC2_UNAVAILABLE;
     
-    
+    //与类相关的API
     //Class
     //获得类名
     self.view.backgroundColor = [UIColor whiteColor];
+    
     const char * resutl0 = class_getName([self class]);//获取类名
     NSString *resutlStr = [NSString stringWithUTF8String:resutl0];
     NSLog(@"这是resultStr:%@",resutlStr);
@@ -61,24 +62,39 @@
     size_t classSize = class_getInstanceSize([self class]);
     NSLog(@"这是classSize:%zu",classSize);
     
-    //获取实例变量
-//    const char * dataArrayIvarCstring = [@"_dataArray" UTF8String];
-//    Ivar dataArrayIvar = class_getInstanceVariable([self class], dataArrayIvarCstring);
-//    NSLog(@"这是Ivar:%@", [NSString stringWithUTF8String:ivar_getName(dataArrayIvar)]);
+    //是否是元类
+    if(class_isMetaClass([self class])){
+        NSLog(@"self class 是元类");
+    }
     
-//    //获取属性(属性会自动生成实例变量)
-//    const char * dataArrayPropertyCstring = [@"dataArray" UTF8String];
-//    objc_property_t dataArrayPropertyr = class_getProperty([self class], dataArrayPropertyCstring);
-//    NSLog(@"这是property:%@", [NSString stringWithUTF8String:property_getName(dataArrayPropertyr)]);
+    if( class_isMetaClass(superClass)){
+        NSLog(@"superClass是元类");
+    };
+    
+    const char * className = object_getClassName([self class]);
+    Class metaClass = objc_getMetaClass(className);
+    if(class_isMetaClass(metaClass)){
+        NSLog(@"是元类");
+    }
+   
+    //获取实例变量
+    const char * dataArrayIvarCstring = [@"_dataArray" UTF8String];
+    Ivar dataArrayIvar = class_getInstanceVariable([self class], dataArrayIvarCstring);
+    NSLog(@"这是Ivar:%@", [NSString stringWithUTF8String:ivar_getName(dataArrayIvar)]);
+    
+    //获取属性(属性会自动生成实例变量)
+    const char * dataArrayPropertyCstring = [@"dataArray" UTF8String];
+    objc_property_t dataArrayPropertyr = class_getProperty([self class], dataArrayPropertyCstring);
+    NSLog(@"这是property:%@", [NSString stringWithUTF8String:property_getName(dataArrayPropertyr)]);
     
     //通过SEL找到Method,并找到相应的实现
-//    IMP doFuncMethodImp = class_getMethodImplementation([self class], @selector(doFunc));
-//    doFuncMethodImp();
+    IMP doFuncMethodImp = class_getMethodImplementation([self class], @selector(doFunc));
+    doFuncMethodImp(self,@selector(doFunc));
 
     //获取类方法
-//    Method dofun2Method = class_getClassMethod([self class], @selector(dofunc2));
-//    IMP dofun2MethodImp = method_getImplementation(dofun2Method);
-//    dofun2MethodImp();
+    Method dofun2Method = class_getClassMethod([self class], @selector(dofunc2));
+    IMP dofun2MethodImp = method_getImplementation(dofun2Method);
+    dofun2MethodImp(self,@selector(dofun2Method));
     
     
 }

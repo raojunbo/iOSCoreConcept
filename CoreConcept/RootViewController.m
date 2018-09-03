@@ -23,7 +23,7 @@
     NSLog(@"这是目录%@",NSHomeDirectory());
 
     self.dataArray = @[
-                       @"RootBlockViewController",
+                       @"ReadingViewController",
                        @"ThreadViewController",
                        @"RuntimeViewController",
                        @"RunLoopViewController",

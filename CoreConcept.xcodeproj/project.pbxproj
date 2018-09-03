@@ -101,6 +101,14 @@
 		345363DE20DF9B8D007C921D /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345363DD20DF9B8D007C921D /* MVPViewController.m */; };
 		345363E120DF9BA5007C921D /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 345363E020DF9BA5007C921D /* User.m */; };
 		345363E420DF9F14007C921D /* UserPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 345363E320DF9F14007C921D /* UserPresenter.m */; };
+		3456E631213BB71B003E8165 /* RuntimeViewController8.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E630213BB71B003E8165 /* RuntimeViewController8.m */; };
+		3456E635213CCBC8003E8165 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E634213CCBC8003E8165 /* Mediator.m */; };
+		3456E638213CCDF0003E8165 /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E637213CCDF0003E8165 /* BookDetailViewController.m */; };
+		3456E63E213CCE63003E8165 /* BookReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E63D213CCE63003E8165 /* BookReviewViewController.m */; };
+		3456E641213CCE9D003E8165 /* ReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E640213CCE9D003E8165 /* ReadingViewController.m */; };
+		3456E644213CD81B003E8165 /* Mediator2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E643213CD81B003E8165 /* Mediator2.m */; };
+		3456E647213CDB9C003E8165 /* Mediator3.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E646213CDB9C003E8165 /* Mediator3.m */; };
+		3456E64A213CEAF9003E8165 /* ProtocolMediator3.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E649213CEAF9003E8165 /* ProtocolMediator3.m */; };
 		345DE10E1FD845F100719FAD /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 345DE0E41FD845F000719FAD /* demo.html */; };
 		345DE10F1FD845F100719FAD /* guang2.json in Resources */ = {isa = PBXBuildFile; fileRef = 345DE0E51FD845F000719FAD /* guang2.json */; };
 		345DE1101FD845F100719FAD /* guang2_img_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 345DE0E71FD845F000719FAD /* guang2_img_0.png */; };
@@ -379,6 +387,23 @@
 		345363E020DF9BA5007C921D /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		345363E220DF9F14007C921D /* UserPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserPresenter.h; sourceTree = "<group>"; };
 		345363E320DF9F14007C921D /* UserPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPresenter.m; sourceTree = "<group>"; };
+		3456E62F213BB71B003E8165 /* RuntimeViewController8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController8.h; sourceTree = "<group>"; };
+		3456E630213BB71B003E8165 /* RuntimeViewController8.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController8.m; sourceTree = "<group>"; };
+		3456E633213CCBC8003E8165 /* Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		3456E634213CCBC8003E8165 /* Mediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		3456E636213CCDF0003E8165 /* BookDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookDetailViewController.h; sourceTree = "<group>"; };
+		3456E637213CCDF0003E8165 /* BookDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookDetailViewController.m; sourceTree = "<group>"; };
+		3456E63C213CCE63003E8165 /* BookReviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookReviewViewController.h; sourceTree = "<group>"; };
+		3456E63D213CCE63003E8165 /* BookReviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookReviewViewController.m; sourceTree = "<group>"; };
+		3456E63F213CCE9D003E8165 /* ReadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadingViewController.h; sourceTree = "<group>"; };
+		3456E640213CCE9D003E8165 /* ReadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadingViewController.m; sourceTree = "<group>"; };
+		3456E642213CD81B003E8165 /* Mediator2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator2.h; sourceTree = "<group>"; };
+		3456E643213CD81B003E8165 /* Mediator2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator2.m; sourceTree = "<group>"; };
+		3456E645213CDB9C003E8165 /* Mediator3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator3.h; sourceTree = "<group>"; };
+		3456E646213CDB9C003E8165 /* Mediator3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator3.m; sourceTree = "<group>"; };
+		3456E648213CEAF9003E8165 /* ProtocolMediator3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolMediator3.h; sourceTree = "<group>"; };
+		3456E649213CEAF9003E8165 /* ProtocolMediator3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolMediator3.m; sourceTree = "<group>"; };
+		3456E64B213CF25B003E8165 /* ComponentProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentProtocol.h; sourceTree = "<group>"; };
 		345DE0E41FD845F000719FAD /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
 		345DE0E51FD845F000719FAD /* guang2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guang2.json; sourceTree = "<group>"; };
 		345DE0E71FD845F000719FAD /* guang2_img_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guang2_img_0.png; sourceTree = "<group>"; };
@@ -653,6 +678,8 @@
 				34670D8420C50C6B004B65A1 /* RuntimeKVOCustomViewController.m */,
 				34670D8620C50C93004B65A1 /* NSObject+RAOKVO.h */,
 				34670D8720C50C93004B65A1 /* NSObject+RAOKVO.m */,
+				3456E62F213BB71B003E8165 /* RuntimeViewController8.h */,
+				3456E630213BB71B003E8165 /* RuntimeViewController8.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -873,6 +900,28 @@
 				345363E320DF9F14007C921D /* UserPresenter.m */,
 			);
 			path = MVP;
+			sourceTree = "<group>";
+		};
+		3456E632213BEDFF003E8165 /* componentization */ = {
+			isa = PBXGroup;
+			children = (
+				3456E633213CCBC8003E8165 /* Mediator.h */,
+				3456E634213CCBC8003E8165 /* Mediator.m */,
+				3456E642213CD81B003E8165 /* Mediator2.h */,
+				3456E643213CD81B003E8165 /* Mediator2.m */,
+				3456E645213CDB9C003E8165 /* Mediator3.h */,
+				3456E646213CDB9C003E8165 /* Mediator3.m */,
+				3456E648213CEAF9003E8165 /* ProtocolMediator3.h */,
+				3456E649213CEAF9003E8165 /* ProtocolMediator3.m */,
+				3456E64B213CF25B003E8165 /* ComponentProtocol.h */,
+				3456E63F213CCE9D003E8165 /* ReadingViewController.h */,
+				3456E640213CCE9D003E8165 /* ReadingViewController.m */,
+				3456E636213CCDF0003E8165 /* BookDetailViewController.h */,
+				3456E637213CCDF0003E8165 /* BookDetailViewController.m */,
+				3456E63C213CCE63003E8165 /* BookReviewViewController.h */,
+				3456E63D213CCE63003E8165 /* BookReviewViewController.m */,
+			);
+			path = componentization;
 			sourceTree = "<group>";
 		};
 		345DE0E31FD845F000719FAD /* guang2 */ = {
@@ -1139,6 +1188,7 @@
 		34B6825C1F8E41B000389BF5 /* CoreConcept */ = {
 			isa = PBXGroup;
 			children = (
+				3456E632213BEDFF003E8165 /* componentization */,
 				3408AA5320ECCD67009ED572 /* interview */,
 				3429909720E8F2EC0093A58E /* BlockKit */,
 				3429909120E8E6FC0093A58E /* UIImage */,
@@ -1443,6 +1493,7 @@
 				3463298720B023BB0033A9BB /* Runtime7ViewController.m in Sources */,
 				343588551FCE5EB60097B18B /* Test22ViewController.m in Sources */,
 				3440C3EF20AD31CA0062A89D /* CALayerViewController.m in Sources */,
+				3456E635213CCBC8003E8165 /* Mediator.m in Sources */,
 				344A950C20F215D4000EE752 /* SwizzView.m in Sources */,
 				342B00CC20E493C500FA08CB /* DispatchIOViewController.m in Sources */,
 				342BF45420BB8EE300B3FD31 /* BlockCircleViewController.m in Sources */,
@@ -1458,14 +1509,17 @@
 				341A6A4320B3931F009591F2 /* GCD4ViewController.m in Sources */,
 				3463294920B0137D0033A9BB /* Runtime6ViewController.m in Sources */,
 				34E2009620C12BAF004FA52E /* TestMasViewController2.m in Sources */,
+				3456E631213BB71B003E8165 /* RuntimeViewController8.m in Sources */,
 				341190D920AD692800752304 /* AnimationViewController.m in Sources */,
 				34A15EBC1FC9128C002A1038 /* DrawVC.m in Sources */,
 				342AD2F820EBD0110051CC57 /* RunloopHuizhiViewController.m in Sources */,
 				341BCB1D205E1C89005DE1F5 /* RSACryptor.m in Sources */,
 				34FDBCE21FD12CD3004770A3 /* TestShapeLayerVCV.m in Sources */,
 				342B00D620E4D17000FA08CB /* ThreadLockViewController.m in Sources */,
+				3456E64A213CEAF9003E8165 /* ProtocolMediator3.m in Sources */,
 				341190DD20AD6F6E00752304 /* AnimationLayer.m in Sources */,
 				34259C3F20E6354A006FF740 /* ReadSDWebViewController.m in Sources */,
+				3456E63E213CCE63003E8165 /* BookReviewViewController.m in Sources */,
 				343588771FD0090B0097B18B /* TestPerspective2ViewController.m in Sources */,
 				341A6A4720B3AA40009591F2 /* OperationViewController.m in Sources */,
 				34CD80FF20EF5371005AB4B1 /* NetDesignViewController.m in Sources */,
@@ -1483,6 +1537,7 @@
 				342123CC20B979AE007C03DC /* BlockPerson.m in Sources */,
 				3440C3F320AD34140062A89D /* CustomCALayer.m in Sources */,
 				34670D8520C50C6B004B65A1 /* RuntimeKVOCustomViewController.m in Sources */,
+				3456E647213CDB9C003E8165 /* Mediator3.m in Sources */,
 				342B28EF20B2B5FA00439600 /* GCD3ViewController.m in Sources */,
 				344A950F20F2163B000EE752 /* SwizzView+swizz.m in Sources */,
 				342E734820F42F4A00074309 /* MemoryLeakViewController.m in Sources */,
@@ -1528,13 +1583,16 @@
 				341190F020AEE41400752304 /* Runtime3ViewController.m in Sources */,
 				34FDBCED1FD15CC2004770A3 /* TestContextView.m in Sources */,
 				340C26CC20E36C43001BDC21 /* BasicViewController.m in Sources */,
+				3456E638213CCDF0003E8165 /* BookDetailViewController.m in Sources */,
 				342B28DE20B17BEB00439600 /* ThreadViewController.m in Sources */,
 				3412CA7820B46CC80065A9C9 /* RunLoopViewController5.m in Sources */,
 				3440C3E620ABC1BB0062A89D /* RunLoopViewController.m in Sources */,
+				3456E641213CCE9D003E8165 /* ReadingViewController.m in Sources */,
 				3429909020E87D310093A58E /* CustomOperation.m in Sources */,
 				34670D7C20C4CEB5004B65A1 /* RuntimeModelViewController.m in Sources */,
 				34AA5B021FE3C1180053DD01 /* BezierView2.m in Sources */,
 				34B1DE731FDFB81800EE50A6 /* TouchView2.m in Sources */,
+				3456E644213CD81B003E8165 /* Mediator2.m in Sources */,
 				34AA5B121FE7B4530053DD01 /* CoreTextView.m in Sources */,
 				3429909A20E8F2FA0093A58E /* BlockKitViewController.m in Sources */,
 				34FDBCF61FD2733C004770A3 /* TestLineWidthViewController.m in Sources */,

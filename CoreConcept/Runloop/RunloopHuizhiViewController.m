@@ -7,7 +7,7 @@
 //
 
 #import "RunloopHuizhiViewController.h"
-
+#import <objc/runtime.h>
 @interface RunloopHuizhiViewController ()
 
 @end
@@ -21,6 +21,7 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    
     // Dispose of any resources that can be recreated.
 }
 
