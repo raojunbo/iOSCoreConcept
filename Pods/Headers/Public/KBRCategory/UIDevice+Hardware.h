@@ -1,0 +1,1 @@
+../../../KBRCategory/KBRCategory/Classes/UIDeice/UIDevice+Hardware.h

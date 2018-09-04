@@ -201,11 +201,6 @@
 		34FDBCFC1FD273E2004770A3 /* TestContextLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FDBCFB1FD273E2004770A3 /* TestContextLineViewController.m */; };
 		34FDBD001FD2A1B7004770A3 /* TestDrawImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FDBCFF1FD2A1B7004770A3 /* TestDrawImageViewController.m */; };
 		34FDBD021FD2C6E7004770A3 /* timg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34FDBD011FD2C1FF004770A3 /* timg@2x.jpg */; };
-
-
-		C571E8F67A031FF65DE363B6 /* libPods-testdown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A356850AD109F8ABA400C5D3 /* libPods-testdown.a */; };
-		C6614EDE212DBCA900F91725 /* NSTimer+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = C6614EDD212DBCA900F91725 /* NSTimer+Block.m */; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -548,10 +543,7 @@
 		779FD14EF5940F5139E7CA4B /* libPods-CoreConcept.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreConcept.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7E29B981BB1CD2C04394D3 /* Pods-CoreConcept.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreConcept.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept.release.xcconfig"; sourceTree = "<group>"; };
 		A356850AD109F8ABA400C5D3 /* libPods-testdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testdown.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-
-		C6614EDC212DBCA900F91725 /* NSTimer+Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Block.h"; sourceTree = "<group>"; };
-		C6614EDD212DBCA900F91725 /* NSTimer+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Block.m"; sourceTree = "<group>"; };
-
+		A933C1CB4F244A0BD49B54DB /* Pods-CoreConcept.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreConcept.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -729,7 +721,6 @@
 				342123C820B97911007C03DC /* BlockViewController.m */,
 				342123CA20B979AE007C03DC /* BlockPerson.h */,
 				342123CB20B979AE007C03DC /* BlockPerson.m */,
-
 				342BF45520BB911600B3FD31 /* RootBlockViewController.h */,
 				342BF45620BB911700B3FD31 /* RootBlockViewController.m */,
 				34218BF520C699C70056C7D2 /* BlockReviewViewController.h */,
@@ -738,10 +729,6 @@
 				342B00D820E4E94800FA08CB /* BlockTestViewController.m */,
 				34259C3920E60D9D006FF740 /* BlockYinyongViewController.h */,
 				34259C3A20E60D9D006FF740 /* BlockYinyongViewController.m */,
-
-				C6614EDC212DBCA900F91725 /* NSTimer+Block.h */,
-				C6614EDD212DBCA900F91725 /* NSTimer+Block.m */,
-
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -1278,8 +1265,8 @@
 		ABB0C41967E6CA31CB79571E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C997AA051A69B287F856D7AE /* Pods-CoreConcept.debug.xcconfig */,
 				9B7E29B981BB1CD2C04394D3 /* Pods-CoreConcept.release.xcconfig */,
+				A933C1CB4F244A0BD49B54DB /* Pods-CoreConcept.debug.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1576,7 +1563,6 @@
 				341190F320AFE6B700752304 /* RunTime4ViewController.m in Sources */,
 				34FDBCF91FD27378004770A3 /* ContextLineWidthView.m in Sources */,
 				342123C920B97911007C03DC /* BlockViewController.m in Sources */,
-				C6614EDE212DBCA900F91725 /* NSTimer+Block.m in Sources */,
 				3435887E1FD019F50097B18B /* TestSolidViewController.m in Sources */,
 				341DB5921FC64BAD00E89AD9 /* TestTimeOffsetViewController.m in Sources */,
 				343588711FCFD8B90097B18B /* TestTranformViewController.m in Sources */,
@@ -1727,7 +1713,7 @@
 		};
 		34B682711F8E41B000389BF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C997AA051A69B287F856D7AE /* Pods-CoreConcept.debug.xcconfig */;
+			baseConfigurationReference = A933C1CB4F244A0BD49B54DB /* Pods-CoreConcept.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

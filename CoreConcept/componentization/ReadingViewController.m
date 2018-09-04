@@ -43,14 +43,19 @@
 //    [self.navigationController pushViewController:reviewVC animated:YES];
     
     
-    //注册url与block的映射
-//    [[Mediator3 shareInstance] openURL:@"weread://bookDetail" withParam:@{@"bookId":@"2"}];
+    //注册url与block的映射,实现调转的操作
+     UIImage *image = [UIImage imageNamed:@"LiveCourse_question_rewardBtn"];
+    [[Mediator3 shareInstance] openURL:@"weread://bookDetail" withParam:@{@"bookId":@"2",@"image":image}];
     
+    //注册url与block映射，实现只是取值的操作
+    NSString *bookCount =  [[Mediator3 shareInstance] objectForURL:@"weread://bookCount" withParam:@""];
+    NSLog(@"这是从某个组件取回来的值%@",bookCount);
     
     //注册protocol与Class的映射
     //这里采用protocol的原因是，用协议取申明对外公开的方法
     Class cls = [[ProtocolMediator3 shareInstance] classForProtocol:@protocol(BookDetailComponentProtocol)];
     id bookDetailVC = [[cls alloc]init];
+    
     [self.navigationController pushViewController:bookDetailVC animated:YES];
 }
 

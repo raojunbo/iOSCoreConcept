@@ -11,6 +11,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @protocol BookDetailComponentProtocol<NSObject>
 
 - (UIViewController *)bookDetailViewController:(NSString *)bookId;

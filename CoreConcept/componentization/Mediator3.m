@@ -42,4 +42,16 @@
     }
 }
 
+- (void)registerURLPattern:(NSString *)urlPattern toObjectHandler:(objectComponetBlock)block {
+    [self.cache setObject:block forKey:urlPattern];
+}
+
+- (id)objectForURL:(NSString *)url withParam:(id)param{
+    objectComponetBlock block = [self.cache objectForKey:url];
+    if(block){
+        return block(param);
+    }
+    return nil;
+}
+
 @end

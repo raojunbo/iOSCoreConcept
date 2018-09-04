@@ -26,9 +26,13 @@
     }];
     
     
+    //只是取值的操作
+    [[Mediator3 shareInstance]registerURLPattern:@"weread://bookCount" toObjectHandler:^id(id param) {
+        //执行一定的操作后
+        return @"5";
+    }];
     
-    
-    //采用注册协议的方式
+    //采用注册协议的方式，实现传递非常规的参数
     [[ProtocolMediator3 shareInstance] registerProtocol:@protocol(BookDetailComponentProtocol) forClass:[self class]];
 }
 
