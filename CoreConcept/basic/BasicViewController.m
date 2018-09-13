@@ -7,7 +7,7 @@
 //
 
 #import "BasicViewController.h"
-
+#import "Dog.h"
 @interface BasicViewController ()
 
 @end
@@ -54,7 +54,8 @@
     /*
      这里让我联想起，进入main函数前，都做了些什么
      */
-    
+    Dog *dog = [[Dog alloc]init];
+    [dog performSelector:@selector(animalJiao)];
 }
 
 - (void)didReceiveMemoryWarning {

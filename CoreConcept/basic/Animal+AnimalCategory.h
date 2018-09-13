@@ -10,4 +10,6 @@
 
 @interface Animal (AnimalCategory)
 
+- (void)animalJiao;
+
 @end

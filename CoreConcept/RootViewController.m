@@ -9,6 +9,9 @@
 #import "RootViewController.h"
 #import "AFNetworking.h"
 #import <Masonry.h>
+
+static NSString *const testConst = @"testConst";
+
 @interface RootViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong)UITableView *tableView;
 @property (nonatomic, strong)NSArray *dataArray;
@@ -24,7 +27,7 @@
 
     self.dataArray = @[
                        @"ReadingViewController",
-                       @"ThreadViewController",
+                       @"BasicViewController",
                        @"RuntimeViewController",
                        @"RunLoopViewController",
                        @"GCDBarrierViewController",

@@ -15,4 +15,11 @@
     NSLog(@"%s",__FUNCTION__);
 }
 
++ (void)dogJiao {
+      NSLog(@"%s",__FUNCTION__);
+}
+
++ (void)hah {
+  
+}
 @end

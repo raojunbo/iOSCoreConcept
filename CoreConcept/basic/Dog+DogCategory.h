@@ -10,4 +10,7 @@
 
 @interface Dog (DogCategory)
 
++ (void)hah;
++ (void)dogJiao;
+
 @end

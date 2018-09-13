@@ -180,6 +180,10 @@
 		34B6826D1F8E41B000389BF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B6826C1F8E41B000389BF5 /* main.m */; };
 		34B682751F8E447300389BF5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B682741F8E447300389BF5 /* RootViewController.m */; };
 		34B9E0DB20C3A892001B19A9 /* chat_sender_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B9E0DA20C3A892001B19A9 /* chat_sender_bg@2x.png */; };
+		34C059662140CBBC0013872D /* Dog+DogCategory2.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C059652140CBBC0013872D /* Dog+DogCategory2.m */; };
+		34C05BBE21410B210013872D /* MutiClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C05BBD21410B210013872D /* MutiClassA.m */; };
+		34C05BC121410B2E0013872D /* MutiClasssB.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C05BC021410B2E0013872D /* MutiClasssB.m */; };
+		34C05BC421410B3D0013872D /* MutiClassC.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C05BC321410B3D0013872D /* MutiClassC.m */; };
 		34CD80FF20EF5371005AB4B1 /* NetDesignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CD80FE20EF5371005AB4B1 /* NetDesignViewController.m */; };
 		34D1C92B207E0F5F005349E0 /* TestEventViewContrller.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D1C92A207E0F5F005349E0 /* TestEventViewContrller.m */; };
 		34E2009620C12BAF004FA52E /* TestMasViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E2009520C12BAF004FA52E /* TestMasViewController2.m */; };
@@ -201,6 +205,9 @@
 		34FDBCFC1FD273E2004770A3 /* TestContextLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FDBCFB1FD273E2004770A3 /* TestContextLineViewController.m */; };
 		34FDBD001FD2A1B7004770A3 /* TestDrawImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FDBCFF1FD2A1B7004770A3 /* TestDrawImageViewController.m */; };
 		34FDBD021FD2C6E7004770A3 /* timg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34FDBD011FD2C1FF004770A3 /* timg@2x.jpg */; };
+		34FEEBF92148B4DB006DFE2A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FEEBF82148B4DB006DFE2A /* TestViewController.m */; };
+		34FEEBFD214A881F006DFE2A /* FPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FEEBFC214A881F006DFE2A /* FPSViewController.m */; };
+		34FEEC00214A9C5C006DFE2A /* RaoFPLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FEEBFF214A9C5C006DFE2A /* RaoFPLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -504,6 +511,14 @@
 		34B682731F8E447300389BF5 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		34B682741F8E447300389BF5 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		34B9E0DA20C3A892001B19A9 /* chat_sender_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_sender_bg@2x.png"; sourceTree = "<group>"; };
+		34C059642140CBBC0013872D /* Dog+DogCategory2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dog+DogCategory2.h"; sourceTree = "<group>"; };
+		34C059652140CBBC0013872D /* Dog+DogCategory2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Dog+DogCategory2.m"; sourceTree = "<group>"; };
+		34C05BBC21410B210013872D /* MutiClassA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutiClassA.h; sourceTree = "<group>"; };
+		34C05BBD21410B210013872D /* MutiClassA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutiClassA.m; sourceTree = "<group>"; };
+		34C05BBF21410B2E0013872D /* MutiClasssB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutiClasssB.h; sourceTree = "<group>"; };
+		34C05BC021410B2E0013872D /* MutiClasssB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutiClasssB.m; sourceTree = "<group>"; };
+		34C05BC221410B3D0013872D /* MutiClassC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutiClassC.h; sourceTree = "<group>"; };
+		34C05BC321410B3D0013872D /* MutiClassC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutiClassC.m; sourceTree = "<group>"; };
 		34CD80FD20EF5371005AB4B1 /* NetDesignViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetDesignViewController.h; sourceTree = "<group>"; };
 		34CD80FE20EF5371005AB4B1 /* NetDesignViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetDesignViewController.m; sourceTree = "<group>"; };
 		34D1C929207E0F5F005349E0 /* TestEventViewContrller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestEventViewContrller.h; sourceTree = "<group>"; };
@@ -540,6 +555,12 @@
 		34FDBCFE1FD2A1B7004770A3 /* TestDrawImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDrawImageViewController.h; sourceTree = "<group>"; };
 		34FDBCFF1FD2A1B7004770A3 /* TestDrawImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDrawImageViewController.m; sourceTree = "<group>"; };
 		34FDBD011FD2C1FF004770A3 /* timg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "timg@2x.jpg"; sourceTree = "<group>"; };
+		34FEEBF72148B4DB006DFE2A /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		34FEEBF82148B4DB006DFE2A /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		34FEEBFB214A881F006DFE2A /* FPSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPSViewController.h; sourceTree = "<group>"; };
+		34FEEBFC214A881F006DFE2A /* FPSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPSViewController.m; sourceTree = "<group>"; };
+		34FEEBFE214A9C5C006DFE2A /* RaoFPLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RaoFPLabel.h; sourceTree = "<group>"; };
+		34FEEBFF214A9C5C006DFE2A /* RaoFPLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaoFPLabel.m; sourceTree = "<group>"; };
 		779FD14EF5940F5139E7CA4B /* libPods-CoreConcept.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreConcept.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7E29B981BB1CD2C04394D3 /* Pods-CoreConcept.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreConcept.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept.release.xcconfig"; sourceTree = "<group>"; };
 		A356850AD109F8ABA400C5D3 /* libPods-testdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testdown.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -600,6 +621,8 @@
 				340C26D120E370D6001BDC21 /* Dog.m */,
 				340C26D920E3725D001BDC21 /* Dog+DogCategory.h */,
 				340C26DA20E3725D001BDC21 /* Dog+DogCategory.m */,
+				34C059642140CBBC0013872D /* Dog+DogCategory2.h */,
+				34C059652140CBBC0013872D /* Dog+DogCategory2.m */,
 			);
 			path = basic;
 			sourceTree = "<group>";
@@ -1188,6 +1211,8 @@
 		34B6825C1F8E41B000389BF5 /* CoreConcept */ = {
 			isa = PBXGroup;
 			children = (
+				34FEEBFA214A8812006DFE2A /* Fps */,
+				34C05BBB21410ADC0013872D /* mutiInter */,
 				3456E632213BEDFF003E8165 /* componentization */,
 				3408AA5320ECCD67009ED572 /* interview */,
 				3429909720E8F2EC0093A58E /* BlockKit */,
@@ -1201,7 +1226,6 @@
 				341190DA20AD6EE200752304 /* Animation */,
 				3440C3F020AD31D20062A89D /* CALayer */,
 				3440C3D620AA562D0062A89D /* Runloop */,
-				34D1C92C207E1123005349E0 /* Webview */,
 				34D1C928207E0F36005349E0 /* Event */,
 				348975FD206285AE00D20026 /* Masonry */,
 				341BCB10205DDD5D005DE1F5 /* Enciry */,
@@ -1211,6 +1235,8 @@
 				342283D41FD840B900BBF041 /* Lotti */,
 				34B1DE611FDE8D4900EE50A6 /* DesignPatterns */,
 				34B6825D1F8E41B000389BF5 /* AppDelegate.h */,
+				34FEEBF72148B4DB006DFE2A /* TestViewController.h */,
+				34FEEBF82148B4DB006DFE2A /* TestViewController.m */,
 				34B6825E1F8E41B000389BF5 /* AppDelegate.m */,
 				342123CD20BA5E52007C03DC /* source */,
 				34B682731F8E447300389BF5 /* RootViewController.h */,
@@ -1220,6 +1246,27 @@
 				34B6826C1F8E41B000389BF5 /* main.m */,
 			);
 			path = CoreConcept;
+			sourceTree = "<group>";
+		};
+		34C05BBB21410ADC0013872D /* mutiInter */ = {
+			isa = PBXGroup;
+			children = (
+				34C05BC521410C020013872D /* muticategory */,
+				34C05BBC21410B210013872D /* MutiClassA.h */,
+				34C05BBD21410B210013872D /* MutiClassA.m */,
+				34C05BBF21410B2E0013872D /* MutiClasssB.h */,
+				34C05BC021410B2E0013872D /* MutiClasssB.m */,
+				34C05BC221410B3D0013872D /* MutiClassC.h */,
+				34C05BC321410B3D0013872D /* MutiClassC.m */,
+			);
+			path = mutiInter;
+			sourceTree = "<group>";
+		};
+		34C05BC521410C020013872D /* muticategory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = muticategory;
 			sourceTree = "<group>";
 		};
 		34D1C928207E0F36005349E0 /* Event */ = {
@@ -1233,13 +1280,6 @@
 				342AD2F420EB191E0051CC57 /* TestGerViewController.m */,
 			);
 			path = Event;
-			sourceTree = "<group>";
-		};
-		34D1C92C207E1123005349E0 /* Webview */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Webview;
 			sourceTree = "<group>";
 		};
 		34FDBCE31FD12CD9004770A3 /* test6.1 */ = {
@@ -1260,6 +1300,17 @@
 				34FDBCFF1FD2A1B7004770A3 /* TestDrawImageViewController.m */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		34FEEBFA214A8812006DFE2A /* Fps */ = {
+			isa = PBXGroup;
+			children = (
+				34FEEBFB214A881F006DFE2A /* FPSViewController.h */,
+				34FEEBFC214A881F006DFE2A /* FPSViewController.m */,
+				34FEEBFE214A9C5C006DFE2A /* RaoFPLabel.h */,
+				34FEEBFF214A9C5C006DFE2A /* RaoFPLabel.m */,
+			);
+			path = Fps;
 			sourceTree = "<group>";
 		};
 		ABB0C41967E6CA31CB79571E /* Pods */ = {
@@ -1464,6 +1515,7 @@
 			files = (
 				345363DE20DF9B8D007C921D /* MVPViewController.m in Sources */,
 				34670D8220C4F5DD004B65A1 /* RuntimeDynamicViewController.m in Sources */,
+				34C05BC421410B3D0013872D /* MutiClassC.m in Sources */,
 				3440C3D920AA56D80062A89D /* CustomOpaqueView.m in Sources */,
 				3408AA5F20EDCB37009ED572 /* InterviewKVOViewController.m in Sources */,
 				34AA5B0D1FE7AECE0053DD01 /* DrawCoreTextVC.m in Sources */,
@@ -1490,8 +1542,11 @@
 				34B1DE701FDFB7EB00EE50A6 /* TouchView1.m in Sources */,
 				3440C3E320AB278D0062A89D /* TestOpenGlView.m in Sources */,
 				3408AA6B20EE0DCA009ED572 /* NSObject+RAO2KVC.m in Sources */,
+				34FEEBFD214A881F006DFE2A /* FPSViewController.m in Sources */,
 				3463298720B023BB0033A9BB /* Runtime7ViewController.m in Sources */,
 				343588551FCE5EB60097B18B /* Test22ViewController.m in Sources */,
+				34C05BC121410B2E0013872D /* MutiClasssB.m in Sources */,
+				34FEEC00214A9C5C006DFE2A /* RaoFPLabel.m in Sources */,
 				3440C3EF20AD31CA0062A89D /* CALayerViewController.m in Sources */,
 				3456E635213CCBC8003E8165 /* Mediator.m in Sources */,
 				344A950C20F215D4000EE752 /* SwizzView.m in Sources */,
@@ -1523,6 +1578,7 @@
 				343588771FD0090B0097B18B /* TestPerspective2ViewController.m in Sources */,
 				341A6A4720B3AA40009591F2 /* OperationViewController.m in Sources */,
 				34CD80FF20EF5371005AB4B1 /* NetDesignViewController.m in Sources */,
+				34C05BBE21410B210013872D /* MutiClassA.m in Sources */,
 				34EB66E220EE715F00D6BF81 /* InterViewMessageViewController.m in Sources */,
 				34670D8820C50C93004B65A1 /* NSObject+RAOKVO.m in Sources */,
 				3429908A20E87CF80093A58E /* OperationCustomViewController.m in Sources */,
@@ -1537,11 +1593,14 @@
 				342123CC20B979AE007C03DC /* BlockPerson.m in Sources */,
 				3440C3F320AD34140062A89D /* CustomCALayer.m in Sources */,
 				34670D8520C50C6B004B65A1 /* RuntimeKVOCustomViewController.m in Sources */,
+				34FEEBF92148B4DB006DFE2A /* TestViewController.m in Sources */,
 				3456E647213CDB9C003E8165 /* Mediator3.m in Sources */,
 				342B28EF20B2B5FA00439600 /* GCD3ViewController.m in Sources */,
 				344A950F20F2163B000EE752 /* SwizzView+swizz.m in Sources */,
 				342E734820F42F4A00074309 /* MemoryLeakViewController.m in Sources */,
 				342B00CF20E4B4CD00FA08CB /* DispatchSourceViewController.m in Sources */,
+				340C26D820E3724B001BDC21 /* Animal+AnimalCategory.m in Sources */,
+				34C059662140CBBC0013872D /* Dog+DogCategory2.m in Sources */,
 				34B1DE641FDE8D8C00EE50A6 /* TestGerstureVC.m in Sources */,
 				342B28E920B26B7600439600 /* GCDViewController.m in Sources */,
 				340802B620D6849000ED4BD7 /* TestEvent2ViewController.m in Sources */,
@@ -1552,7 +1611,6 @@
 				34FDBCF31FD2671B004770A3 /* TestContextClipViewController.m in Sources */,
 				34F3362A1FCD5BC400E6D7C1 /* TestLayerPropertyVC.m in Sources */,
 				34AA5B061FE605140053DD01 /* DrawTextViewController.m in Sources */,
-				340C26D820E3724B001BDC21 /* Animal+AnimalCategory.m in Sources */,
 				341BCB15205DF89B005DE1F5 /* EnciryViewController.m in Sources */,
 				3440C3EC20AC30930062A89D /* RunLoopViewController3.m in Sources */,
 				34FDBCEA1FD1409D004770A3 /* TestContextViewController.m in Sources */,

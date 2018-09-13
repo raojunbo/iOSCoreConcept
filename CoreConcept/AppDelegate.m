@@ -54,7 +54,8 @@
 #import "AnimationPauseViewController.h"
 #import "RunloopViewController4.h"
 #import "BlockViewController.h"
-
+#import "TestViewController.h"
+#import "FPSViewController.h"
 /*
  专题写作之基础知识深入理解
  1.设计模式
@@ -85,7 +86,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-     RootViewController *rootVC = [[RootViewController alloc]init];
+     FPSViewController *rootVC = [[FPSViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:rootVC];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];

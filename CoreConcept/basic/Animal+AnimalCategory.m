@@ -15,4 +15,8 @@
     NSLog(@"%s",__FUNCTION__);
 }
 
+- (void)animalJiao {
+    NSLog(@"animaljiao");
+}
+
 @end
