@@ -5,11 +5,6 @@
 //  Created by rjb on 2018/5/16.
 //  Copyright © 2018年 rjb. All rights reserved.
 //
-/*
- 
- 每次Runloop循环需要处理很多图
- 思路 
- */
 
 
 #import "RunLoopViewController.h"
@@ -17,6 +12,10 @@
 @interface RunLoopViewController ()<CAAnimationDelegate>
 @property (nonatomic, strong) UIView *aniamtionView;
 @property (nonatomic, strong)UIButton *button;
+@property (nonatomic, assign)CGFloat lastTime;
+@property (nonatomic, assign)NSInteger count;
+@property (nonatomic, strong)CADisplayLink *link;
+
 @end
 
 @implementation RunLoopViewController
@@ -27,10 +26,12 @@
     
     //timer的目的，是让runloop的状态发生变化
     [self addRunloopObserver];
+    
     [self.view addSubview:self.aniamtionView];
     
     [self.view addSubview:self.button];
-    
+//    self.link = [CADisplayLink displayLinkWithTarget:self selector:@selector(tick:)];
+//    [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
 }
 
 - (UIButton *)button {
@@ -60,7 +61,6 @@
     basicAnimation.duration = 10;
     basicAnimation.delegate = self;
     [self.aniamtionView.layer addAnimation:basicAnimation forKey:@"hah"];
-    
 }
 
 - (void)animationDidStart:(CAAnimation *)anim {
@@ -68,11 +68,10 @@
     NSLog(@"这是runloop%@",runloop);
 }
 
-
 - (void)addRunloopObserver {
     //通过runloop的事件处理的状态变化,在kCFRunLoopBeforeWaiting,kCFRunLoopAfterWaiting之间变化
     CFRunLoopRef runloop =  CFRunLoopGetCurrent();
-    CFRunLoopObserverRef runLoopObserver = CFRunLoopObserverCreate(NULL, kCFRunLoopBeforeWaiting , YES, 0, &callBack, nil);
+    CFRunLoopObserverRef runLoopObserver = CFRunLoopObserverCreate(NULL, kCFRunLoopAllActivities , YES, 0, &callBack, nil);
     CFRunLoopAddObserver(runloop, runLoopObserver, kCFRunLoopCommonModes);
     CFRelease(runLoopObserver);
 }
@@ -101,6 +100,25 @@ void callBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *i
             break;
     }
 }
+
+//- (void)tick:(CADisplayLink *)link {
+//    if (_lastTime == 0) {
+//        _lastTime = link.timestamp;
+//        return;
+//    }
+//
+//    _count++;
+//    NSTimeInterval delta = link.timestamp - _lastTime;
+//    if (delta < 1) return;
+//    _lastTime = link.timestamp;
+//    float fps = _count / delta;
+//    _count = 0;
+//    dispatch_semaphore_wait(<#dispatch_semaphore_t  _Nonnull dsema#>, <#dispatch_time_t timeout#>)
+////    CGFloat progress = fps / 60.0;
+////    UIColor *color = [UIColor colorWithHue:0.27 * (progress - 0.2) saturation:1 brightness:0.9 alpha:1];
+//
+////    NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%d FPS",(int)round(fps)]];
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
