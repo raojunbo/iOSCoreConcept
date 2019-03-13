@@ -23,7 +23,6 @@
 #import "TestPainterModelVC.h"
 #import "TestContextLineViewController.h"
 #import "TestDrawImageViewController.h"
-#import "LottiViewVCViewController.h"
 #import "TestGerstureVC.h"
 #import "TargetModelViewController.h"
 #import "BezierPathViewController.h"
@@ -56,6 +55,7 @@
 #import "BlockViewController.h"
 #import "TestViewController.h"
 #import "FPSViewController.h"
+#import "AsyTableViewController.h"
 /*
  专题写作之基础知识深入理解
  1.设计模式
@@ -86,7 +86,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-     RunLoopViewController *rootVC = [[RunLoopViewController alloc]init];
+    
+     AsyTableViewController *rootVC = [[AsyTableViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:rootVC];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
