@@ -1,19 +1,19 @@
 //
-//  MJAsyncLoadImgUtil.m
+//  MJLAsyncLoadImgUtil.m
 //  MojiWeather
 //
 //  Created by Admin on 2019/3/11.
 //  Copyright © 2019 Moji Fengyun Technology Co., Ltd. All rights reserved.
 //
 
-#import "MJAsyncLoadImgUtil.h"
+#import "MJLAsyncLoadImgUtil.h"
 #import "YYCache.h"
 #import "YYImageCoder.h"
 
 static NSString *const kDrawImageCompletedCallbackKey = @"DrawCompleted";
-static NSString *const kDrawImageOperationQueueKey = @"com.MJAsyncLoadImgUtil.AsyDraw.op";
-static NSString *const kDrawImageMemoryCacheNameKey = @"com.MJAsyncLoadImgUtil.AsyDraw.memCache";
-static char *const kDrawImageDispathBarrierQueueNameKey = "com.MJAsyncLoadImgUtil.barrierQueue";
+static NSString *const kDrawImageOperationQueueKey = @"com.MJLAsyncLoadImgUtil.AsyDraw.op";
+static NSString *const kDrawImageMemoryCacheNameKey = @"com.MJLAsyncLoadImgUtil.AsyDraw.memCache";
+static char *const kDrawImageDispathBarrierQueueNameKey = "com.MJLAsyncLoadImgUtil.barrierQueue";
 
 static NSArray *_NSBundlePreferredScales() {
     static NSArray *scales;
@@ -64,7 +64,7 @@ static NSString *_NSStringByAppendingNameScale(NSString *string, CGFloat scale) 
  同一时间，同一path,只做一次operation
  同一时间，同一Path ,可能会有多个回调
  */
-@interface MJAsyncLoadImgUtil()
+@interface MJLAsyncLoadImgUtil()
 @property (nonatomic, strong) NSOperationQueue *operationQueue;
 @property (nonatomic, strong) YYMemoryCache *mCache;//只做内存缓存
 @property (nonatomic, strong) NSMutableDictionary<NSString *, AsyDrawOperation *> *PathOperations;//同一个path，只做一次opration
@@ -72,15 +72,19 @@ static NSString *_NSStringByAppendingNameScale(NSString *string, CGFloat scale) 
 @property (nonatomic, strong) dispatch_queue_t barrierQueue;//保护pathCallBacks
 @end
 
-@implementation MJAsyncLoadImgUtil
+@implementation MJLAsyncLoadImgUtil
 
-+ (MJAsyncLoadImgUtil *)sharedInstance {
++ (MJLAsyncLoadImgUtil *)sharedInstance {
     static dispatch_once_t once;
     static id instance;
     dispatch_once(&once, ^{
         instance = [self new];
     });
     return instance;
+}
+
++ (void)initialize {
+   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveMemoryWarning) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
 }
 
 - (instancetype)init {
@@ -94,33 +98,31 @@ static NSString *_NSStringByAppendingNameScale(NSString *string, CGFloat scale) 
         _mCache.name = kDrawImageMemoryCacheNameKey;
         //_mCache.costLimit = 10*1024*1024;//10M
 
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveMemoryWarning) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
-        
         _PathOperations = [[NSMutableDictionary alloc]init];
         _PathCallBacks = [[NSMutableDictionary alloc]init];
         
         _barrierQueue = dispatch_queue_create(kDrawImageDispathBarrierQueueNameKey, DISPATCH_QUEUE_CONCURRENT);
-
     }
     return self;
 }
 
 + (AsyDrawOperation *)asyncLoadImgWithKey:(NSString *)imgUniqueKey handler:(UIImage *(^)(NSString *imageName))drawHandler block:(DrawCompleteBlock)block {
-    return  [[MJAsyncLoadImgUtil sharedInstance] _asyncLoadImgWithKey:imgUniqueKey handler:drawHandler block:block];
+    return  [[MJLAsyncLoadImgUtil sharedInstance] _asyncLoadImgWithKey:imgUniqueKey handler:drawHandler block:block];
 }
 
 + (AsyDrawOperation *)asyncLoadImgWithImgName:(NSString *)imgName block:(DrawCompleteBlock)block {
-    return  [[MJAsyncLoadImgUtil sharedInstance] _asyncLoadImgWithImgName:imgName block:block];
+    return  [[MJLAsyncLoadImgUtil sharedInstance] _asyncLoadImgWithImgName:imgName block:block];
 }
 
 - (AsyDrawOperation *)_asyncLoadImgWithImgName:(NSString *)imgName block:(DrawCompleteBlock)block {
     NSString *imgPath = [self pathWithName:imgName];
-    return  [[MJAsyncLoadImgUtil sharedInstance] _asyncLoadImgWithKey:imgPath handler:^UIImage *(NSString *imgUniqueKey) {
+    return  [[MJLAsyncLoadImgUtil sharedInstance] _asyncLoadImgWithKey:imgPath handler:^UIImage *(NSString *imgUniqueKey) {
         UIImage *image = [UIImage imageWithContentsOfFile:imgPath];
+        
         if(!image){
             return nil;
         }
-        image = [image yy_imageByDecoded];//用yyDecode解码
+        image = [image yy_imageByDecoded];//这个地方有问题
         return image;
     } block:block];
 }
@@ -130,7 +132,7 @@ static NSString *_NSStringByAppendingNameScale(NSString *string, CGFloat scale) 
         !completeBlock?:completeBlock(nil);
         return nil;
     }
-    UIImage *image = [[MJAsyncLoadImgUtil sharedInstance] queryImageInMemoryForKey:imgUniqueKey];
+    UIImage *image = [[MJLAsyncLoadImgUtil sharedInstance] queryImageInMemoryForKey:imgUniqueKey];
     if(image){
         !completeBlock?:completeBlock(image);
     }else{
@@ -146,7 +148,7 @@ static NSString *_NSStringByAppendingNameScale(NSString *string, CGFloat scale) 
                     image = drawHandler(imgUniqueKey);
                 }
                 if(image){
-                    [[MJAsyncLoadImgUtil sharedInstance] cacheImage:image ForKey:imgUniqueKey];
+                    [[MJLAsyncLoadImgUtil sharedInstance] cacheImage:image ForKey:imgUniqueKey];
                 }
                 //处理同一个path，多次请求的调
                 __block NSArray * callbacksForURL;
@@ -232,6 +234,9 @@ static NSString *_NSStringByAppendingNameScale(NSString *string, CGFloat scale) 
 }
 
 - (void)dealloc {
+    #if !OS_OBJECT_USE_OBJC
+        dispatch_release(_barrierQueue);
+    #endif
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 

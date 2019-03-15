@@ -181,11 +181,12 @@
 		84AB46752236B4D0002B2A60 /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AB46562236B4D0002B2A60 /* YYFrameImage.m */; };
 		84AB46762236B4D0002B2A60 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AB46572236B4D0002B2A60 /* YYAnimatedImageView.m */; };
 		84AB46842237737A002B2A60 /* chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AB468322377379002B2A60 /* chat@2x.png */; };
-		84AB469422379A26002B2A60 /* UIImageView+AsyLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AB468C22379A25002B2A60 /* UIImageView+AsyLoad.m */; };
-		84AB469522379A26002B2A60 /* MJAsyncLoadImgUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AB468E22379A25002B2A60 /* MJAsyncLoadImgUtil.m */; };
-		84AB469622379A26002B2A60 /* UIView+AsyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AB468F22379A25002B2A60 /* UIView+AsyOperation.m */; };
-		84AB469722379A26002B2A60 /* UIButton+AsyLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AB469022379A25002B2A60 /* UIButton+AsyLoad.m */; };
 		84AB469A22379B67002B2A60 /* OutDrawObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AB469922379B67002B2A60 /* OutDrawObject.m */; };
+		84B6D269223A4A6500185469 /* UIImageView+MJLAsyLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B6D261223A4A6500185469 /* UIImageView+MJLAsyLoad.m */; };
+		84B6D26A223A4A6500185469 /* MJLAsyncLoadImgUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B6D262223A4A6500185469 /* MJLAsyncLoadImgUtil.m */; };
+		84B6D26B223A4A6500185469 /* UIButton+MJLAsyLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B6D263223A4A6500185469 /* UIButton+MJLAsyLoad.m */; };
+		84B6D26C223A4A6500185469 /* UIView+AsyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B6D264223A4A6500185469 /* UIView+AsyOperation.m */; };
+		84B6D26E223A4F1C00185469 /* buyaolian.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84B6D26D223A4F1C00185469 /* buyaolian.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -518,16 +519,17 @@
 		84AB46572236B4D0002B2A60 /* YYAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYAnimatedImageView.m; sourceTree = "<group>"; };
 		84AB46582236B4D0002B2A60 /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSpriteSheetImage.h; sourceTree = "<group>"; };
 		84AB468322377379002B2A60 /* chat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat@2x.png"; sourceTree = "<group>"; };
-		84AB468C22379A25002B2A60 /* UIImageView+AsyLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AsyLoad.m"; sourceTree = "<group>"; };
-		84AB468D22379A25002B2A60 /* UIButton+AsyLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AsyLoad.h"; sourceTree = "<group>"; };
-		84AB468E22379A25002B2A60 /* MJAsyncLoadImgUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJAsyncLoadImgUtil.m; sourceTree = "<group>"; };
-		84AB468F22379A25002B2A60 /* UIView+AsyOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AsyOperation.m"; sourceTree = "<group>"; };
-		84AB469022379A25002B2A60 /* UIButton+AsyLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AsyLoad.m"; sourceTree = "<group>"; };
-		84AB469122379A25002B2A60 /* UIImageView+AsyLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AsyLoad.h"; sourceTree = "<group>"; };
-		84AB469222379A25002B2A60 /* MJAsyncLoadImgUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJAsyncLoadImgUtil.h; sourceTree = "<group>"; };
-		84AB469322379A25002B2A60 /* UIView+AsyOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AsyOperation.h"; sourceTree = "<group>"; };
 		84AB469822379B67002B2A60 /* OutDrawObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutDrawObject.h; sourceTree = "<group>"; };
 		84AB469922379B67002B2A60 /* OutDrawObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutDrawObject.m; sourceTree = "<group>"; };
+		84B6D261223A4A6500185469 /* UIImageView+MJLAsyLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MJLAsyLoad.m"; sourceTree = "<group>"; };
+		84B6D262223A4A6500185469 /* MJLAsyncLoadImgUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJLAsyncLoadImgUtil.m; sourceTree = "<group>"; };
+		84B6D263223A4A6500185469 /* UIButton+MJLAsyLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MJLAsyLoad.m"; sourceTree = "<group>"; };
+		84B6D264223A4A6500185469 /* UIView+AsyOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AsyOperation.m"; sourceTree = "<group>"; };
+		84B6D265223A4A6500185469 /* UIImageView+MJLAsyLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MJLAsyLoad.h"; sourceTree = "<group>"; };
+		84B6D266223A4A6500185469 /* MJLAsyncLoadImgUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJLAsyncLoadImgUtil.h; sourceTree = "<group>"; };
+		84B6D267223A4A6500185469 /* UIView+AsyOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AsyOperation.h"; sourceTree = "<group>"; };
+		84B6D268223A4A6500185469 /* UIButton+MJLAsyLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MJLAsyLoad.h"; sourceTree = "<group>"; };
+		84B6D26D223A4F1C00185469 /* buyaolian.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = buyaolian.gif; sourceTree = "<group>"; };
 		9B7E29B981BB1CD2C04394D3 /* Pods-CoreConcept.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreConcept.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept.release.xcconfig"; sourceTree = "<group>"; };
 		A356850AD109F8ABA400C5D3 /* libPods-testdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testdown.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A933C1CB4F244A0BD49B54DB /* Pods-CoreConcept.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreConcept.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1145,9 +1147,10 @@
 		84AB46362236AD8B002B2A60 /* Asy */ = {
 			isa = PBXGroup;
 			children = (
-				84AB468B22379A25002B2A60 /* MJAsyncLoadImgUtil */,
+				84B6D260223A4A6500185469 /* MJAsyncLoadImgUtil */,
 				84AB464E2236B4D0002B2A60 /* Image */,
 				84AB46372236ADD9002B2A60 /* AsyTableViewController.h */,
+				84B6D26D223A4F1C00185469 /* buyaolian.gif */,
 				84AB469822379B67002B2A60 /* OutDrawObject.h */,
 				84AB469922379B67002B2A60 /* OutDrawObject.m */,
 				84AB46382236ADD9002B2A60 /* AsyTableViewController.m */,
@@ -1172,17 +1175,17 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
-		84AB468B22379A25002B2A60 /* MJAsyncLoadImgUtil */ = {
+		84B6D260223A4A6500185469 /* MJAsyncLoadImgUtil */ = {
 			isa = PBXGroup;
 			children = (
-				84AB469222379A25002B2A60 /* MJAsyncLoadImgUtil.h */,
-				84AB468E22379A25002B2A60 /* MJAsyncLoadImgUtil.m */,
-				84AB469322379A25002B2A60 /* UIView+AsyOperation.h */,
-				84AB468F22379A25002B2A60 /* UIView+AsyOperation.m */,
-				84AB468D22379A25002B2A60 /* UIButton+AsyLoad.h */,
-				84AB469022379A25002B2A60 /* UIButton+AsyLoad.m */,
-				84AB469122379A25002B2A60 /* UIImageView+AsyLoad.h */,
-				84AB468C22379A25002B2A60 /* UIImageView+AsyLoad.m */,
+				84B6D261223A4A6500185469 /* UIImageView+MJLAsyLoad.m */,
+				84B6D262223A4A6500185469 /* MJLAsyncLoadImgUtil.m */,
+				84B6D263223A4A6500185469 /* UIButton+MJLAsyLoad.m */,
+				84B6D264223A4A6500185469 /* UIView+AsyOperation.m */,
+				84B6D265223A4A6500185469 /* UIImageView+MJLAsyLoad.h */,
+				84B6D266223A4A6500185469 /* MJLAsyncLoadImgUtil.h */,
+				84B6D267223A4A6500185469 /* UIView+AsyOperation.h */,
+				84B6D268223A4A6500185469 /* UIButton+MJLAsyLoad.h */,
 			);
 			path = MJAsyncLoadImgUtil;
 			sourceTree = "<group>";
@@ -1243,7 +1246,7 @@
 				TargetAttributes = {
 					34B682591F8E41B000389BF5 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -1284,6 +1287,7 @@
 				34FDBD021FD2C6E7004770A3 /* timg@2x.jpg in Resources */,
 				3429909620E8E7F10093A58E /* check_green.png in Resources */,
 				347EE36A1FE1506A0031E60E /* homework_fragement_8@2x.png in Resources */,
+				84B6D26E223A4F1C00185469 /* buyaolian.gif in Resources */,
 				34B682671F8E41B000389BF5 /* Assets.xcassets in Resources */,
 				347EE3691FE150680031E60E /* homework_fragement_7@2x.png in Resources */,
 				34B9E0DB20C3A892001B19A9 /* chat_sender_bg@2x.png in Resources */,
@@ -1373,11 +1377,11 @@
 				343588651FCEA1510097B18B /* TestBorderViewController.m in Sources */,
 				342B28E520B195D100439600 /* Thread3ViewController.m in Sources */,
 				340E64B3201E0EFC00D9CAB7 /* MTeacher.m in Sources */,
+				84B6D26C223A4A6500185469 /* UIView+AsyOperation.m in Sources */,
 				340C26DB20E3725D001BDC21 /* Dog+DogCategory.m in Sources */,
 				341190ED20AED81000752304 /* Runtime2ViewController.m in Sources */,
 				345363E420DF9F14007C921D /* UserPresenter.m in Sources */,
 				340E64B6201E0F3900D9CAB7 /* MTeacher+Runtime.m in Sources */,
-				84AB469622379A26002B2A60 /* UIView+AsyOperation.m in Sources */,
 				34AA5B091FE6052C0053DD01 /* DrawTextView.m in Sources */,
 				344A950920F2148A000EE752 /* SwizzViewController.m in Sources */,
 				343588741FD0042E0097B18B /* TestPerspectiveViewController.m in Sources */,
@@ -1405,7 +1409,6 @@
 				342B00C320E47F4C00FA08CB /* GCDBarrierViewController.m in Sources */,
 				341A6A4A20B3E351009591F2 /* AnimationPauseViewController.m in Sources */,
 				3412CA7520B468850065A9C9 /* RunloopViewController4.m in Sources */,
-				84AB469722379A26002B2A60 /* UIButton+AsyLoad.m in Sources */,
 				342BF45720BB911700B3FD31 /* RootBlockViewController.m in Sources */,
 				84AB46742236B4D0002B2A60 /* YYImageCoder.m in Sources */,
 				341A6A4320B3931F009591F2 /* GCD4ViewController.m in Sources */,
@@ -1433,6 +1436,7 @@
 				34B1DE6A1FDF881000EE50A6 /* ButtonView.m in Sources */,
 				34FDBCFC1FD273E2004770A3 /* TestContextLineViewController.m in Sources */,
 				3429909420E8E7190093A58E /* ImageViewController.m in Sources */,
+				84B6D26A223A4A6500185469 /* MJLAsyncLoadImgUtil.m in Sources */,
 				3435887A1FD00E560097B18B /* TestPatLayerViewController.m in Sources */,
 				341190EA20AE8A4A00752304 /* RuntimeViewController.m in Sources */,
 				3408AA5C20ED9821009ED572 /* ACodeViewController.m in Sources */,
@@ -1449,7 +1453,6 @@
 				342B00CF20E4B4CD00FA08CB /* DispatchSourceViewController.m in Sources */,
 				340C26D820E3724B001BDC21 /* Animal+AnimalCategory.m in Sources */,
 				34C059662140CBBC0013872D /* Dog+DogCategory2.m in Sources */,
-				84AB469422379A26002B2A60 /* UIImageView+AsyLoad.m in Sources */,
 				34B1DE641FDE8D8C00EE50A6 /* TestGerstureVC.m in Sources */,
 				342B28E920B26B7600439600 /* GCDViewController.m in Sources */,
 				340802B620D6849000ED4BD7 /* TestEvent2ViewController.m in Sources */,
@@ -1465,10 +1468,12 @@
 				34FDBCEA1FD1409D004770A3 /* TestContextViewController.m in Sources */,
 				340802B020D3720D00ED4BD7 /* TestConstraintsViewController.m in Sources */,
 				342B00C920E48ACC00FA08CB /* DispatchSemaphoreViewController.m in Sources */,
+				84B6D26B223A4A6500185469 /* UIButton+MJLAsyLoad.m in Sources */,
 				341190F920B00CE000752304 /* RuntimePerson.m in Sources */,
 				342B00C620E4832100FA08CB /* DispatchSyncViewController.m in Sources */,
 				341190F320AFE6B700752304 /* RunTime4ViewController.m in Sources */,
 				34FDBCF91FD27378004770A3 /* ContextLineWidthView.m in Sources */,
+				84B6D269223A4A6500185469 /* UIImageView+MJLAsyLoad.m in Sources */,
 				342123C920B97911007C03DC /* BlockViewController.m in Sources */,
 				3435887E1FD019F50097B18B /* TestSolidViewController.m in Sources */,
 				341DB5921FC64BAD00E89AD9 /* TestTimeOffsetViewController.m in Sources */,
@@ -1481,7 +1486,6 @@
 				84AB46762236B4D0002B2A60 /* YYAnimatedImageView.m in Sources */,
 				340802B320D6552B00ED4BD7 /* TestMasLinkViewController.m in Sources */,
 				34B1DE6D1FDF8E4300EE50A6 /* CustomGestureRecognizer.m in Sources */,
-				84AB469522379A26002B2A60 /* MJAsyncLoadImgUtil.m in Sources */,
 				341190E620ADA4B100752304 /* AnimationActionLayer.m in Sources */,
 				84AB46392236ADD9002B2A60 /* AsyTableViewController.m in Sources */,
 				342B00D920E4E94800FA08CB /* BlockTestViewController.m in Sources */,
@@ -1626,14 +1630,15 @@
 			baseConfigurationReference = A933C1CB4F244A0BD49B54DB /* Pods-CoreConcept.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H943X5Q87C;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GM22SA2R34;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = CoreConcept/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.knowin.RapidCalculation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moji.MojiWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Dev_MojiWeather;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1643,14 +1648,15 @@
 			baseConfigurationReference = 9B7E29B981BB1CD2C04394D3 /* Pods-CoreConcept.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H943X5Q87C;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GM22SA2R34;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = CoreConcept/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.knowin.RapidCalculation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moji.MojiWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Dev_MojiWeather;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MJAsyncLoadImgUtil.h"
+#import "MJLAsyncLoadImgUtil.h"
 NS_ASSUME_NONNULL_BEGIN
 
 /*

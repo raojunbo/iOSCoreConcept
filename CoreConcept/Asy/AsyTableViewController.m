@@ -8,7 +8,7 @@
 
 #import "AsyTableViewController.h"
 #import <Masonry.h>
-#import "UIImageView+AsyLoad.h"
+#import "UIImageView+MJLAsyLoad.h"
 #import "OutDrawObject.h"
 
 @interface AsyTableViewCell : UITableViewCell
@@ -34,11 +34,13 @@
 
 - (void)setDrawObject:(OutDrawObject *)drawObject {
     _drawObject = drawObject;
-    if(drawObject){
-        UIImage *image = [drawObject disasterMultipleWarningImgbyDwIcon:@"text2"];
-        self.testImageView.image = image;
-        
-    }
+    UIImage *image = [drawObject disasterMultipleWarningImgbyDwIcon:@"text2"];
+    self.testImageView.image = image;
+//    if(drawObject){
+//        [self.testImageView mj_asyloadImageUniqueKey:@"text22" preHandler:^UIImage *(NSString *imageName) {
+//            return [drawObject disasterMultipleWarningImgbyDwIcon:@"text2"];
+//        }];
+//    }
 }
 
 - (UIImageView *)testImageView {
@@ -66,12 +68,18 @@
     self.view.backgroundColor = [UIColor whiteColor];
     //图片数组
     self.dataArray = @[
-                       @"chat",
-                       @"chat",
-                       @"chat",
-                       @"chat",
-                       @"chat"
+                       @"buyaolian"
                        ];
+//    self.dataArray = @[
+//                       @"timg",
+//                       @"buyaolian",
+//                       @"chat",
+//                       @"chat_sender_bg",
+//                       @"check_green",
+//                       @"text1",
+//                       @"fire",
+//                       @"bg_4"
+//                       ];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
@@ -110,7 +118,9 @@
         OutDrawObject *outDrawObjct = [[OutDrawObject alloc]init];
         cell.drawObject = outDrawObjct;
     }else{
-         [cell.testImageView asyload_imageName:testImageStr];
+//         [cell.testImageView asyload_imageName:testImageStr];
+        [cell.testImageView mj_asyloadImageName:testImageStr];
+//        cell.testImageView.image  = [UIImage imageNamed:testImageStr];
     }
     return cell;
 }

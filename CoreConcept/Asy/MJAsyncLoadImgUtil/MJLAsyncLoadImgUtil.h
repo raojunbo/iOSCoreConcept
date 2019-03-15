@@ -1,5 +1,5 @@
 //
-//  MJAsyncLoadImgUtil.h
+//  MJLAsyncLoadImgUtil.h
 //  MojiWeather
 //
 //  Created by Admin on 2019/3/11.
@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
 #import <UIKit/UIKit.h>
 
 typedef void(^DrawCompleteBlock)(UIImage *image);
@@ -17,7 +16,7 @@ typedef void(^VoidBlock)(void);
 @property (nonatomic, copy) VoidBlock block;
 @end
 
-@interface MJAsyncLoadImgUtil : NSObject
+@interface MJLAsyncLoadImgUtil : NSObject
 
 /*
  imageName: 图片名字
