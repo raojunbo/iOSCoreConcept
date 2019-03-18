@@ -234,7 +234,6 @@ static const CGFloat kDestSeemOverlap = 2.0f;   // the numbers of pixels to over
  解压缩图片原理
  创建CGBitmapContext并将图片绘制到上面
  取位图
- 
  */
 #if SD_UIKIT || SD_WATCH
 - (nullable UIImage *)sd_decompressedImageWithImage:(nullable UIImage *)image {

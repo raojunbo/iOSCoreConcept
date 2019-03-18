@@ -8,9 +8,10 @@
 
 #import "DrawCoreTextVC.h"
 #import "CoreTextView.h"
-
+#import "CoreTextView2.h"
 @interface DrawCoreTextVC ()
-@property (nonatomic, strong) CoreTextView *textView;
+//@property (nonatomic, strong) CoreTextView *textView;
+@property (nonatomic, strong) CoreTextView2 *textView2;
 @end
 
 @implementation DrawCoreTextVC
@@ -19,7 +20,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    CoreTextView  *corTextView = [[CoreTextView alloc]initWithFrame:CGRectMake(0, 100, 200, 200)];
+    CoreTextView2  *corTextView = [[CoreTextView2 alloc]initWithFrame:CGRectMake(40, 100, 200, 200)];
     corTextView.backgroundColor = [UIColor grayColor];
     [self.view addSubview:corTextView];
 }
