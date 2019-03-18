@@ -11,22 +11,28 @@
 @implementation CoreTextView
 
 - (void)drawRect:(CGRect)rect {
- CGContextRef context = UIGraphicsGetCurrentContext();
-    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, 150, 150)];
-    NSAttributedString *attributesStr = [[NSAttributedString alloc]initWithString:@"年垃圾袋龙卷风的了解放东路解放东路附近的了发电机房朗读及分类据了解龙卷风的理解烦死了啊解放东路积分的思路分级是代理福建省六块腹肌lj"];
-    drawAttributesStringBezierPath(path,attributesStr,context);
+    //取得绘制的上下文
+    CGContextRef context = UIGraphicsGetCurrentContext();//取得当前的上下文
+    CGContextSetTextMatrix(context, CGAffineTransformIdentity);
+    CGContextTranslateCTM(context, 0, self.bounds.size.height);//转换坐标系
+    CGContextScaleCTM(context, 1, -1);
+
+    //绘制区域
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPathAddRect(path, NULL, self.bounds);
+    
+    //绘制的内容为属性字符串
+    UIFont *font = [UIFont systemFontOfSize:15];
+    NSDictionary *attributes = @{NSFontAttributeName:font,NSForegroundColorAttributeName:[UIColor blueColor]};
+    
+    NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc]initWithString:@"hello，你好" attributes:attributes];
+    CTFramesetterRef setter = CTFramesetterCreateWithAttributedString((CFAttributedStringRef) attrStr);//创建排版器
+    
+    //在指定的路径里，排版哪些字符，用哪个排版器
+    CTFrameRef frame = CTFramesetterCreateFrame(setter, CFRangeMake(0, attrStr.length), path, NULL);
+    CTFrameDraw(frame, context);
 }
-void drawAttributesStringBezierPath(UIBezierPath *path,NSAttributedString *attributedStr,CGContextRef context){
-    //哈哈,NULL是C里的空
-//
-    if (context != NULL) {
-        UIBezierPath *copyPath = [path copy];
-        //build a framesetter and extract a frame destination
-        CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((__bridge CFAttributedStringRef) attributedStr);
-        CTFrameRef  theFrame = CTFramesetterCreateFrame(framesetter, CFRangeMake(0, attributedStr.length), copyPath.CGPath, NULL);
-        
-        CTFrameDraw(theFrame, context);
-    }
-}
+
+
 
 @end

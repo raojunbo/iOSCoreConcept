@@ -87,7 +87,7 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-     AsyTableViewController *rootVC = [[AsyTableViewController alloc]init];
+     DrawCoreTextVC *rootVC = [[DrawCoreTextVC alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:rootVC];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];

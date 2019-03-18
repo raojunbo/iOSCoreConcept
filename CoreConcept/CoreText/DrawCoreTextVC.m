@@ -17,10 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- 
-    CoreTextView  *corTextView = [[CoreTextView alloc]initWithFrame:CGRectMake(0, 0, 200, 200)];
-    [self.view addSubview:corTextView];
+    self.view.backgroundColor = [UIColor whiteColor];
     
+    CoreTextView  *corTextView = [[CoreTextView alloc]initWithFrame:CGRectMake(0, 100, 200, 200)];
+    corTextView.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:corTextView];
 }
 
 - (void)didReceiveMemoryWarning {

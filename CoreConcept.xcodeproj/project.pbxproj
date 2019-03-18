@@ -187,6 +187,7 @@
 		84B6D26B223A4A6500185469 /* UIButton+MJLAsyLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B6D263223A4A6500185469 /* UIButton+MJLAsyLoad.m */; };
 		84B6D26C223A4A6500185469 /* UIView+AsyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B6D264223A4A6500185469 /* UIView+AsyOperation.m */; };
 		84B6D26E223A4F1C00185469 /* buyaolian.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84B6D26D223A4F1C00185469 /* buyaolian.gif */; };
+		C66B8B60223E96460037B31E /* CoreTextView2.m in Sources */ = {isa = PBXBuildFile; fileRef = C66B8B5F223E96460037B31E /* CoreTextView2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -533,6 +534,8 @@
 		9B7E29B981BB1CD2C04394D3 /* Pods-CoreConcept.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreConcept.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept.release.xcconfig"; sourceTree = "<group>"; };
 		A356850AD109F8ABA400C5D3 /* libPods-testdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testdown.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A933C1CB4F244A0BD49B54DB /* Pods-CoreConcept.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreConcept.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept.debug.xcconfig"; sourceTree = "<group>"; };
+		C66B8B5E223E96460037B31E /* CoreTextView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextView2.h; sourceTree = "<group>"; };
+		C66B8B5F223E96460037B31E /* CoreTextView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextView2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -991,6 +994,8 @@
 				34AA5B0C1FE7AECE0053DD01 /* DrawCoreTextVC.m */,
 				34AA5B101FE7B4530053DD01 /* CoreTextView.h */,
 				34AA5B111FE7B4530053DD01 /* CoreTextView.m */,
+				C66B8B5E223E96460037B31E /* CoreTextView2.h */,
+				C66B8B5F223E96460037B31E /* CoreTextView2.m */,
 			);
 			path = CoreText;
 			sourceTree = "<group>";
@@ -1448,6 +1453,7 @@
 				34FEEBF92148B4DB006DFE2A /* TestViewController.m in Sources */,
 				3456E647213CDB9C003E8165 /* Mediator3.m in Sources */,
 				342B28EF20B2B5FA00439600 /* GCD3ViewController.m in Sources */,
+				C66B8B60223E96460037B31E /* CoreTextView2.m in Sources */,
 				344A950F20F2163B000EE752 /* SwizzView+swizz.m in Sources */,
 				342E734820F42F4A00074309 /* MemoryLeakViewController.m in Sources */,
 				342B00CF20E4B4CD00FA08CB /* DispatchSourceViewController.m in Sources */,
