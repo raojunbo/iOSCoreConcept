@@ -9,6 +9,7 @@
 #import "CoreTextView.h"
 
 @interface CoreTextView ()
+
 @end
 
 @implementation CoreTextView
@@ -97,6 +98,21 @@
             }
         }
     }
+}
+
+//重写sizeThatFits方法,当外部使用frame布局时，通过sizeToFit
+- (CGSize)sizeThatFits:(CGSize)size {
+    NSAttributedString *drawString = self.richTextData.assembleAttributesString;
+    if (drawString == nil) {
+        return CGSizeZero;
+    }
+    CFAttributedStringRef attributedStringRef = (__bridge CFAttributedStringRef)drawString;
+    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString(attributedStringRef);
+    CFRange range = CFRangeMake(0, 0);
+    if (framesetter) {
+        //排版器，
+    }
+    return CGSizeZero;
 }
 
 @end

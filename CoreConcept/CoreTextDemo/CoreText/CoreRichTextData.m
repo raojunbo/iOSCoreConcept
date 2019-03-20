@@ -122,9 +122,9 @@ static CGFloat getWidth(void *ref) {
 }
 
 @end
+
 @interface CoreRichTextData ()
 
-@property (nonatomic, strong) NSMutableAttributedString *assembleAttributesString;//将图片组装完成后的属性字符串
 @end
 
 @implementation CoreRichTextData
@@ -211,7 +211,10 @@ static CGFloat getWidth(void *ref) {
 - (CTFrameRef)frameRef {
     //排版的路径范围
     CGMutablePathRef path = CGPathCreateMutable();
-    CGPathAddRect(path, NULL, self.textBounds);
+//    CGPathAddRect(path, NULL, self.textBounds);
+//CGContextAddPath(<#CGContextRef  _Nullable c#>, <#CGPathRef  _Nullable path#>)
+//    cgpathaddpath
+    CGPathAddEllipseInRect(path, &CGAffineTransformIdentity, self.textBounds);
     
     //创建排版器，
     CTFramesetterRef setter = CTFramesetterCreateWithAttributedString((CFAttributedStringRef) self.assembleAttributesString);
@@ -220,6 +223,7 @@ static CGFloat getWidth(void *ref) {
     CTFrameRef frame = CTFramesetterCreateFrame(setter, CFRangeMake(0, self.assembleAttributesString.length), path, NULL);
     return frame;
 }
+
 
 
 @end

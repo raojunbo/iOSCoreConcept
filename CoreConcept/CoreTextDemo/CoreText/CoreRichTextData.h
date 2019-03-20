@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger, CoreItemType) {
 @protocol CoreItemPotocal <NSObject>
 @property (nonatomic, strong) NSMutableArray *runFrames;//一个句子，可能被截断成多个run,coreText坐标
 @property (nonatomic, strong) NSMutableArray *uiKitFrames;//一个句子的run坐标转换成UIKit的坐标
-@property (nonatomic, strong) NSAttributedString *attributesStr;
+@property (nonatomic, strong) NSAttributedString *attributesStr;//转换完后的属性字符串
 @end
 
 @interface CoreBaseItem:NSObject<CoreItemPotocal>
@@ -56,9 +56,10 @@ typedef NS_ENUM(NSInteger, CoreItemType) {
 @end
 
 @interface CoreRichTextData : NSObject
-@property (nonatomic, assign)CGRect textBounds;               //段落需要要
-@property (nonatomic, assign,readonly)CTFrameRef frameRef;    //排好版的CTFrame
-@property (nonatomic, strong,readonly)NSArray *sentenceArray; //句子数组
+@property (nonatomic, assign)CGRect textBounds;               //排版路径
+@property (nonatomic, strong,readonly) NSArray *sentenceArray; //句子数组
+@property (nonatomic, assign,readonly) CTFrameRef frameRef;    //排好版的CTFrame
+@property (nonatomic, strong,readonly) NSMutableAttributedString *assembleAttributesString;//将图片组装完成后的属性字符串
 
 - (instancetype)initWithSentenceArray:(NSArray <id<CoreItemPotocal>> *)sentenceArray;
 
