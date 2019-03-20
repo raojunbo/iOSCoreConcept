@@ -8,6 +8,7 @@
 
 #import "Dog+DogCategory.h"
 
+
 @implementation Dog (DogCategory)
 
 + (void)load {
