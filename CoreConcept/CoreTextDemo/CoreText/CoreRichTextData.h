@@ -12,29 +12,48 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol CoreItemPotocal <NSObject>
-@property (nonatomic, strong) NSMutableArray *runFrames;//一个句子，可能被截断成多个run
-@property (nonatomic, strong) NSAttributedString *attributesStr;
+//可以将一段文本解析成一个一个的item项目：linkItem,imageItem
 
+
+typedef NS_ENUM(NSInteger, CoreItemType) {
+    CoreItemTextType = 0,
+    CoreItemLinkType = 1,
+    CoreItemImageType = 2,
+    CoreItemFillInType = 3
+};
+
+@protocol CoreItemPotocal <NSObject>
+@property (nonatomic, strong) NSMutableArray *runFrames;//一个句子，可能被截断成多个run,coreText坐标
+@property (nonatomic, strong) NSMutableArray *uiKitFrames;//一个句子的run坐标转换成UIKit的坐标
+@property (nonatomic, strong) NSAttributedString *attributesStr;
 @end
 
 @interface CoreBaseItem:NSObject<CoreItemPotocal>
 @property (nonatomic, strong) NSMutableArray *runFrames;
+@property (nonatomic, strong) NSMutableArray *uiKitFrames;
 @property (nonatomic, strong) NSAttributedString *attributesStr;
-@end
-
-@interface CoreLinkItem : CoreBaseItem
-@property (nonatomic, strong) NSAttributedString *linkAttributesText;
-@end
-
-@interface CoreImageItem : CoreBaseItem
-@property (nonatomic, strong) UIImage *image;
 @end
 
 @interface CoreTextItem : CoreBaseItem
 @property (nonatomic, strong) NSAttributedString *normalAttributesText;
 @end
 
+@interface CoreLinkItem : CoreBaseItem
+@property (nonatomic, strong) NSAttributedString *linkAttributesText;
+@end
+
+//带占位符号，需要设置代理改变占位大小
+@interface CoreBaseSeatItem : CoreBaseItem
+@property (nonatomic, assign) CGSize seatSize;
+@end
+
+@interface CoreImageItem : CoreBaseSeatItem
+@property (nonatomic, strong) UIImage *image;
+@end
+
+@interface CoreFillInItem : CoreBaseSeatItem
+@property (nonatomic, strong) UITextField *textFiledView;
+@end
 
 @interface CoreRichTextData : NSObject
 @property (nonatomic, assign)CGRect textBounds;               //段落需要要
