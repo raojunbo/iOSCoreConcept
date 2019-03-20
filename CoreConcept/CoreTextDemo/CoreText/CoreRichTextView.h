@@ -1,5 +1,5 @@
 //
-//  CoreTextView2.h
+//  CoreRichTextView.h
 //  CoreConcept
 //
 //  Created by rjb on 2019/3/17.
@@ -11,7 +11,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CoreTextView2 : UIView
+@interface CoreRichTextView : UIView
+
+@property (nonatomic, strong) CoreRichTextData *richTextData;
+
+@property (nonatomic, assign) NSInteger numberOfLines;
 
 @end
 

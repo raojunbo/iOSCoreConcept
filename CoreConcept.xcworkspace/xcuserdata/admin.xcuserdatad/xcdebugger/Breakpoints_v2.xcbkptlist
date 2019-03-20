@@ -137,13 +137,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreConcept/swizzle/SwizzleViewController.m"
-            timestampString = "574664408.927496"
+            filePath = "CoreConcept/CoreTextDemo/CoreText/CoreRichTextView.m"
+            timestampString = "574755898.268276"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "+load"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "-sizeThatFits:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -153,13 +153,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreConcept/swizzle/SwizzleViewController.m"
-            timestampString = "574664408.927986"
+            filePath = "CoreConcept/CoreTextDemo/CoreText/CoreRichTextView.m"
+            timestampString = "574755898.268748"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "+load"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "-sizeThatFits:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
