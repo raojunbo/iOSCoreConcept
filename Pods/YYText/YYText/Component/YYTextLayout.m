@@ -417,13 +417,13 @@ dispatch_semaphore_signal(_lock);
         [((NSMutableAttributedString *)text) yy_setClearColorToJoinedEmoji];
     }
     
-    layout = [[YYTextLayout alloc] _init];
+    layout = [[YYTextLayout alloc] _init];//根据信息，创建YYTextLayout布局信息
     layout.text = text;
     layout.container = container;
     layout.range = range;
     isVerticalForm = container.verticalForm;
     
-    // set cgPath and cgPathBox
+    // set cgPath and cgPathBox，生成排版的路径与路径box
     if (container.path == nil && container.exclusionPaths.count == 0) {
         if (container.size.width <= 0 || container.size.height <= 0) goto fail;
         CGRect rect = (CGRect) {CGPointZero, container.size };
@@ -486,9 +486,10 @@ dispatch_semaphore_signal(_lock);
         frameAttrs[(id)kCTFrameProgressionAttributeName] = @(kCTFrameProgressionRightToLeft);
     }
     
-    // create CoreText objects
+    // create CoreText objects，生成排版器
     ctSetter = CTFramesetterCreateWithAttributedString((CFTypeRef)text);
     if (!ctSetter) goto fail;
+    //生成CTFrame
     ctFrame = CTFramesetterCreateFrame(ctSetter, YYTextCFRangeFromNSRange(range), cgPath, (CFTypeRef)frameAttrs);
     if (!ctFrame) goto fail;
     lines = [NSMutableArray new];
@@ -511,7 +512,7 @@ dispatch_semaphore_signal(_lock);
         lastPosition = CGPointMake(FLT_MAX, 0);
     }
     
-    // calculate line frame
+    // calculate line frame，计算行的frame
     NSUInteger lineCurrentIdx = 0;
     for (NSUInteger i = 0; i < lineCount; i++) {
         CTLineRef ctLine = CFArrayGetValueAtIndex(ctLines, i);
@@ -647,6 +648,7 @@ dispatch_semaphore_signal(_lock);
         }
     }
     
+    //计算bounding size
     { // calculate bounding size
         CGRect rect = textBoundingRect;
         if (container.path) {

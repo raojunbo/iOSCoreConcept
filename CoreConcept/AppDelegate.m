@@ -56,6 +56,7 @@
 #import "TestViewController.h"
 #import "FPSViewController.h"
 #import "AsyTableViewController.h"
+#import "TestYYTextViewController.h"
 /*
  专题写作之基础知识深入理解
  1.设计模式
@@ -87,7 +88,7 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-     DrawCoreTextVC *rootVC = [[DrawCoreTextVC alloc]init];
+     TestYYTextViewController *rootVC = [[TestYYTextViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:rootVC];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];

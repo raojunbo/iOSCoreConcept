@@ -255,9 +255,9 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
         }];
     }
     [self willChangeValueForKey:@"textLayout"];
-    _innerLayout = [YYTextLayout layoutWithContainer:_innerContainer text:text];
+    _innerLayout = [YYTextLayout layoutWithContainer:_innerContainer text:text];//生成排版信息
     [self didChangeValueForKey:@"textLayout"];
-    CGSize size = [_innerLayout textBoundingSize];
+    CGSize size = [_innerLayout textBoundingSize];//从排版信息中获得大小
     CGSize visibleSize = [self _getVisibleSize];
     if (_innerContainer.isVerticalForm) {
         size.height = visibleSize.height;
@@ -2180,8 +2180,8 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
         _typingAttributesHolder.yy_attributes = [_innerText yy_attributesAtIndex:_innerText.length - 1];
     }
     
-    [self _updateOuterProperties];
-    [self _updateLayout];
+    [self _updateOuterProperties];//更新外部属性
+    [self _updateLayout];//更新布局
     [self _updateSelectionView];
     
     if (self.isFirstResponder) {

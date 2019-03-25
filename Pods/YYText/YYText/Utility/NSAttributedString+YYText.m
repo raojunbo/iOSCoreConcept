@@ -573,6 +573,7 @@ return style. _attr_;
     return atr;
 }
 
+//attachmentStr
 + (NSMutableAttributedString *)yy_attachmentStringWithContent:(id)content
                                                   contentMode:(UIViewContentMode)contentMode
                                                attachmentSize:(CGSize)attachmentSize
@@ -585,8 +586,8 @@ return style. _attr_;
     attach.contentMode = contentMode;
     [atr yy_setTextAttachment:attach range:NSMakeRange(0, atr.length)];
     
-    YYTextRunDelegate *delegate = [YYTextRunDelegate new];
-    delegate.width = attachmentSize.width;
+    YYTextRunDelegate *delegate = [YYTextRunDelegate new];//创建RunDelegate
+    delegate.width = attachmentSize.width;//设置Delegate里的大小，ascent,descent
     switch (alignment) {
         case YYTextVerticalAlignmentTop: {
             delegate.ascent = font.ascender;
