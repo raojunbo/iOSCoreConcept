@@ -1,18 +1,18 @@
 //
-//  CoreTextView.m
+//  CoreRichTextView.m
 //  CoreConcept
 //
 //  Created by rjb on 2019/3/17.
 //  Copyright © 2019 rjb. All rights reserved.
 //
 
-#import "CoreTextView.h"
+#import "CoreRichTextView.h"
 
-@interface CoreTextView ()
+@interface CoreRichTextView ()
 
 @end
 
-@implementation CoreTextView
+@implementation CoreRichTextView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if(self = [super initWithFrame:frame]){
@@ -101,18 +101,35 @@
 }
 
 //重写sizeThatFits方法,当外部使用frame布局时，通过sizeToFit
+//这里实际上计算的是有问题的的?
 - (CGSize)sizeThatFits:(CGSize)size {
     NSAttributedString *drawString = self.richTextData.assembleAttributesString;
     if (drawString == nil) {
         return CGSizeZero;
     }
     CFAttributedStringRef attributedStringRef = (__bridge CFAttributedStringRef)drawString;
-    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString(attributedStringRef);
+    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString(attributedStringRef);//排版器
     CFRange range = CFRangeMake(0, 0);
-    if (framesetter) {
-        //排版器，
+    if (self.numberOfLines > 0 && framesetter) {
+        CGMutablePathRef path = CGPathCreateMutable();
+        CGPathAddRect(path, NULL, CGRectMake(0, 0, size.width, size.height));
+        CTFrameRef frame = CTFramesetterCreateFrame(framesetter, CFRangeMake(0, 0), path, NULL);
+        CFArrayRef lines = CTFrameGetLines(frame);//排版完全之后的所有行
+        if (lines !=nil && CFArrayGetCount(lines) > 0) {
+            NSInteger lastVisibleLineIndex = MIN(self.numberOfLines, CFArrayGetCount(lines)) -1;
+            CTLineRef lastVisibleLine = CFArrayGetValueAtIndex(lines, lastVisibleLineIndex);//获取可见范围的最后一行
+            CFRange rangeToLayout = CTLineGetStringRange(lastVisibleLine);
+            range = CFRangeMake(0, rangeToLayout.location + rangeToLayout.length);
+        }
+        CFRelease(frame);
+        CFRelease(path);
     }
-    return CGSizeZero;
+    
+    //计算出真正的大小
+    CFRange fitCFRange = CFRangeMake(0, 0);
+    CGSize newSize = CTFramesetterSuggestFrameSizeWithConstraints(framesetter, range, NULL, size, &fitCFRange);
+
+    return newSize;
 }
 
 @end

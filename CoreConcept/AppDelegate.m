@@ -56,7 +56,11 @@
 #import "TestViewController.h"
 #import "FPSViewController.h"
 #import "AsyTableViewController.h"
+
 #import "TestYYTextViewController.h"
+
+#import "SwizzleViewController.h"
+
 /*
  专题写作之基础知识深入理解
  1.设计模式

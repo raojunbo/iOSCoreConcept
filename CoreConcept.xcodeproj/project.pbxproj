@@ -173,8 +173,9 @@
 		34FEEBFD214A881F006DFE2A /* FPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FEEBFC214A881F006DFE2A /* FPSViewController.m */; };
 		34FEEC00214A9C5C006DFE2A /* RaoFPLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FEEBFF214A9C5C006DFE2A /* RaoFPLabel.m */; };
 		8403F91F223FBA840016D472 /* DrawCoreTextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403F916223FBA840016D472 /* DrawCoreTextVC.m */; };
-		8403F920223FBA840016D472 /* CoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403F91C223FBA840016D472 /* CoreTextView.m */; };
+		8403F920223FBA840016D472 /* CoreRichTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403F91C223FBA840016D472 /* CoreRichTextView.m */; };
 		8403F921223FBA840016D472 /* CoreRichTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403F91D223FBA840016D472 /* CoreRichTextData.m */; };
+		8403F92622409E0C0016D472 /* SwizzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403F92522409E0C0016D472 /* SwizzleViewController.m */; };
 		84AB46392236ADD9002B2A60 /* AsyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AB46382236ADD9002B2A60 /* AsyTableViewController.m */; };
 		84AB46722236B4D0002B2A60 /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AB46522236B4D0002B2A60 /* YYSpriteSheetImage.m */; };
 		84AB46732236B4D0002B2A60 /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AB46542236B4D0002B2A60 /* YYImage.m */; };
@@ -505,11 +506,13 @@
 		34FEEBFF214A9C5C006DFE2A /* RaoFPLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaoFPLabel.m; sourceTree = "<group>"; };
 		779FD14EF5940F5139E7CA4B /* libPods-CoreConcept.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreConcept.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8403F916223FBA840016D472 /* DrawCoreTextVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawCoreTextVC.m; sourceTree = "<group>"; };
-		8403F917223FBA840016D472 /* CoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextView.h; sourceTree = "<group>"; };
+		8403F917223FBA840016D472 /* CoreRichTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreRichTextView.h; sourceTree = "<group>"; };
 		8403F919223FBA840016D472 /* CoreRichTextData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreRichTextData.h; sourceTree = "<group>"; };
 		8403F91B223FBA840016D472 /* DrawCoreTextVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawCoreTextVC.h; sourceTree = "<group>"; };
-		8403F91C223FBA840016D472 /* CoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextView.m; sourceTree = "<group>"; };
+		8403F91C223FBA840016D472 /* CoreRichTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreRichTextView.m; sourceTree = "<group>"; };
 		8403F91D223FBA840016D472 /* CoreRichTextData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreRichTextData.m; sourceTree = "<group>"; };
+		8403F92422409E0C0016D472 /* SwizzleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwizzleViewController.h; sourceTree = "<group>"; };
+		8403F92522409E0C0016D472 /* SwizzleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzleViewController.m; sourceTree = "<group>"; };
 		84AB46372236ADD9002B2A60 /* AsyTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyTableViewController.h; sourceTree = "<group>"; };
 		84AB46382236ADD9002B2A60 /* AsyTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyTableViewController.m; sourceTree = "<group>"; };
 		84AB464F2236B4D0002B2A60 /* YYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImage.h; sourceTree = "<group>"; };
@@ -1060,6 +1063,7 @@
 				341BCB10205DDD5D005DE1F5 /* Enciry */,
 				34AA5B031FE604F30053DD01 /* Draw */,
 				34B1DE601FDE8D3700EE50A6 /* Gersture */,
+				8403F92322409DDC0016D472 /* swizzle */,
 				34B1DE611FDE8D4900EE50A6 /* DesignPatterns */,
 				34B6825D1F8E41B000389BF5 /* AppDelegate.h */,
 				34FEEBF72148B4DB006DFE2A /* TestViewController.h */,
@@ -1146,8 +1150,6 @@
 				8403F918223FBA840016D472 /* CoreText */,
 				8403F91B223FBA840016D472 /* DrawCoreTextVC.h */,
 				8403F916223FBA840016D472 /* DrawCoreTextVC.m */,
-				8403F917223FBA840016D472 /* CoreTextView.h */,
-				8403F91C223FBA840016D472 /* CoreTextView.m */,
 			);
 			path = CoreTextDemo;
 			sourceTree = "<group>";
@@ -1157,8 +1159,19 @@
 			children = (
 				8403F919223FBA840016D472 /* CoreRichTextData.h */,
 				8403F91D223FBA840016D472 /* CoreRichTextData.m */,
+				8403F917223FBA840016D472 /* CoreRichTextView.h */,
+				8403F91C223FBA840016D472 /* CoreRichTextView.m */,
 			);
 			path = CoreText;
+			sourceTree = "<group>";
+		};
+		8403F92322409DDC0016D472 /* swizzle */ = {
+			isa = PBXGroup;
+			children = (
+				8403F92422409E0C0016D472 /* SwizzleViewController.h */,
+				8403F92522409E0C0016D472 /* SwizzleViewController.m */,
+			);
+			path = swizzle;
 			sourceTree = "<group>";
 		};
 		84AB46362236AD8B002B2A60 /* Asy */ = {
@@ -1462,6 +1475,7 @@
 				34670D8820C50C93004B65A1 /* NSObject+RAOKVO.m in Sources */,
 				3429908A20E87CF80093A58E /* OperationCustomViewController.m in Sources */,
 				34B1DE6A1FDF881000EE50A6 /* ButtonView.m in Sources */,
+				8403F92622409E0C0016D472 /* SwizzleViewController.m in Sources */,
 				34FDBCFC1FD273E2004770A3 /* TestContextLineViewController.m in Sources */,
 				3429909420E8E7190093A58E /* ImageViewController.m in Sources */,
 				84B6D26A223A4A6500185469 /* MJLAsyncLoadImgUtil.m in Sources */,
@@ -1496,7 +1510,7 @@
 				34FDBCEA1FD1409D004770A3 /* TestContextViewController.m in Sources */,
 				340802B020D3720D00ED4BD7 /* TestConstraintsViewController.m in Sources */,
 				342B00C920E48ACC00FA08CB /* DispatchSemaphoreViewController.m in Sources */,
-				8403F920223FBA840016D472 /* CoreTextView.m in Sources */,
+				8403F920223FBA840016D472 /* CoreRichTextView.m in Sources */,
 				84B6D26B223A4A6500185469 /* UIButton+MJLAsyLoad.m in Sources */,
 				341190F920B00CE000752304 /* RuntimePerson.m in Sources */,
 				342B00C620E4832100FA08CB /* DispatchSyncViewController.m in Sources */,

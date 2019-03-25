@@ -7,11 +7,11 @@
 //
 
 #import "DrawCoreTextVC.h"
-#import "CoreTextView.h"
-#import "CoreTextView.h"
+#import "CoreRichTextView.h"
+#import "CoreRichTextView.h"
 @interface DrawCoreTextVC ()
 
-@property (nonatomic, strong) CoreTextView *textView2;
+@property (nonatomic, strong) CoreRichTextView *textView2;
 @end
 
 @implementation DrawCoreTextVC
@@ -20,17 +20,27 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    CoreTextView  *corTextView = [[CoreTextView alloc]initWithFrame:CGRectMake(40, 100, 200, 200)];
-    corTextView.backgroundColor = [UIColor grayColor];
-    [self.view addSubview:corTextView];
-    
     //测试数据
     //链接
     //图片
     //文本
     NSArray *array = @[[self createLinkItem],[self createImageItem],[self createTextItem],[self createFillItem]];
     CoreRichTextData *richTextData = [[CoreRichTextData alloc]initWithSentenceArray:array];
+   
+    
+    
+    CoreRichTextView  *corTextView = [[CoreRichTextView alloc]initWithFrame:CGRectMake(40, 70, 200, 200)];
+    corTextView.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:corTextView];
     corTextView.richTextData = richTextData;
+    corTextView.numberOfLines = 5;
+  
+    CoreRichTextView  *corTextView2 = [[CoreRichTextView alloc]initWithFrame:CGRectMake(40, corTextView.frame.origin.y+200+10, 200, 200)];
+    corTextView2.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:corTextView2];
+    corTextView2.richTextData = richTextData;
+//    corTextView2.numberOfLines = 2;
+//    [corTextView2 sizeToFit];
 }
 
 - (CoreLinkItem *)createLinkItem {
