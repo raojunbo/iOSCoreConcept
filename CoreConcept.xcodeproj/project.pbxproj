@@ -190,6 +190,9 @@
 		84B6D26C223A4A6500185469 /* UIView+AsyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B6D264223A4A6500185469 /* UIView+AsyOperation.m */; };
 		84B6D26E223A4F1C00185469 /* buyaolian.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84B6D26D223A4F1C00185469 /* buyaolian.gif */; };
 		C66B8B6422472A9D0037B31E /* TestYYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66B8B6322472A9D0037B31E /* TestYYTextViewController.m */; };
+		ED1CB9E423E85DE30096F2C4 /* EGNewCityTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1CB9E323E85DE30096F2C4 /* EGNewCityTaskManager.m */; };
+		ED5B6A8323EAA2CA0032A5EE /* TestCityTaskManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5B6A8223EAA2CA0032A5EE /* TestCityTaskManagerViewController.m */; };
+		ED5B6A8623EAB2200032A5EE /* EGWCityTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5B6A8523EAB2200032A5EE /* EGWCityTaskManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -542,6 +545,12 @@
 		A933C1CB4F244A0BD49B54DB /* Pods-CoreConcept.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreConcept.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept.debug.xcconfig"; sourceTree = "<group>"; };
 		C66B8B6222472A9D0037B31E /* TestYYTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestYYTextViewController.h; sourceTree = "<group>"; };
 		C66B8B6322472A9D0037B31E /* TestYYTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestYYTextViewController.m; sourceTree = "<group>"; };
+		ED1CB9E223E85DE30096F2C4 /* EGNewCityTaskManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGNewCityTaskManager.h; sourceTree = "<group>"; };
+		ED1CB9E323E85DE30096F2C4 /* EGNewCityTaskManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGNewCityTaskManager.m; sourceTree = "<group>"; };
+		ED5B6A8123EAA2CA0032A5EE /* TestCityTaskManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCityTaskManagerViewController.h; sourceTree = "<group>"; };
+		ED5B6A8223EAA2CA0032A5EE /* TestCityTaskManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCityTaskManagerViewController.m; sourceTree = "<group>"; };
+		ED5B6A8423EAB2200032A5EE /* EGWCityTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGWCityTaskManager.h; sourceTree = "<group>"; };
+		ED5B6A8523EAB2200032A5EE /* EGWCityTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGWCityTaskManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1040,6 +1049,7 @@
 		34B6825C1F8E41B000389BF5 /* CoreConcept */ = {
 			isa = PBXGroup;
 			children = (
+				ED5B6A7D23EAA2700032A5EE /* TaskManager */,
 				C66B8B6122472A700037B31E /* YY */,
 				8403F915223FBA840016D472 /* CoreTextDemo */,
 				84AB46362236AD8B002B2A60 /* Asy */,
@@ -1251,6 +1261,19 @@
 			path = YY;
 			sourceTree = "<group>";
 		};
+		ED5B6A7D23EAA2700032A5EE /* TaskManager */ = {
+			isa = PBXGroup;
+			children = (
+				ED5B6A8423EAB2200032A5EE /* EGWCityTaskManager.h */,
+				ED5B6A8523EAB2200032A5EE /* EGWCityTaskManager.m */,
+				ED1CB9E223E85DE30096F2C4 /* EGNewCityTaskManager.h */,
+				ED1CB9E323E85DE30096F2C4 /* EGNewCityTaskManager.m */,
+				ED5B6A8123EAA2CA0032A5EE /* TestCityTaskManagerViewController.h */,
+				ED5B6A8223EAA2CA0032A5EE /* TestCityTaskManagerViewController.m */,
+			);
+			path = TaskManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1420,6 +1443,7 @@
 				340C26DB20E3725D001BDC21 /* Dog+DogCategory.m in Sources */,
 				341190ED20AED81000752304 /* Runtime2ViewController.m in Sources */,
 				345363E420DF9F14007C921D /* UserPresenter.m in Sources */,
+				ED5B6A8323EAA2CA0032A5EE /* TestCityTaskManagerViewController.m in Sources */,
 				340E64B6201E0F3900D9CAB7 /* MTeacher+Runtime.m in Sources */,
 				34AA5B091FE6052C0053DD01 /* DrawTextView.m in Sources */,
 				344A950920F2148A000EE752 /* SwizzViewController.m in Sources */,
@@ -1444,6 +1468,7 @@
 				84AB46752236B4D0002B2A60 /* YYFrameImage.m in Sources */,
 				343588611FCE96490097B18B /* TestLayerViewController.m in Sources */,
 				34FDBD001FD2A1B7004770A3 /* TestDrawImageViewController.m in Sources */,
+				ED1CB9E423E85DE30096F2C4 /* EGNewCityTaskManager.m in Sources */,
 				340C26D220E370D6001BDC21 /* Dog.m in Sources */,
 				34B6825F1F8E41B000389BF5 /* AppDelegate.m in Sources */,
 				342B00C320E47F4C00FA08CB /* GCDBarrierViewController.m in Sources */,
@@ -1497,6 +1522,7 @@
 				34C059662140CBBC0013872D /* Dog+DogCategory2.m in Sources */,
 				34B1DE641FDE8D8C00EE50A6 /* TestGerstureVC.m in Sources */,
 				342B28E920B26B7600439600 /* GCDViewController.m in Sources */,
+				ED5B6A8623EAB2200032A5EE /* EGWCityTaskManager.m in Sources */,
 				340802B620D6849000ED4BD7 /* TestEvent2ViewController.m in Sources */,
 				340C26CF20E370B0001BDC21 /* Animal.m in Sources */,
 				341190E320ADA39C00752304 /* AnimationActionView.m in Sources */,
