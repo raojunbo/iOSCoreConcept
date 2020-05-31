@@ -59,6 +59,7 @@
 
 #import "SwizzleViewController.h"
 #import "TestCityTaskManagerViewController.h"
+#import "FigurePointViewController.h"
 
 /*
  专题写作之基础知识深入理解
@@ -91,7 +92,7 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-     TestCityTaskManagerViewController *rootVC = [[TestCityTaskManagerViewController alloc]init];
+    FigurePointViewController *rootVC = [[FigurePointViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:rootVC];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];

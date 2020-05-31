@@ -99,6 +99,7 @@
 		345363DE20DF9B8D007C921D /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345363DD20DF9B8D007C921D /* MVPViewController.m */; };
 		345363E120DF9BA5007C921D /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 345363E020DF9BA5007C921D /* User.m */; };
 		345363E420DF9F14007C921D /* UserPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 345363E320DF9F14007C921D /* UserPresenter.m */; };
+		3455B2212483A7AF0093D5A7 /* FigurePointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3455B2202483A7AF0093D5A7 /* FigurePointViewController.m */; };
 		3456E631213BB71B003E8165 /* RuntimeViewController8.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E630213BB71B003E8165 /* RuntimeViewController8.m */; };
 		3456E635213CCBC8003E8165 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E634213CCBC8003E8165 /* Mediator.m */; };
 		3456E638213CCDF0003E8165 /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E637213CCDF0003E8165 /* BookDetailViewController.m */; };
@@ -376,6 +377,8 @@
 		345363E020DF9BA5007C921D /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		345363E220DF9F14007C921D /* UserPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserPresenter.h; sourceTree = "<group>"; };
 		345363E320DF9F14007C921D /* UserPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPresenter.m; sourceTree = "<group>"; };
+		3455B21F2483A7AF0093D5A7 /* FigurePointViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FigurePointViewController.h; sourceTree = "<group>"; };
+		3455B2202483A7AF0093D5A7 /* FigurePointViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FigurePointViewController.m; sourceTree = "<group>"; };
 		3456E62F213BB71B003E8165 /* RuntimeViewController8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController8.h; sourceTree = "<group>"; };
 		3456E630213BB71B003E8165 /* RuntimeViewController8.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController8.m; sourceTree = "<group>"; };
 		3456E633213CCBC8003E8165 /* Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
@@ -896,6 +899,15 @@
 			path = MVP;
 			sourceTree = "<group>";
 		};
+		3455B21E2483A7610093D5A7 /* figurepoint */ = {
+			isa = PBXGroup;
+			children = (
+				3455B21F2483A7AF0093D5A7 /* FigurePointViewController.h */,
+				3455B2202483A7AF0093D5A7 /* FigurePointViewController.m */,
+			);
+			path = figurepoint;
+			sourceTree = "<group>";
+		};
 		3456E632213BEDFF003E8165 /* componentization */ = {
 			isa = PBXGroup;
 			children = (
@@ -1049,6 +1061,7 @@
 		34B6825C1F8E41B000389BF5 /* CoreConcept */ = {
 			isa = PBXGroup;
 			children = (
+				3455B21E2483A7610093D5A7 /* figurepoint */,
 				ED5B6A7D23EAA2700032A5EE /* TaskManager */,
 				C66B8B6122472A700037B31E /* YY */,
 				8403F915223FBA840016D472 /* CoreTextDemo */,
@@ -1532,6 +1545,7 @@
 				34F3362A1FCD5BC400E6D7C1 /* TestLayerPropertyVC.m in Sources */,
 				34AA5B061FE605140053DD01 /* DrawTextViewController.m in Sources */,
 				341BCB15205DF89B005DE1F5 /* EnciryViewController.m in Sources */,
+				3455B2212483A7AF0093D5A7 /* FigurePointViewController.m in Sources */,
 				3440C3EC20AC30930062A89D /* RunLoopViewController3.m in Sources */,
 				34FDBCEA1FD1409D004770A3 /* TestContextViewController.m in Sources */,
 				340802B020D3720D00ED4BD7 /* TestConstraintsViewController.m in Sources */,
