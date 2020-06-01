@@ -190,9 +190,27 @@
 		84B6D26C223A4A6500185469 /* UIView+AsyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B6D264223A4A6500185469 /* UIView+AsyOperation.m */; };
 		84B6D26E223A4F1C00185469 /* buyaolian.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84B6D26D223A4F1C00185469 /* buyaolian.gif */; };
 		C66B8B6422472A9D0037B31E /* TestYYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66B8B6322472A9D0037B31E /* TestYYTextViewController.m */; };
+		ED1203FB247E4917009B5600 /* TestDispatchSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1203FA247E4917009B5600 /* TestDispatchSecondViewController.m */; };
+		ED181800244FE5920069B743 /* TimeMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1817FF244FE5920069B743 /* TimeMonitorViewController.m */; };
+		ED18181D244FF0390069B743 /* TimeMonitorRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED18181C244FF0390069B743 /* TimeMonitorRootViewController.m */; };
 		ED1CB9E423E85DE30096F2C4 /* EGNewCityTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1CB9E323E85DE30096F2C4 /* EGNewCityTaskManager.m */; };
 		ED5B6A8323EAA2CA0032A5EE /* TestCityTaskManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5B6A8223EAA2CA0032A5EE /* TestCityTaskManagerViewController.m */; };
 		ED5B6A8623EAB2200032A5EE /* EGWCityTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5B6A8523EAB2200032A5EE /* EGWCityTaskManager.m */; };
+		ED7B9513245446030005A744 /* SMCallStackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B94F8245446030005A744 /* SMCallStackModel.m */; };
+		ED7B9514245446030005A744 /* SMLagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B94FB245446030005A744 /* SMLagButton.m */; };
+		ED7B9515245446030005A744 /* SMLagDB.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B94FC245446030005A744 /* SMLagDB.m */; };
+		ED7B9516245446030005A744 /* SMCPUMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B94FE245446030005A744 /* SMCPUMonitor.m */; };
+		ED7B9517245446030005A744 /* SMCallTraceTimeCostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B9503245446030005A744 /* SMCallTraceTimeCostModel.m */; };
+		ED7B9518245446030005A744 /* SMLagMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B9506245446030005A744 /* SMLagMonitor.m */; };
+		ED7B9519245446030005A744 /* SMCallTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B9507245446030005A744 /* SMCallTrace.m */; };
+		ED7B951A245446030005A744 /* SMStackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B9509245446030005A744 /* SMStackCell.m */; };
+		ED7B951B245446030005A744 /* SMStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B950A245446030005A744 /* SMStackViewController.m */; };
+		ED7B951C245446030005A744 /* SMCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B950B245446030005A744 /* SMCallStack.m */; };
+		ED7B951D245446030005A744 /* SMClsCallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B950E245446030005A744 /* SMClsCallCell.m */; };
+		ED7B951E245446030005A744 /* SMCallTraceCore.c in Sources */ = {isa = PBXBuildFile; fileRef = ED7B950F245446030005A744 /* SMCallTraceCore.c */; };
+		ED7B951F245446030005A744 /* SMCallLib.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B9510245446030005A744 /* SMCallLib.m */; };
+		ED7B9520245446030005A744 /* SMClsCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B9512245446030005A744 /* SMClsCallViewController.m */; };
+		EDE58ED624739640003528DB /* TestDispatchPoollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE58ED524739640003528DB /* TestDispatchPoollViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -545,12 +563,48 @@
 		A933C1CB4F244A0BD49B54DB /* Pods-CoreConcept.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreConcept.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept.debug.xcconfig"; sourceTree = "<group>"; };
 		C66B8B6222472A9D0037B31E /* TestYYTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestYYTextViewController.h; sourceTree = "<group>"; };
 		C66B8B6322472A9D0037B31E /* TestYYTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestYYTextViewController.m; sourceTree = "<group>"; };
+		ED1203F9247E4917009B5600 /* TestDispatchSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDispatchSecondViewController.h; sourceTree = "<group>"; };
+		ED1203FA247E4917009B5600 /* TestDispatchSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDispatchSecondViewController.m; sourceTree = "<group>"; };
+		ED1817FE244FE5920069B743 /* TimeMonitorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeMonitorViewController.h; sourceTree = "<group>"; };
+		ED1817FF244FE5920069B743 /* TimeMonitorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeMonitorViewController.m; sourceTree = "<group>"; };
+		ED18181B244FF0390069B743 /* TimeMonitorRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeMonitorRootViewController.h; sourceTree = "<group>"; };
+		ED18181C244FF0390069B743 /* TimeMonitorRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeMonitorRootViewController.m; sourceTree = "<group>"; };
 		ED1CB9E223E85DE30096F2C4 /* EGNewCityTaskManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGNewCityTaskManager.h; sourceTree = "<group>"; };
 		ED1CB9E323E85DE30096F2C4 /* EGNewCityTaskManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGNewCityTaskManager.m; sourceTree = "<group>"; };
 		ED5B6A8123EAA2CA0032A5EE /* TestCityTaskManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCityTaskManagerViewController.h; sourceTree = "<group>"; };
 		ED5B6A8223EAA2CA0032A5EE /* TestCityTaskManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCityTaskManagerViewController.m; sourceTree = "<group>"; };
 		ED5B6A8423EAB2200032A5EE /* EGWCityTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGWCityTaskManager.h; sourceTree = "<group>"; };
 		ED5B6A8523EAB2200032A5EE /* EGWCityTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGWCityTaskManager.m; sourceTree = "<group>"; };
+		ED7B94F7245446030005A744 /* SMStackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStackCell.h; sourceTree = "<group>"; };
+		ED7B94F8245446030005A744 /* SMCallStackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallStackModel.m; sourceTree = "<group>"; };
+		ED7B94F9245446030005A744 /* SMCallTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTrace.h; sourceTree = "<group>"; };
+		ED7B94FA245446030005A744 /* SMLagMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLagMonitor.h; sourceTree = "<group>"; };
+		ED7B94FB245446030005A744 /* SMLagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLagButton.m; sourceTree = "<group>"; };
+		ED7B94FC245446030005A744 /* SMLagDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLagDB.m; sourceTree = "<group>"; };
+		ED7B94FD245446030005A744 /* SMCallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallStack.h; sourceTree = "<group>"; };
+		ED7B94FE245446030005A744 /* SMCPUMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCPUMonitor.m; sourceTree = "<group>"; };
+		ED7B94FF245446030005A744 /* SMStackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStackViewController.h; sourceTree = "<group>"; };
+		ED7B9500245446030005A744 /* SMCallTraceCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTraceCore.h; sourceTree = "<group>"; };
+		ED7B9501245446030005A744 /* SMClsCallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMClsCallCell.h; sourceTree = "<group>"; };
+		ED7B9502245446030005A744 /* SMClsCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMClsCallViewController.h; sourceTree = "<group>"; };
+		ED7B9503245446030005A744 /* SMCallTraceTimeCostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallTraceTimeCostModel.m; sourceTree = "<group>"; };
+		ED7B9504245446030005A744 /* SMCallLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallLib.h; sourceTree = "<group>"; };
+		ED7B9505245446030005A744 /* SMLagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLagButton.h; sourceTree = "<group>"; };
+		ED7B9506245446030005A744 /* SMLagMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLagMonitor.m; sourceTree = "<group>"; };
+		ED7B9507245446030005A744 /* SMCallTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallTrace.m; sourceTree = "<group>"; };
+		ED7B9508245446030005A744 /* SMCallStackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallStackModel.h; sourceTree = "<group>"; };
+		ED7B9509245446030005A744 /* SMStackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStackCell.m; sourceTree = "<group>"; };
+		ED7B950A245446030005A744 /* SMStackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStackViewController.m; sourceTree = "<group>"; };
+		ED7B950B245446030005A744 /* SMCallStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallStack.m; sourceTree = "<group>"; };
+		ED7B950C245446030005A744 /* SMCPUMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCPUMonitor.h; sourceTree = "<group>"; };
+		ED7B950D245446030005A744 /* SMLagDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLagDB.h; sourceTree = "<group>"; };
+		ED7B950E245446030005A744 /* SMClsCallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMClsCallCell.m; sourceTree = "<group>"; };
+		ED7B950F245446030005A744 /* SMCallTraceCore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SMCallTraceCore.c; sourceTree = "<group>"; };
+		ED7B9510245446030005A744 /* SMCallLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallLib.m; sourceTree = "<group>"; };
+		ED7B9511245446030005A744 /* SMCallTraceTimeCostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTraceTimeCostModel.h; sourceTree = "<group>"; };
+		ED7B9512245446030005A744 /* SMClsCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMClsCallViewController.m; sourceTree = "<group>"; };
+		EDE58ED424739640003528DB /* TestDispatchPoollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDispatchPoollViewController.h; sourceTree = "<group>"; };
+		EDE58ED524739640003528DB /* TestDispatchPoollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDispatchPoollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1049,6 +1103,8 @@
 		34B6825C1F8E41B000389BF5 /* CoreConcept */ = {
 			isa = PBXGroup;
 			children = (
+				EDE58ED324739615003528DB /* operationpool */,
+				ED1817D2244FE4530069B743 /* timemonitor */,
 				ED5B6A7D23EAA2700032A5EE /* TaskManager */,
 				C66B8B6122472A700037B31E /* YY */,
 				8403F915223FBA840016D472 /* CoreTextDemo */,
@@ -1261,6 +1317,18 @@
 			path = YY;
 			sourceTree = "<group>";
 		};
+		ED1817D2244FE4530069B743 /* timemonitor */ = {
+			isa = PBXGroup;
+			children = (
+				ED7B94F6245446030005A744 /* SMLagMonitor */,
+				ED1817FE244FE5920069B743 /* TimeMonitorViewController.h */,
+				ED1817FF244FE5920069B743 /* TimeMonitorViewController.m */,
+				ED18181B244FF0390069B743 /* TimeMonitorRootViewController.h */,
+				ED18181C244FF0390069B743 /* TimeMonitorRootViewController.m */,
+			);
+			path = timemonitor;
+			sourceTree = "<group>";
+		};
 		ED5B6A7D23EAA2700032A5EE /* TaskManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -1272,6 +1340,52 @@
 				ED5B6A8223EAA2CA0032A5EE /* TestCityTaskManagerViewController.m */,
 			);
 			path = TaskManager;
+			sourceTree = "<group>";
+		};
+		ED7B94F6245446030005A744 /* SMLagMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				ED7B94F7245446030005A744 /* SMStackCell.h */,
+				ED7B94F8245446030005A744 /* SMCallStackModel.m */,
+				ED7B94F9245446030005A744 /* SMCallTrace.h */,
+				ED7B94FA245446030005A744 /* SMLagMonitor.h */,
+				ED7B94FB245446030005A744 /* SMLagButton.m */,
+				ED7B94FC245446030005A744 /* SMLagDB.m */,
+				ED7B94FD245446030005A744 /* SMCallStack.h */,
+				ED7B94FE245446030005A744 /* SMCPUMonitor.m */,
+				ED7B94FF245446030005A744 /* SMStackViewController.h */,
+				ED7B9500245446030005A744 /* SMCallTraceCore.h */,
+				ED7B9501245446030005A744 /* SMClsCallCell.h */,
+				ED7B9502245446030005A744 /* SMClsCallViewController.h */,
+				ED7B9503245446030005A744 /* SMCallTraceTimeCostModel.m */,
+				ED7B9504245446030005A744 /* SMCallLib.h */,
+				ED7B9505245446030005A744 /* SMLagButton.h */,
+				ED7B9506245446030005A744 /* SMLagMonitor.m */,
+				ED7B9507245446030005A744 /* SMCallTrace.m */,
+				ED7B9508245446030005A744 /* SMCallStackModel.h */,
+				ED7B9509245446030005A744 /* SMStackCell.m */,
+				ED7B950A245446030005A744 /* SMStackViewController.m */,
+				ED7B950B245446030005A744 /* SMCallStack.m */,
+				ED7B950C245446030005A744 /* SMCPUMonitor.h */,
+				ED7B950D245446030005A744 /* SMLagDB.h */,
+				ED7B950E245446030005A744 /* SMClsCallCell.m */,
+				ED7B950F245446030005A744 /* SMCallTraceCore.c */,
+				ED7B9510245446030005A744 /* SMCallLib.m */,
+				ED7B9511245446030005A744 /* SMCallTraceTimeCostModel.h */,
+				ED7B9512245446030005A744 /* SMClsCallViewController.m */,
+			);
+			path = SMLagMonitor;
+			sourceTree = "<group>";
+		};
+		EDE58ED324739615003528DB /* operationpool */ = {
+			isa = PBXGroup;
+			children = (
+				EDE58ED424739640003528DB /* TestDispatchPoollViewController.h */,
+				EDE58ED524739640003528DB /* TestDispatchPoollViewController.m */,
+				ED1203F9247E4917009B5600 /* TestDispatchSecondViewController.h */,
+				ED1203FA247E4917009B5600 /* TestDispatchSecondViewController.m */,
+			);
+			path = operationpool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1366,7 +1480,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CoreConcept/Pods-CoreConcept-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -1375,7 +1489,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoreConcept/Pods-CoreConcept-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55CE831C00F9088194F3C516 /* [CP] Check Pods Manifest.lock */ = {
@@ -1402,7 +1516,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CoreConcept/Pods-CoreConcept-frameworks.sh",
 				"${PODS_ROOT}/HyphenateLite/iOS_Pods_IMSDK_V3.4.2/HyphenateLite.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1411,7 +1525,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoreConcept/Pods-CoreConcept-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1441,8 +1555,10 @@
 				340E64B3201E0EFC00D9CAB7 /* MTeacher.m in Sources */,
 				84B6D26C223A4A6500185469 /* UIView+AsyOperation.m in Sources */,
 				340C26DB20E3725D001BDC21 /* Dog+DogCategory.m in Sources */,
+				ED18181D244FF0390069B743 /* TimeMonitorRootViewController.m in Sources */,
 				341190ED20AED81000752304 /* Runtime2ViewController.m in Sources */,
 				345363E420DF9F14007C921D /* UserPresenter.m in Sources */,
+				ED7B951B245446030005A744 /* SMStackViewController.m in Sources */,
 				ED5B6A8323EAA2CA0032A5EE /* TestCityTaskManagerViewController.m in Sources */,
 				340E64B6201E0F3900D9CAB7 /* MTeacher+Runtime.m in Sources */,
 				34AA5B091FE6052C0053DD01 /* DrawTextView.m in Sources */,
@@ -1457,6 +1573,7 @@
 				3463298720B023BB0033A9BB /* Runtime7ViewController.m in Sources */,
 				8403F921223FBA840016D472 /* CoreRichTextData.m in Sources */,
 				343588551FCE5EB60097B18B /* Test22ViewController.m in Sources */,
+				ED7B951E245446030005A744 /* SMCallTraceCore.c in Sources */,
 				34C05BC121410B2E0013872D /* MutiClasssB.m in Sources */,
 				34FEEC00214A9C5C006DFE2A /* RaoFPLabel.m in Sources */,
 				3440C3EF20AD31CA0062A89D /* CALayerViewController.m in Sources */,
@@ -1474,6 +1591,7 @@
 				342B00C320E47F4C00FA08CB /* GCDBarrierViewController.m in Sources */,
 				341A6A4A20B3E351009591F2 /* AnimationPauseViewController.m in Sources */,
 				3412CA7520B468850065A9C9 /* RunloopViewController4.m in Sources */,
+				ED7B9517245446030005A744 /* SMCallTraceTimeCostModel.m in Sources */,
 				342BF45720BB911700B3FD31 /* RootBlockViewController.m in Sources */,
 				84AB46742236B4D0002B2A60 /* YYImageCoder.m in Sources */,
 				341A6A4320B3931F009591F2 /* GCD4ViewController.m in Sources */,
@@ -1490,6 +1608,7 @@
 				341190DD20AD6F6E00752304 /* AnimationLayer.m in Sources */,
 				C66B8B6422472A9D0037B31E /* TestYYTextViewController.m in Sources */,
 				34259C3F20E6354A006FF740 /* ReadSDWebViewController.m in Sources */,
+				ED7B951C245446030005A744 /* SMCallStack.m in Sources */,
 				3456E63E213CCE63003E8165 /* BookReviewViewController.m in Sources */,
 				343588771FD0090B0097B18B /* TestPerspective2ViewController.m in Sources */,
 				341A6A4720B3AA40009591F2 /* OperationViewController.m in Sources */,
@@ -1497,6 +1616,7 @@
 				34C05BBE21410B210013872D /* MutiClassA.m in Sources */,
 				34EB66E220EE715F00D6BF81 /* InterViewMessageViewController.m in Sources */,
 				84AB46722236B4D0002B2A60 /* YYSpriteSheetImage.m in Sources */,
+				ED7B951A245446030005A744 /* SMStackCell.m in Sources */,
 				34670D8820C50C93004B65A1 /* NSObject+RAOKVO.m in Sources */,
 				3429908A20E87CF80093A58E /* OperationCustomViewController.m in Sources */,
 				34B1DE6A1FDF881000EE50A6 /* ButtonView.m in Sources */,
@@ -1513,6 +1633,9 @@
 				3440C3F320AD34140062A89D /* CustomCALayer.m in Sources */,
 				34670D8520C50C6B004B65A1 /* RuntimeKVOCustomViewController.m in Sources */,
 				34FEEBF92148B4DB006DFE2A /* TestViewController.m in Sources */,
+				ED7B9515245446030005A744 /* SMLagDB.m in Sources */,
+				ED7B951F245446030005A744 /* SMCallLib.m in Sources */,
+				ED1203FB247E4917009B5600 /* TestDispatchSecondViewController.m in Sources */,
 				3456E647213CDB9C003E8165 /* Mediator3.m in Sources */,
 				342B28EF20B2B5FA00439600 /* GCD3ViewController.m in Sources */,
 				344A950F20F2163B000EE752 /* SwizzView+swizz.m in Sources */,
@@ -1535,9 +1658,11 @@
 				3440C3EC20AC30930062A89D /* RunLoopViewController3.m in Sources */,
 				34FDBCEA1FD1409D004770A3 /* TestContextViewController.m in Sources */,
 				340802B020D3720D00ED4BD7 /* TestConstraintsViewController.m in Sources */,
+				ED7B9518245446030005A744 /* SMLagMonitor.m in Sources */,
 				342B00C920E48ACC00FA08CB /* DispatchSemaphoreViewController.m in Sources */,
 				8403F920223FBA840016D472 /* CoreRichTextView.m in Sources */,
 				84B6D26B223A4A6500185469 /* UIButton+MJLAsyLoad.m in Sources */,
+				ED7B951D245446030005A744 /* SMClsCallCell.m in Sources */,
 				341190F920B00CE000752304 /* RuntimePerson.m in Sources */,
 				342B00C620E4832100FA08CB /* DispatchSyncViewController.m in Sources */,
 				341190F320AFE6B700752304 /* RunTime4ViewController.m in Sources */,
@@ -1556,18 +1681,23 @@
 				340802B320D6552B00ED4BD7 /* TestMasLinkViewController.m in Sources */,
 				34B1DE6D1FDF8E4300EE50A6 /* CustomGestureRecognizer.m in Sources */,
 				341190E620ADA4B100752304 /* AnimationActionLayer.m in Sources */,
+				ED7B9514245446030005A744 /* SMLagButton.m in Sources */,
 				84AB46392236ADD9002B2A60 /* AsyTableViewController.m in Sources */,
+				ED7B9519245446030005A744 /* SMCallTrace.m in Sources */,
 				342B00D920E4E94800FA08CB /* BlockTestViewController.m in Sources */,
 				342B28E220B1857A00439600 /* Thread2ViewController.m in Sources */,
+				ED7B9513245446030005A744 /* SMCallStackModel.m in Sources */,
 				3408AA5620ECCD7D009ED572 /* CopyingViewController.m in Sources */,
 				34FDBCE61FD13305004770A3 /* TestShapeLayer2ViewController.m in Sources */,
 				340E64B0201E05C900D9CAB7 /* MethodViewController.m in Sources */,
+				ED7B9516245446030005A744 /* SMCPUMonitor.m in Sources */,
 				345363E120DF9BA5007C921D /* User.m in Sources */,
 				341190F020AEE41400752304 /* Runtime3ViewController.m in Sources */,
 				34FDBCED1FD15CC2004770A3 /* TestContextView.m in Sources */,
 				340C26CC20E36C43001BDC21 /* BasicViewController.m in Sources */,
 				3456E638213CCDF0003E8165 /* BookDetailViewController.m in Sources */,
 				342B28DE20B17BEB00439600 /* ThreadViewController.m in Sources */,
+				ED7B9520245446030005A744 /* SMClsCallViewController.m in Sources */,
 				3412CA7820B46CC80065A9C9 /* RunLoopViewController5.m in Sources */,
 				3440C3E620ABC1BB0062A89D /* RunLoopViewController.m in Sources */,
 				3456E641213CCE9D003E8165 /* ReadingViewController.m in Sources */,
@@ -1578,9 +1708,11 @@
 				3456E644213CD81B003E8165 /* Mediator2.m in Sources */,
 				3429909A20E8F2FA0093A58E /* BlockKitViewController.m in Sources */,
 				34FDBCF61FD2733C004770A3 /* TestLineWidthViewController.m in Sources */,
+				EDE58ED624739640003528DB /* TestDispatchPoollViewController.m in Sources */,
 				34B682751F8E447300389BF5 /* RootViewController.m in Sources */,
 				340204FE1FBEF3C2005C087D /* AnimationCustomView.m in Sources */,
 				34259C3B20E60D9D006FF740 /* BlockYinyongViewController.m in Sources */,
+				ED181800244FE5920069B743 /* TimeMonitorViewController.m in Sources */,
 				34A15EBF1FC9143F002A1038 /* DrawView.m in Sources */,
 				84AB469A22379B67002B2A60 /* OutDrawObject.m in Sources */,
 			);

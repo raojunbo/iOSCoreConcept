@@ -1,0 +1,6 @@
+module Pods_CoreConcept {
+  umbrella header "Pods-CoreConcept-umbrella.h"
+
+  export *
+  module * { export * }
+}

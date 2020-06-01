@@ -1,5 +1,5 @@
 #公用的私有远程索引库源
-source  'git@gitee.com:BlueLegend/BlueLegendPrivateSpec.git'
+#source  'git@gitee.com:BlueLegend/BlueLegendPrivateSpec.git'
 #github远程索引库源
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
@@ -13,6 +13,9 @@ target ‘CoreConcept’ do
    	pod 'YYText', '~> 1.0.7'
    	 pod 'BlocksKit', '~> 2.2.5'
     pod 'MJRefresh', '~> 3.1.15.3'
- 	pod 'KBRCategory'
- 	pod 'HyphenateLite'
+    pod 'AFNetworking'
+    pod 'FMDB'
+      pod 'ReactiveCocoa', '=2.3'
+    pod 'HyphenateLite'
+    pod 'YYDispatchQueuePool'
 end

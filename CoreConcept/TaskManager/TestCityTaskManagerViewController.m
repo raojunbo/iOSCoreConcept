@@ -24,14 +24,14 @@
     self.button1 = [UIButton buttonWithType:UIButtonTypeCustom];
     self.button1.frame = CGRectMake(0, 100, 100, 50);
     self.button1.backgroundColor = [UIColor redColor];
-    [self.button1 setTitle:@"serial" forState:UIControlStateNormal];
+    [self.button1 setTitle:@"newserial" forState:UIControlStateNormal];
     [self.view addSubview:self.button1];
     [self.button1 addTarget:self action:@selector(testSerial) forControlEvents:UIControlEventTouchUpInside];
     
     self.button2 = [UIButton buttonWithType:UIButtonTypeCustom];
     self.button2.frame = CGRectMake(0, 200, 100, 50);
     self.button2.backgroundColor = [UIColor greenColor];
-    [self.button2 setTitle:@"button2" forState:UIControlStateNormal];
+    [self.button2 setTitle:@"newInterval" forState:UIControlStateNormal];
     [self.view addSubview:self.button2];
     [self.button2 addTarget:self action:@selector(testIntever) forControlEvents:UIControlEventTouchUpInside];
     self.view.backgroundColor = [UIColor whiteColor];
