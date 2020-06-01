@@ -173,49 +173,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E017D94A-A265-4209-9CEE-3631D708A9B6"
+            uuid = "697C1E84-B748-45C2-B4DB-9BBE40070438"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoreConcept/figurepoint/FigurePointViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
-            landmarkName = "-printFigurePoint"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E017D94A-A265-4209-9CEE-3631D708A9B6 - be2ada35f25ea95b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[FigurePointViewController printFigurePoint]"
-                  moduleName = "CoreConcept"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rjb/Desktop/gitwork/iOSCoreConcept/CoreConcept/figurepoint/FigurePointViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "208"
-                  endingLineNumber = "208"
-                  offsetFromSymbolStart = "168">
-               </Location>
-               <Location
-                  uuid = "E017D94A-A265-4209-9CEE-3631D708A9B6 - d09d38a1898feb81"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__45-[FigurePointViewController printFigurePoint]_block_invoke_2"
-                  moduleName = "CoreConcept"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rjb/Desktop/gitwork/iOSCoreConcept/CoreConcept/figurepoint/FigurePointViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "208"
-                  endingLineNumber = "208"
-                  offsetFromSymbolStart = "15">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

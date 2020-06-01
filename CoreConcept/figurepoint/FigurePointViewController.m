@@ -45,7 +45,7 @@
     int lastColumnMax = 0;//上列的最大值
     int lastColumnMin = 0;//上列的最小值
     
-    for (int i = 0; i< 6; i++) {
+    for (int i = 0; i< self.pointArray.count; i++) {
         PointEntity *currentEntity = self.pointArray[i];
         if (i == 0) {
             [self checkPointMergeUp:currentEntity depth:depth type:type];
@@ -66,6 +66,8 @@
                     type = 0;
                     CGFloat cigao = lastColumnMax - self.gezhi;
                     [self checkPoint:currentEntity ciGao:cigao depth:depth type:type];
+                    lastColumnMax = currentEntity.max;
+                    lastColumnMin = currentEntity.min;
                 }else{
                     //什么也不做
                 }
@@ -76,10 +78,13 @@
                     [self checkPointMergeUp:currentEntity depth:depth type:type];
                     lastColumnMin = currentEntity.min;
                 }else if([self checkDowToUp:currentEntity withLastColumnMin:lastColumnMin]){
+                    //没有形成新低时。最高价是否比最低价小于一级。就会出现反转
                     depth = depth + 1;
                     type = 1;
                     CGFloat cidi = lastColumnMin + self.gezhi;
                     [self checkPoint:currentEntity ciDi:cidi depth:depth type:type];
+                    lastColumnMin = currentEntity.min;
+                    lastColumnMax = currentEntity.max;
                 }else {
                     //什么也不做
                 }
@@ -90,10 +95,11 @@
 }
 
 - (BOOL)checkDowToUp:(PointEntity *)currentEntity withLastColumnMin:(CGFloat)lastColumnMin {
-    int minchu = currentEntity.min/self.gezhi;
     CGFloat lastColumnCiDi =  lastColumnMin + self.gezhi;
-    int minChuCiDi = lastColumnCiDi/self.gezhi;
-    if(currentEntity.min > minChuCiDi){
+    int minChuCiDi = lastColumnCiDi/self.gezhi + 1;//向上取h整数
+    int minChuCidiZheng = minChuCiDi * self.gezhi;
+    
+    if(currentEntity.max > minChuCidiZheng){
         return YES;
     }else{
         return NO;
@@ -101,9 +107,7 @@
 }
 
 - (BOOL)checkUpToDown:(PointEntity *)currentEntity withLastColumnMax:(CGFloat)lastColumnMax {
-    int minchu = currentEntity.min/self.gezhi;
     CGFloat lastColumnCiGao =  lastColumnMax - self.gezhi;
-    int minChuCiGao = lastColumnCiGao/self.gezhi;
     if(currentEntity.min < lastColumnCiGao){
         return YES;
     }else{
@@ -157,10 +161,13 @@
 }
 
 - (void)checkPoint:(PointEntity *)currentEntity ciDi:(CGFloat)ciDi depth:(int)depth type:(int)type {
+    //当前的最高点，一定是大于等于次高点
     int maxchu = currentEntity.max/self.gezhi;
     int maxzheng = self.gezhi * maxchu;
     
-    [self checkPoinWithMinZheng:ciDi maxZheng:maxzheng depth:depth type:type];
+    int cidichu = ciDi/self.gezhi;
+    int cidizheng = cidichu * self.gezhi;
+    [self checkPoinWithMinZheng:cidizheng maxZheng:maxzheng depth:depth type:type];
 }
 
 - (void)checkPoinWithMinZheng:(int)minzheng maxZheng:(int)maxzheng depth:(int)depth type:(int)type {
@@ -210,29 +217,30 @@
     [sortedArray enumerateObjectsUsingBlock:^(id  _Nonnull key, NSUInteger idx, BOOL * _Nonnull stop) {
         //每一行,是一个数组
         NSArray *valueArray = [self.valueDict objectForKey:key];
-        FigurePointEntity *figurePointEntity = valueArray.lastObject;//最后一个肯定是最深的
-        int maxIndex = figurePointEntity.depth;//最大深度
+        FigurePointEntity *lastFigurePointEntity = valueArray.lastObject;//最后一个肯定是最深的
+        int maxIndex = lastFigurePointEntity.depth;//最大深度
+        
         for (int i = 0; i<=maxIndex; i++) {
             //找当前列，是否存在
-            BOOL cunzai = NO;
+            FigurePointEntity *findPointEntity = nil;
             for (int j = 0; j< valueArray.count; j++) {
                 FigurePointEntity *figurePointEntity = valueArray[j];
                 if(figurePointEntity.depth == i){
-                    cunzai = YES;
+                    findPointEntity = figurePointEntity;
                     break;
                 }
             }
             if (i == 0) {
                 printf("%s",[key UTF8String]);
             }
-            if(cunzai){
-                NSString *valueStr = @"o";
-                if(figurePointEntity.type == 1){
-                    valueStr= @"x";
+            if(findPointEntity){
+                NSString *valueStr = @" o";
+                if(findPointEntity.type == 1){
+                    valueStr= @" x";
                 }
                 printf("%s", [valueStr UTF8String]);
             }else{
-                printf(" ");
+                printf("  ");
             }
         }
         printf("\n");
