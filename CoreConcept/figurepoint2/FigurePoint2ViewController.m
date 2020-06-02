@@ -217,6 +217,7 @@
 }
 
 - (void)fillDownToUp:(PointEntity *)currentEntity withLastColumMin:(CGFloat)lastColumnMin depth:(int)depth type:(int)type {
+     int minAllzheng = ((int)self.minAll/self.gezhi) *self.gezhi;
     //次低
     CGFloat lastColumnCidi =  lastColumnMin + self.gezhi;
     int minIndex =  (lastColumnCidi - minAllzheng)/self.gezhi + 1;
