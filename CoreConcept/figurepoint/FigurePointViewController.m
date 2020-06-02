@@ -8,13 +8,7 @@
 
 #import "FigurePointViewController.h"
 
-@interface PointEntity : NSObject
-@property (nonatomic, strong) NSString *time;
-@property (nonatomic, assign)CGFloat begin;
-@property (nonatomic, assign) CGFloat max;
-@property (nonatomic, assign) CGFloat min;
-@property (nonatomic, assign) CGFloat end;
-@end
+
 @implementation PointEntity
 @end
 
@@ -44,6 +38,7 @@
     int depth = 0;//向右的深度
     int lastColumnMax = 0;//上列的最大值
     int lastColumnMin = 0;//上列的最小值
+    
     
     for (int i = 0; i< self.pointArray.count; i++) {
         PointEntity *currentEntity = self.pointArray[i];
