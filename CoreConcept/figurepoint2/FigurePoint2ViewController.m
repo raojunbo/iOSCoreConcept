@@ -56,7 +56,7 @@
 - (void)printFigure {
     //打印点数图
     for (int i = 0; i< self.figurePointArray.count; i++) {
-//         printf("%d",((int)self.minAll/self.gezhi + i) *self.gezhi);
+        //         printf("%d",((int)self.minAll/self.gezhi + i) *self.gezhi);
         printf("%d",((int)self.maxAll/self.gezhi -i) *self.gezhi);
         NSMutableArray *lineArray = self.figurePointArray[i];
         for (int j  = 0; j<lineArray.count ; j++) {
@@ -89,12 +89,14 @@
             //当前是上涨列；
             if(type == 1){
                 if([self checkNewHigh:currentEntity lastColumMax:lastColumnMax depth:depth]){
-                     //查看当前数据的最高价是否可以追加上涨；
+                    //查看当前数据的最高价是否可以追加上涨；
                     [self checkPointMergeNewHigh:currentEntity lastColumMin:lastColumnMin depth:depth type:type];
                     lastColumnMax = currentEntity.max;
                 }else if([self checkUpToDown:currentEntity withLastColumnMax:lastColumnMax]){
                     //没有形成新的高价时。最低价是否比最高价小于一级。也就是向下订单动力有多强
-                    depth = depth + 1;
+                    if(![self checkColumnHadOnlyOne:depth]){
+                        depth = depth + 1;
+                    }
                     type = 0;
                     [self fillUpToDown:currentEntity withLastColumMax:lastColumnMax depth:depth type:type];
                     lastColumnMax = currentEntity.max;
@@ -110,21 +112,39 @@
                     lastColumnMin = currentEntity.min;
                 }else if([self checkDownToUp:currentEntity withLastColumMin:lastColumnMin]){
                     //没有形成新低时。最高价是否比最低价小于一级。就会出现反转
-                    depth = depth + 1;
+                    if(![self checkColumnHadOnlyOne:depth]){
+                        //判定当前列是否只有一个点；只有一个点时；depth不变；
+                        //depth 不走
+                        depth = depth + 1;
+                    }
                     type = 1;
                     [self fillDownToUp:currentEntity withLastColumMin:lastColumnMin depth:depth type:type];
+                    
                     lastColumnMin = currentEntity.min;
                     lastColumnMax = currentEntity.max;
                 }else {
                     //什么也不做
                 }
             }
-//            [self printFigure];
         }
     }
 }
 
-
+- (BOOL)checkColumnHadOnlyOne:(int)depth {
+    int noEmptyCount = 0;
+    for (int i = 0; i< self.figurePointArray.count; i++) {
+        NSMutableArray *lineArray = self.figurePointArray[i];
+        FigurePoint *figurePoint = lineArray[depth];
+        if (figurePoint.type == 1 || figurePoint.type == 0) {
+            noEmptyCount++;
+        }
+    }
+    if (noEmptyCount<=1) {
+        return YES;
+    }else{
+        return NO;
+    }
+}
 #pragma 初始化
 
 - (void)checkPointMergeFirst:(PointEntity *)currentEntity depath:(int)depth type:(int)type {
@@ -170,7 +190,7 @@
 }
 
 - (void)fillUpToDown:(PointEntity *)currentEntity withLastColumMax:(CGFloat)lastColumnMax depth:(int)depth type:(int)type {
-     int minAllzheng = ((int)self.minAll/self.gezhi) *self.gezhi;
+    int minAllzheng = ((int)self.minAll/self.gezhi) *self.gezhi;
     //最高的坐标
     CGFloat lastColumnCiGao =  lastColumnMax - self.gezhi;
     int maxIndex =  (lastColumnCiGao - minAllzheng)/self.gezhi;
@@ -217,7 +237,7 @@
 }
 
 - (void)fillDownToUp:(PointEntity *)currentEntity withLastColumMin:(CGFloat)lastColumnMin depth:(int)depth type:(int)type {
-     int minAllzheng = ((int)self.minAll/self.gezhi) *self.gezhi;
+    int minAllzheng = ((int)self.minAll/self.gezhi) *self.gezhi;
     //次低
     CGFloat lastColumnCidi =  lastColumnMin + self.gezhi;
     int minIndex =  (lastColumnCidi - minAllzheng)/self.gezhi + 1;
