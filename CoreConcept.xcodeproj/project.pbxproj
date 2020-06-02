@@ -99,6 +99,7 @@
 		345363DE20DF9B8D007C921D /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345363DD20DF9B8D007C921D /* MVPViewController.m */; };
 		345363E120DF9BA5007C921D /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 345363E020DF9BA5007C921D /* User.m */; };
 		345363E420DF9F14007C921D /* UserPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 345363E320DF9F14007C921D /* UserPresenter.m */; };
+		3455B2212483A7AF0093D5A7 /* FigurePointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3455B2202483A7AF0093D5A7 /* FigurePointViewController.m */; };
 		3456E631213BB71B003E8165 /* RuntimeViewController8.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E630213BB71B003E8165 /* RuntimeViewController8.m */; };
 		3456E635213CCBC8003E8165 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E634213CCBC8003E8165 /* Mediator.m */; };
 		3456E638213CCDF0003E8165 /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E637213CCDF0003E8165 /* BookDetailViewController.m */; };
@@ -190,6 +191,8 @@
 		84B6D26C223A4A6500185469 /* UIView+AsyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B6D264223A4A6500185469 /* UIView+AsyOperation.m */; };
 		84B6D26E223A4F1C00185469 /* buyaolian.gif in Resources */ = {isa = PBXBuildFile; fileRef = 84B6D26D223A4F1C00185469 /* buyaolian.gif */; };
 		C66B8B6422472A9D0037B31E /* TestYYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66B8B6322472A9D0037B31E /* TestYYTextViewController.m */; };
+		ED03F2872484D18A0003B5E8 /* AlertNewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03F2862484D18A0003B5E8 /* AlertNewControllerViewController.m */; };
+		ED03F28D2484D8080003B5E8 /* UIView+MJLFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03F28C2484D8080003B5E8 /* UIView+MJLFindViewController.m */; };
 		ED1203FB247E4917009B5600 /* TestDispatchSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1203FA247E4917009B5600 /* TestDispatchSecondViewController.m */; };
 		ED181800244FE5920069B743 /* TimeMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1817FF244FE5920069B743 /* TimeMonitorViewController.m */; };
 		ED18181D244FF0390069B743 /* TimeMonitorRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED18181C244FF0390069B743 /* TimeMonitorRootViewController.m */; };
@@ -394,6 +397,8 @@
 		345363E020DF9BA5007C921D /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		345363E220DF9F14007C921D /* UserPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserPresenter.h; sourceTree = "<group>"; };
 		345363E320DF9F14007C921D /* UserPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPresenter.m; sourceTree = "<group>"; };
+		3455B21F2483A7AF0093D5A7 /* FigurePointViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FigurePointViewController.h; sourceTree = "<group>"; };
+		3455B2202483A7AF0093D5A7 /* FigurePointViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FigurePointViewController.m; sourceTree = "<group>"; };
 		3456E62F213BB71B003E8165 /* RuntimeViewController8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController8.h; sourceTree = "<group>"; };
 		3456E630213BB71B003E8165 /* RuntimeViewController8.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController8.m; sourceTree = "<group>"; };
 		3456E633213CCBC8003E8165 /* Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
@@ -563,6 +568,10 @@
 		A933C1CB4F244A0BD49B54DB /* Pods-CoreConcept.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreConcept.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreConcept/Pods-CoreConcept.debug.xcconfig"; sourceTree = "<group>"; };
 		C66B8B6222472A9D0037B31E /* TestYYTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestYYTextViewController.h; sourceTree = "<group>"; };
 		C66B8B6322472A9D0037B31E /* TestYYTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestYYTextViewController.m; sourceTree = "<group>"; };
+		ED03F2852484D18A0003B5E8 /* AlertNewControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertNewControllerViewController.h; sourceTree = "<group>"; };
+		ED03F2862484D18A0003B5E8 /* AlertNewControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertNewControllerViewController.m; sourceTree = "<group>"; };
+		ED03F28B2484D8080003B5E8 /* UIView+MJLFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJLFindViewController.h"; sourceTree = "<group>"; };
+		ED03F28C2484D8080003B5E8 /* UIView+MJLFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJLFindViewController.m"; sourceTree = "<group>"; };
 		ED1203F9247E4917009B5600 /* TestDispatchSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDispatchSecondViewController.h; sourceTree = "<group>"; };
 		ED1203FA247E4917009B5600 /* TestDispatchSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDispatchSecondViewController.m; sourceTree = "<group>"; };
 		ED1817FE244FE5920069B743 /* TimeMonitorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeMonitorViewController.h; sourceTree = "<group>"; };
@@ -950,6 +959,15 @@
 			path = MVP;
 			sourceTree = "<group>";
 		};
+		3455B21E2483A7610093D5A7 /* figurepoint */ = {
+			isa = PBXGroup;
+			children = (
+				3455B21F2483A7AF0093D5A7 /* FigurePointViewController.h */,
+				3455B2202483A7AF0093D5A7 /* FigurePointViewController.m */,
+			);
+			path = figurepoint;
+			sourceTree = "<group>";
+		};
 		3456E632213BEDFF003E8165 /* componentization */ = {
 			isa = PBXGroup;
 			children = (
@@ -1103,8 +1121,10 @@
 		34B6825C1F8E41B000389BF5 /* CoreConcept */ = {
 			isa = PBXGroup;
 			children = (
+				ED03F2842484D1460003B5E8 /* AlertPop */,
 				EDE58ED324739615003528DB /* operationpool */,
 				ED1817D2244FE4530069B743 /* timemonitor */,
+				3455B21E2483A7610093D5A7 /* figurepoint */,
 				ED5B6A7D23EAA2700032A5EE /* TaskManager */,
 				C66B8B6122472A700037B31E /* YY */,
 				8403F915223FBA840016D472 /* CoreTextDemo */,
@@ -1315,6 +1335,17 @@
 				C66B8B6322472A9D0037B31E /* TestYYTextViewController.m */,
 			);
 			path = YY;
+			sourceTree = "<group>";
+		};
+		ED03F2842484D1460003B5E8 /* AlertPop */ = {
+			isa = PBXGroup;
+			children = (
+				ED03F2852484D18A0003B5E8 /* AlertNewControllerViewController.h */,
+				ED03F2862484D18A0003B5E8 /* AlertNewControllerViewController.m */,
+				ED03F28B2484D8080003B5E8 /* UIView+MJLFindViewController.h */,
+				ED03F28C2484D8080003B5E8 /* UIView+MJLFindViewController.m */,
+			);
+			path = AlertPop;
 			sourceTree = "<group>";
 		};
 		ED1817D2244FE4530069B743 /* timemonitor */ = {
@@ -1631,6 +1662,7 @@
 				34897600206285D200D20026 /* TestMasViewController.m in Sources */,
 				342123CC20B979AE007C03DC /* BlockPerson.m in Sources */,
 				3440C3F320AD34140062A89D /* CustomCALayer.m in Sources */,
+				ED03F2872484D18A0003B5E8 /* AlertNewControllerViewController.m in Sources */,
 				34670D8520C50C6B004B65A1 /* RuntimeKVOCustomViewController.m in Sources */,
 				34FEEBF92148B4DB006DFE2A /* TestViewController.m in Sources */,
 				ED7B9515245446030005A744 /* SMLagDB.m in Sources */,
@@ -1655,6 +1687,7 @@
 				34F3362A1FCD5BC400E6D7C1 /* TestLayerPropertyVC.m in Sources */,
 				34AA5B061FE605140053DD01 /* DrawTextViewController.m in Sources */,
 				341BCB15205DF89B005DE1F5 /* EnciryViewController.m in Sources */,
+				3455B2212483A7AF0093D5A7 /* FigurePointViewController.m in Sources */,
 				3440C3EC20AC30930062A89D /* RunLoopViewController3.m in Sources */,
 				34FDBCEA1FD1409D004770A3 /* TestContextViewController.m in Sources */,
 				340802B020D3720D00ED4BD7 /* TestConstraintsViewController.m in Sources */,
@@ -1700,6 +1733,7 @@
 				ED7B9520245446030005A744 /* SMClsCallViewController.m in Sources */,
 				3412CA7820B46CC80065A9C9 /* RunLoopViewController5.m in Sources */,
 				3440C3E620ABC1BB0062A89D /* RunLoopViewController.m in Sources */,
+				ED03F28D2484D8080003B5E8 /* UIView+MJLFindViewController.m in Sources */,
 				3456E641213CCE9D003E8165 /* ReadingViewController.m in Sources */,
 				3429909020E87D310093A58E /* CustomOperation.m in Sources */,
 				34670D7C20C4CEB5004B65A1 /* RuntimeModelViewController.m in Sources */,
