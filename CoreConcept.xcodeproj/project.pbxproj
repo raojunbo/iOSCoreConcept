@@ -46,6 +46,7 @@
 		341BCB15205DF89B005DE1F5 /* EnciryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341BCB14205DF89B005DE1F5 /* EnciryViewController.m */; };
 		341BCB1A205E17A8005DE1F5 /* EncryptionTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 341BCB18205E17A7005DE1F5 /* EncryptionTools.m */; };
 		341BCB1D205E1C89005DE1F5 /* RSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 341BCB1C205E1C89005DE1F5 /* RSACryptor.m */; };
+		341D786A24855C3D000A3970 /* FigurePoint2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341D786924855C3D000A3970 /* FigurePoint2ViewController.m */; };
 		341DB5921FC64BAD00E89AD9 /* TestTimeOffsetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341DB5911FC64BAD00E89AD9 /* TestTimeOffsetViewController.m */; };
 		342123C920B97911007C03DC /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342123C820B97911007C03DC /* BlockViewController.m */; };
 		342123CC20B979AE007C03DC /* BlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 342123CB20B979AE007C03DC /* BlockPerson.m */; };
@@ -294,6 +295,8 @@
 		341BCB19205E17A7005DE1F5 /* EncryptionTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptionTools.h; sourceTree = "<group>"; };
 		341BCB1B205E1C89005DE1F5 /* RSACryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSACryptor.h; sourceTree = "<group>"; };
 		341BCB1C205E1C89005DE1F5 /* RSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSACryptor.m; sourceTree = "<group>"; };
+		341D786824855C3D000A3970 /* FigurePoint2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FigurePoint2ViewController.h; sourceTree = "<group>"; };
+		341D786924855C3D000A3970 /* FigurePoint2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FigurePoint2ViewController.m; sourceTree = "<group>"; };
 		341DB5901FC64BAD00E89AD9 /* TestTimeOffsetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTimeOffsetViewController.h; sourceTree = "<group>"; };
 		341DB5911FC64BAD00E89AD9 /* TestTimeOffsetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTimeOffsetViewController.m; sourceTree = "<group>"; };
 		342123C720B97911007C03DC /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
@@ -784,6 +787,15 @@
 			path = Enciry;
 			sourceTree = "<group>";
 		};
+		341D786B24855C57000A3970 /* figurepoint2 */ = {
+			isa = PBXGroup;
+			children = (
+				341D786824855C3D000A3970 /* FigurePoint2ViewController.h */,
+				341D786924855C3D000A3970 /* FigurePoint2ViewController.m */,
+			);
+			path = figurepoint2;
+			sourceTree = "<group>";
+		};
 		342123C620B978D3007C03DC /* Block */ = {
 			isa = PBXGroup;
 			children = (
@@ -1124,6 +1136,7 @@
 				ED03F2842484D1460003B5E8 /* AlertPop */,
 				EDE58ED324739615003528DB /* operationpool */,
 				ED1817D2244FE4530069B743 /* timemonitor */,
+				341D786B24855C57000A3970 /* figurepoint2 */,
 				3455B21E2483A7610093D5A7 /* figurepoint */,
 				ED5B6A7D23EAA2700032A5EE /* TaskManager */,
 				C66B8B6122472A700037B31E /* YY */,
@@ -1721,6 +1734,7 @@
 				342B28E220B1857A00439600 /* Thread2ViewController.m in Sources */,
 				ED7B9513245446030005A744 /* SMCallStackModel.m in Sources */,
 				3408AA5620ECCD7D009ED572 /* CopyingViewController.m in Sources */,
+				341D786A24855C3D000A3970 /* FigurePoint2ViewController.m in Sources */,
 				34FDBCE61FD13305004770A3 /* TestShapeLayer2ViewController.m in Sources */,
 				340E64B0201E05C900D9CAB7 /* MethodViewController.m in Sources */,
 				ED7B9516245446030005A744 /* SMCPUMonitor.m in Sources */,
