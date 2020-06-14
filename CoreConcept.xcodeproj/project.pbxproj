@@ -100,7 +100,6 @@
 		345363DE20DF9B8D007C921D /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345363DD20DF9B8D007C921D /* MVPViewController.m */; };
 		345363E120DF9BA5007C921D /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 345363E020DF9BA5007C921D /* User.m */; };
 		345363E420DF9F14007C921D /* UserPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 345363E320DF9F14007C921D /* UserPresenter.m */; };
-		3455B2212483A7AF0093D5A7 /* FigurePointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3455B2202483A7AF0093D5A7 /* FigurePointViewController.m */; };
 		3456E631213BB71B003E8165 /* RuntimeViewController8.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E630213BB71B003E8165 /* RuntimeViewController8.m */; };
 		3456E635213CCBC8003E8165 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E634213CCBC8003E8165 /* Mediator.m */; };
 		3456E638213CCDF0003E8165 /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456E637213CCDF0003E8165 /* BookDetailViewController.m */; };
@@ -159,6 +158,17 @@
 		34F3362E1FCD5D6D00E6D7C1 /* text2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F3362C1FCD5D6D00E6D7C1 /* text2@2x.png */; };
 		34F336301FCD8EEC00E6D7C1 /* textbig@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F3362F1FCD8EEC00E6D7C1 /* textbig@2x.png */; };
 		34F336731FCD987100E6D7C1 /* LiveCourse_question_rewardBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34F336721FCD987100E6D7C1 /* LiveCourse_question_rewardBtn@2x.png */; };
+		34F368112496136C00BADC3E /* KLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F3680A2496136C00BADC3E /* KLineModel.m */; };
+		34F368122496136C00BADC3E /* PointFigureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F3680B2496136C00BADC3E /* PointFigureView.m */; };
+		34F368132496136C00BADC3E /* HTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F3680E2496136C00BADC3E /* HTTPTool.m */; };
+		34F368142496136C00BADC3E /* PointFigureDataProcesser.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F368102496136C00BADC3E /* PointFigureDataProcesser.m */; };
+		34F36818249613A700BADC3E /* kline.json in Resources */ = {isa = PBXBuildFile; fileRef = 34F36815249613A600BADC3E /* kline.json */; };
+		34F36819249613A700BADC3E /* depth.json in Resources */ = {isa = PBXBuildFile; fileRef = 34F36816249613A600BADC3E /* depth.json */; };
+		34F3681A249613A700BADC3E /* kmon.json in Resources */ = {isa = PBXBuildFile; fileRef = 34F36817249613A600BADC3E /* kmon.json */; };
+		34F3681C249621B300BADC3E /* kline2.json in Resources */ = {isa = PBXBuildFile; fileRef = 34F3681B249621B200BADC3E /* kline2.json */; };
+		34F3681E249623C900BADC3E /* kline3.json in Resources */ = {isa = PBXBuildFile; fileRef = 34F3681D249623C900BADC3E /* kline3.json */; };
+		34F368202496243100BADC3E /* kline4.json in Resources */ = {isa = PBXBuildFile; fileRef = 34F3681F2496243100BADC3E /* kline4.json */; };
+		34F368222496245F00BADC3E /* kline5.json in Resources */ = {isa = PBXBuildFile; fileRef = 34F368212496245F00BADC3E /* kline5.json */; };
 		34FDBCDB1FD0FF61004770A3 /* bg_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FDBCDA1FD0FF60004770A3 /* bg_4@2x.png */; };
 		34FDBCE21FD12CD3004770A3 /* TestShapeLayerVCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FDBCE11FD12CD3004770A3 /* TestShapeLayerVCV.m */; };
 		34FDBCE61FD13305004770A3 /* TestShapeLayer2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FDBCE51FD13305004770A3 /* TestShapeLayer2ViewController.m */; };
@@ -400,8 +410,6 @@
 		345363E020DF9BA5007C921D /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		345363E220DF9F14007C921D /* UserPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserPresenter.h; sourceTree = "<group>"; };
 		345363E320DF9F14007C921D /* UserPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPresenter.m; sourceTree = "<group>"; };
-		3455B21F2483A7AF0093D5A7 /* FigurePointViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FigurePointViewController.h; sourceTree = "<group>"; };
-		3455B2202483A7AF0093D5A7 /* FigurePointViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FigurePointViewController.m; sourceTree = "<group>"; };
 		3456E62F213BB71B003E8165 /* RuntimeViewController8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController8.h; sourceTree = "<group>"; };
 		3456E630213BB71B003E8165 /* RuntimeViewController8.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController8.m; sourceTree = "<group>"; };
 		3456E633213CCBC8003E8165 /* Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
@@ -505,6 +513,21 @@
 		34F3362C1FCD5D6D00E6D7C1 /* text2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text2@2x.png"; sourceTree = "<group>"; };
 		34F3362F1FCD8EEC00E6D7C1 /* textbig@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textbig@2x.png"; sourceTree = "<group>"; };
 		34F336721FCD987100E6D7C1 /* LiveCourse_question_rewardBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LiveCourse_question_rewardBtn@2x.png"; sourceTree = "<group>"; };
+		34F368092496136B00BADC3E /* PointFigureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointFigureView.h; sourceTree = "<group>"; };
+		34F3680A2496136C00BADC3E /* KLineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLineModel.m; sourceTree = "<group>"; };
+		34F3680B2496136C00BADC3E /* PointFigureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointFigureView.m; sourceTree = "<group>"; };
+		34F3680C2496136C00BADC3E /* PointFigureDataProcesser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointFigureDataProcesser.h; sourceTree = "<group>"; };
+		34F3680D2496136C00BADC3E /* KLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLineModel.h; sourceTree = "<group>"; };
+		34F3680E2496136C00BADC3E /* HTTPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPTool.m; sourceTree = "<group>"; };
+		34F3680F2496136C00BADC3E /* HTTPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPTool.h; sourceTree = "<group>"; };
+		34F368102496136C00BADC3E /* PointFigureDataProcesser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointFigureDataProcesser.m; sourceTree = "<group>"; };
+		34F36815249613A600BADC3E /* kline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kline.json; sourceTree = "<group>"; };
+		34F36816249613A600BADC3E /* depth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = depth.json; sourceTree = "<group>"; };
+		34F36817249613A600BADC3E /* kmon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kmon.json; sourceTree = "<group>"; };
+		34F3681B249621B200BADC3E /* kline2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kline2.json; sourceTree = "<group>"; };
+		34F3681D249623C900BADC3E /* kline3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kline3.json; sourceTree = "<group>"; };
+		34F3681F2496243100BADC3E /* kline4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kline4.json; sourceTree = "<group>"; };
+		34F368212496245F00BADC3E /* kline5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kline5.json; sourceTree = "<group>"; };
 		34FDBCDA1FD0FF60004770A3 /* bg_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_4@2x.png"; sourceTree = "<group>"; };
 		34FDBCE01FD12CD3004770A3 /* TestShapeLayerVCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestShapeLayerVCV.h; sourceTree = "<group>"; };
 		34FDBCE11FD12CD3004770A3 /* TestShapeLayerVCV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestShapeLayerVCV.m; sourceTree = "<group>"; };
@@ -792,6 +815,21 @@
 			children = (
 				341D786824855C3D000A3970 /* FigurePoint2ViewController.h */,
 				341D786924855C3D000A3970 /* FigurePoint2ViewController.m */,
+				34F36816249613A600BADC3E /* depth.json */,
+				34F36815249613A600BADC3E /* kline.json */,
+				34F3681B249621B200BADC3E /* kline2.json */,
+				34F3681D249623C900BADC3E /* kline3.json */,
+				34F3681F2496243100BADC3E /* kline4.json */,
+				34F36817249613A600BADC3E /* kmon.json */,
+				34F368212496245F00BADC3E /* kline5.json */,
+				34F3680F2496136C00BADC3E /* HTTPTool.h */,
+				34F3680E2496136C00BADC3E /* HTTPTool.m */,
+				34F3680D2496136C00BADC3E /* KLineModel.h */,
+				34F3680A2496136C00BADC3E /* KLineModel.m */,
+				34F3680C2496136C00BADC3E /* PointFigureDataProcesser.h */,
+				34F368102496136C00BADC3E /* PointFigureDataProcesser.m */,
+				34F368092496136B00BADC3E /* PointFigureView.h */,
+				34F3680B2496136C00BADC3E /* PointFigureView.m */,
 			);
 			path = figurepoint2;
 			sourceTree = "<group>";
@@ -971,15 +1009,6 @@
 			path = MVP;
 			sourceTree = "<group>";
 		};
-		3455B21E2483A7610093D5A7 /* figurepoint */ = {
-			isa = PBXGroup;
-			children = (
-				3455B21F2483A7AF0093D5A7 /* FigurePointViewController.h */,
-				3455B2202483A7AF0093D5A7 /* FigurePointViewController.m */,
-			);
-			path = figurepoint;
-			sourceTree = "<group>";
-		};
 		3456E632213BEDFF003E8165 /* componentization */ = {
 			isa = PBXGroup;
 			children = (
@@ -1137,7 +1166,6 @@
 				EDE58ED324739615003528DB /* operationpool */,
 				ED1817D2244FE4530069B743 /* timemonitor */,
 				341D786B24855C57000A3970 /* figurepoint2 */,
-				3455B21E2483A7610093D5A7 /* figurepoint */,
 				ED5B6A7D23EAA2700032A5EE /* TaskManager */,
 				C66B8B6122472A700037B31E /* YY */,
 				8403F915223FBA840016D472 /* CoreTextDemo */,
@@ -1497,10 +1525,13 @@
 				347EE3631FE1505B0031E60E /* homework_fragement_1@2x.png in Resources */,
 				347EE3681FE150660031E60E /* homework_fragement_5@2x.png in Resources */,
 				34F336301FCD8EEC00E6D7C1 /* textbig@2x.png in Resources */,
+				34F36819249613A700BADC3E /* depth.json in Resources */,
 				347EE3641FE1505E0031E60E /* homework_fragement_2@2x.png in Resources */,
 				34F3362E1FCD5D6D00E6D7C1 /* text2@2x.png in Resources */,
+				34F368222496245F00BADC3E /* kline5.json in Resources */,
 				347EE3671FE150640031E60E /* homework_fragement_6@2x.png in Resources */,
 				34FDBCDB1FD0FF61004770A3 /* bg_4@2x.png in Resources */,
+				34F3681C249621B300BADC3E /* kline2.json in Resources */,
 				84AB46842237737A002B2A60 /* chat@2x.png in Resources */,
 				34F336731FCD987100E6D7C1 /* LiveCourse_question_rewardBtn@2x.png in Resources */,
 				347EE3481FE149560031E60E /* fire@2x.png in Resources */,
@@ -1508,9 +1539,13 @@
 				3429909620E8E7F10093A58E /* check_green.png in Resources */,
 				347EE36A1FE1506A0031E60E /* homework_fragement_8@2x.png in Resources */,
 				84B6D26E223A4F1C00185469 /* buyaolian.gif in Resources */,
+				34F368202496243100BADC3E /* kline4.json in Resources */,
+				34F3681E249623C900BADC3E /* kline3.json in Resources */,
 				34B682671F8E41B000389BF5 /* Assets.xcassets in Resources */,
 				347EE3691FE150680031E60E /* homework_fragement_7@2x.png in Resources */,
+				34F36818249613A700BADC3E /* kline.json in Resources */,
 				34B9E0DB20C3A892001B19A9 /* chat_sender_bg@2x.png in Resources */,
+				34F3681A249613A700BADC3E /* kmon.json in Resources */,
 				34F3362D1FCD5D6D00E6D7C1 /* text1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1612,6 +1647,7 @@
 				34B1DE701FDFB7EB00EE50A6 /* TouchView1.m in Sources */,
 				84AB46732236B4D0002B2A60 /* YYImage.m in Sources */,
 				3440C3E320AB278D0062A89D /* TestOpenGlView.m in Sources */,
+				34F368132496136C00BADC3E /* HTTPTool.m in Sources */,
 				3408AA6B20EE0DCA009ED572 /* NSObject+RAO2KVC.m in Sources */,
 				34FEEBFD214A881F006DFE2A /* FPSViewController.m in Sources */,
 				3463298720B023BB0033A9BB /* Runtime7ViewController.m in Sources */,
@@ -1654,6 +1690,7 @@
 				34259C3F20E6354A006FF740 /* ReadSDWebViewController.m in Sources */,
 				ED7B951C245446030005A744 /* SMCallStack.m in Sources */,
 				3456E63E213CCE63003E8165 /* BookReviewViewController.m in Sources */,
+				34F368112496136C00BADC3E /* KLineModel.m in Sources */,
 				343588771FD0090B0097B18B /* TestPerspective2ViewController.m in Sources */,
 				341A6A4720B3AA40009591F2 /* OperationViewController.m in Sources */,
 				34CD80FF20EF5371005AB4B1 /* NetDesignViewController.m in Sources */,
@@ -1700,7 +1737,6 @@
 				34F3362A1FCD5BC400E6D7C1 /* TestLayerPropertyVC.m in Sources */,
 				34AA5B061FE605140053DD01 /* DrawTextViewController.m in Sources */,
 				341BCB15205DF89B005DE1F5 /* EnciryViewController.m in Sources */,
-				3455B2212483A7AF0093D5A7 /* FigurePointViewController.m in Sources */,
 				3440C3EC20AC30930062A89D /* RunLoopViewController3.m in Sources */,
 				34FDBCEA1FD1409D004770A3 /* TestContextViewController.m in Sources */,
 				340802B020D3720D00ED4BD7 /* TestConstraintsViewController.m in Sources */,
@@ -1713,6 +1749,7 @@
 				342B00C620E4832100FA08CB /* DispatchSyncViewController.m in Sources */,
 				341190F320AFE6B700752304 /* RunTime4ViewController.m in Sources */,
 				34FDBCF91FD27378004770A3 /* ContextLineWidthView.m in Sources */,
+				34F368122496136C00BADC3E /* PointFigureView.m in Sources */,
 				84B6D269223A4A6500185469 /* UIImageView+MJLAsyLoad.m in Sources */,
 				342123C920B97911007C03DC /* BlockViewController.m in Sources */,
 				3435887E1FD019F50097B18B /* TestSolidViewController.m in Sources */,
@@ -1720,6 +1757,7 @@
 				343588711FCFD8B90097B18B /* TestTranformViewController.m in Sources */,
 				34AA5AF01FE2C5640053DD01 /* BezierPathViewController.m in Sources */,
 				3440C3E920AC0F0F0062A89D /* RunloopViewController2.m in Sources */,
+				34F368142496136C00BADC3E /* PointFigureDataProcesser.m in Sources */,
 				342AD2F520EB191E0051CC57 /* TestGerViewController.m in Sources */,
 				340E64B9201E1BDF00D9CAB7 /* fishhook.c in Sources */,
 				34D1C92B207E0F5F005349E0 /* TestEventViewContrller.m in Sources */,

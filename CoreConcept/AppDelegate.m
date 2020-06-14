@@ -64,10 +64,8 @@
 #import "TimeMonitorRootViewController.h"
 #import "TestDispatchPoollViewController.h"
 
-#import "FigurePointViewController.h"
 #import "AlertNewControllerViewController.h"
 
-#import "FigurePointViewController.h"
 #import "FigurePoint2ViewController.h"
 
 /*
