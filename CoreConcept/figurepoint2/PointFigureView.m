@@ -7,9 +7,9 @@
 //
 
 #import "PointFigureView.h"
-
+static CGFloat kleftWeight = 40;
 @interface PointFigureView ()
-@property (nonatomic, strong)UIScrollView *pointScrollView;
+
 @end
 @implementation PointFigureView
 
@@ -26,7 +26,7 @@
             [view removeFromSuperview];
         }
     }else {
-        self.pointScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(40, 0, [UIScreen mainScreen].bounds.size.width - 40,self.bounds.size.height)];
+        self.pointScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,self.bounds.size.height)];
         if (@available(iOS 11.0, *)) {
             self.pointScrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         } else {
@@ -42,7 +42,8 @@
     int maxDepth = 0;
     for (int i = 0; i< self.processer.figurePointArray.count; i++) {
         UILabel *zhongLabel =  [self zhongLabel:lineHeigh index:i];
-        [self addSubview:zhongLabel];
+        zhongLabel.tag = i;
+        [self.pointScrollView addSubview:zhongLabel];
         if (i %2 == 0) {
             zhongLabel.backgroundColor = [UIColor lightGrayColor];
         }else {
@@ -57,7 +58,7 @@
             }else{
                 printf("%s",figurePoint.type ==0 ?"o":"x");
             }
-            UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(j * lineHeigh, i* lineHeigh, lineHeigh, lineHeigh)];
+            UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(j * lineHeigh + kleftWeight, i* lineHeigh, lineHeigh, lineHeigh)];
             label.textAlignment = NSTextAlignmentCenter;
             NSString *title = @"";
             if(figurePoint.type == 0){
@@ -73,6 +74,16 @@
         }
     }
     
+    
+    
+//   for (int i = 0; i< self.pointScrollView.subviews.count; i++) {
+//       UIView * view = self.pointScrollView.subviews[i];
+//       if(view.tag  == i){
+//           CGRect originRect = view.frame;
+//           view.frame =  CGRectMake(originRect.origin.x, originRect.origin.y, 300, lineHeigh);
+//       }
+//   }
+    
     self.pointScrollView.contentSize = CGSizeMake((maxDepth + 1) * lineHeigh, self.bounds.size.height);
 }
 
@@ -82,7 +93,7 @@
     zhongLabel.font = [UIFont systemFontOfSize:8];
     int zhongTitle = ((int)self.processer.maxAll/self.processer.gezhi -i) *self.processer.gezhi;
     zhongLabel.text = [NSString stringWithFormat:@"%d", zhongTitle];
-    zhongLabel.frame = CGRectMake(0, i * lineHeigh, 40, lineHeigh);
+    zhongLabel.frame = CGRectMake(0, i * lineHeigh, kleftWeight, lineHeigh);
     return zhongLabel;
 }
 

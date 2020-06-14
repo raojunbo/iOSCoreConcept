@@ -189,32 +189,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "204A83CD-D4E2-4DC7-9AD9-D8479D945E66"
+            uuid = "88FA2B87-8E55-4F10-A46E-A6861D290475"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreConcept/figurepoint2/PointFigureDataProcesser.m"
+            filePath = "CoreConcept/figurepoint2/PointFigureView.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "-fillFigure"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9E82D484-DB2A-423D-9E41-A47615023982"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoreConcept/figurepoint2/PointFigureDataProcesser.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "215"
-            endingLineNumber = "215"
-            landmarkName = "-checkPointMergeNewLow:lastColumMax:depth:type:"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "-printFigure"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -13,6 +13,7 @@
 
 @interface FigurePoint2ViewController ()
 @property (nonatomic,strong) PointFigureView *figureView;
+@property (nonatomic, strong) UIButton *button;
 @end
 
 @implementation FigurePoint2ViewController
@@ -36,7 +37,34 @@
         
         self.figureView.processer = processer;
     }];
-   
+    
+    self.button.frame = CGRectMake(0, 64, 100, 50);
+    [self.button setTitle:@"保存为图片" forState:UIControlStateNormal];
+    self.button.backgroundColor = [UIColor redColor];
+    [self.view addSubview:self.button];
+    [self.button addTarget:self action:@selector(saveToImage) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)saveToImage {
+    UIGraphicsBeginImageContextWithOptions(self.figureView.pointScrollView.contentSize, self.figureView.pointScrollView.opaque, 0.0);
+    
+    UIGraphicsBeginImageContext(self.figureView.pointScrollView.contentSize);
+    self.figureView.pointScrollView.contentOffset = CGPointZero;
+    [self.figureView.pointScrollView.layer renderInContext: UIGraphicsGetCurrentContext()];
+    self.figureView.pointScrollView.frame = CGRectMake(0, 0, self.figureView.pointScrollView.contentSize.width, self.figureView.pointScrollView.contentSize.height);
+
+    UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    NSData* imageData =  UIImagePNGRepresentation(image);
+    UIImage* newImage = [UIImage imageWithData:imageData];
+    UIImageWriteToSavedPhotosAlbum(newImage, nil, nil, nil);//然后将该图片保存到图片图
+}
+
+- (UIButton *)button {
+    if(!_button){
+        _button = [UIButton buttonWithType:UIButtonTypeCustom];
+    }
+    return _button;
 }
 
 @end
