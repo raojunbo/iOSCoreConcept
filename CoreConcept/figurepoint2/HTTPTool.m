@@ -24,54 +24,46 @@ static HTTPTool *tool = nil;
     return tool;
 }
 
-
--(void)getData:(NSString *)period  complation:(void(^)(NSArray<KLineModel *> *models))complationBlock  {
+-(void)getData:(NSString *)period symbol:(NSString *)symbol complation:(void(^)(NSArray<KLineModel *> *models))complationBlock  {
+//    NSArray *datas = [self getLocalData];
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        complationBlock(datas);
+//    });
+     //    https://api.huobi.pro/market/history/kline?period=1min&size=300&symbol=btcusdt
     [_currentDataTask cancel];
-    NSString *urls = [NSString stringWithFormat:@"%@%@%@",@"https://api.huobi.pro/market/history/kline?period=",period,@"&size=300&symbol=btcusdt"];
+    NSString *urls = [NSString stringWithFormat:@"https://api.huobi.pro/market/history/kline?period=%@&size=300&symbol=%@",period,symbol];
     NSURL *url = [[NSURL alloc] initWithString:urls];
     
     NSURLRequest *requst = [[NSURLRequest alloc] initWithURL:url];
-    
     NSURLSession *session = [NSURLSession sharedSession];
-    
-    NSArray *datas = [self getLocalData];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        complationBlock(datas);
-    });
-//    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:requst completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-//        if(error == nil) {
-//           NSDictionary *dict =  [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingFragmentsAllowed error:nil];
-//            NSArray<NSDictionary *> *dicts = dict[@"data"];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:requst completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if(error == nil) {
+            NSDictionary *dict =  [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingFragmentsAllowed error:nil];
+            NSArray<NSDictionary *> *dicts = dict[@"data"];
+            NSArray *lines = [NSArray yy_modelArrayWithClass:[KLineModel class] json:dicts];
 //            NSMutableArray *array = [NSMutableArray arrayWithCapacity:100];
 //            for (int i = 0; i < dicts.count; i++) {
 //                NSDictionary *item = dicts[i];
 //                [array addObject:[[KLineModel alloc] initWithDict:item]];
 //            }
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                complationBlock(array);
-//            });
-//        } else {
-//            NSArray *datas = [self getLocalData];
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                complationBlock(datas);
-//            });
-//        }
-//    }];
-//    [dataTask resume];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                complationBlock(lines);
+            });
+        } else {
+            NSArray *datas = [self getLocalData];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                complationBlock(datas);
+            });
+        }
+    }];
+    [dataTask resume];
 }
 
 -(NSArray<KLineModel *> *)getLocalData {
-   NSString *path = [[NSBundle mainBundle] pathForResource:@"kline5" ofType:@"json"];
-   NSDate *data = [[NSData alloc] initWithContentsOfURL: [[NSURL alloc] initFileURLWithPath:path]];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"kline5" ofType:@"json"];
+    NSDate *data = [[NSData alloc] initWithContentsOfURL: [[NSURL alloc] initFileURLWithPath:path]];
     NSArray<NSDictionary *> *dicts = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingFragmentsAllowed error:nil];
     NSArray *kLineModels = [NSArray yy_modelArrayWithClass:[KLineModel class] json:dicts];
-
-//   NSArray<NSDictionary *> *dicts = dict[@"data"];
-//   NSMutableArray *array = [NSMutableArray arrayWithCapacity:100];
-//   for (int i = 0; i < dicts.count; i++) {
-//       NSDictionary *item = dicts[i];
-//       [array addObject:[[KLineModel alloc] initWithDict:item]];
-//    }
     return kLineModels;
 }
 

@@ -189,16 +189,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "88FA2B87-8E55-4F10-A46E-A6861D290475"
+            uuid = "79073E1B-66E0-4265-A8A0-B1C8C049104E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreConcept/figurepoint2/PointFigureView.m"
+            filePath = "CoreConcept/figurepoint2/HTTPTool.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "-printFigure"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "-getData:symbol:complation:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DADC0A19-6B7F-4218-A6DE-AEA43C7D450B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreConcept/figurepoint2/FigurePoint2ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "-saveImage"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

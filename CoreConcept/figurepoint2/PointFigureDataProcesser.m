@@ -31,6 +31,7 @@
     [self printFigure];
 }
 
+
 - (void)reversePoint {
     //将点数图倒置
     for (int i = 0; i< self.figurePointArray.count/2; i++) {
@@ -297,6 +298,7 @@
 
 - (void)setPointArray:(NSArray<KLineModel *> *)pointArray {
     _pointArray = pointArray;
+     [_figurePointArray removeAllObjects];
     [self build];
 }
 

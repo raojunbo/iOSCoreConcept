@@ -169,6 +169,7 @@
 		34F3681E249623C900BADC3E /* kline3.json in Resources */ = {isa = PBXBuildFile; fileRef = 34F3681D249623C900BADC3E /* kline3.json */; };
 		34F368202496243100BADC3E /* kline4.json in Resources */ = {isa = PBXBuildFile; fileRef = 34F3681F2496243100BADC3E /* kline4.json */; };
 		34F368222496245F00BADC3E /* kline5.json in Resources */ = {isa = PBXBuildFile; fileRef = 34F368212496245F00BADC3E /* kline5.json */; };
+		34F36825249DE9C700BADC3E /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F36824249DE9C700BADC3E /* UIView+Utils.m */; };
 		34FDBCDB1FD0FF61004770A3 /* bg_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FDBCDA1FD0FF60004770A3 /* bg_4@2x.png */; };
 		34FDBCE21FD12CD3004770A3 /* TestShapeLayerVCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FDBCE11FD12CD3004770A3 /* TestShapeLayerVCV.m */; };
 		34FDBCE61FD13305004770A3 /* TestShapeLayer2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FDBCE51FD13305004770A3 /* TestShapeLayer2ViewController.m */; };
@@ -528,6 +529,8 @@
 		34F3681D249623C900BADC3E /* kline3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kline3.json; sourceTree = "<group>"; };
 		34F3681F2496243100BADC3E /* kline4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kline4.json; sourceTree = "<group>"; };
 		34F368212496245F00BADC3E /* kline5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kline5.json; sourceTree = "<group>"; };
+		34F36823249DE9C700BADC3E /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
+		34F36824249DE9C700BADC3E /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
 		34FDBCDA1FD0FF60004770A3 /* bg_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_4@2x.png"; sourceTree = "<group>"; };
 		34FDBCE01FD12CD3004770A3 /* TestShapeLayerVCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestShapeLayerVCV.h; sourceTree = "<group>"; };
 		34FDBCE11FD12CD3004770A3 /* TestShapeLayerVCV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestShapeLayerVCV.m; sourceTree = "<group>"; };
@@ -1196,6 +1199,8 @@
 				34FEEBF72148B4DB006DFE2A /* TestViewController.h */,
 				34FEEBF82148B4DB006DFE2A /* TestViewController.m */,
 				34B6825E1F8E41B000389BF5 /* AppDelegate.m */,
+				34F36823249DE9C700BADC3E /* UIView+Utils.h */,
+				34F36824249DE9C700BADC3E /* UIView+Utils.m */,
 				342123CD20BA5E52007C03DC /* source */,
 				34B682731F8E447300389BF5 /* RootViewController.h */,
 				34B682741F8E447300389BF5 /* RootViewController.m */,
@@ -1632,6 +1637,7 @@
 				343588651FCEA1510097B18B /* TestBorderViewController.m in Sources */,
 				342B28E520B195D100439600 /* Thread3ViewController.m in Sources */,
 				340E64B3201E0EFC00D9CAB7 /* MTeacher.m in Sources */,
+				34F36825249DE9C700BADC3E /* UIView+Utils.m in Sources */,
 				84B6D26C223A4A6500185469 /* UIView+AsyOperation.m in Sources */,
 				340C26DB20E3725D001BDC21 /* Dog+DogCategory.m in Sources */,
 				ED18181D244FF0390069B743 /* TimeMonitorRootViewController.m in Sources */,

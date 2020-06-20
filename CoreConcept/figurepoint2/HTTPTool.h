@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HTTPTool : NSObject
 +(instancetype)tool;
 
--(void)getData:(NSString *)period
+-(void)getData:(NSString *)period symbol:(NSString *)symbol
     complation:(void(^)(NSArray<KLineModel *> *models))complationBlock;
 @end
 

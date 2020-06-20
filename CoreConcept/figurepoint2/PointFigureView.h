@@ -11,8 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PointFigureView : UIView
-@property (nonatomic, strong)UIScrollView *pointScrollView;
-@property(nonatomic, strong) PointFigureDataProcesser *processer;
+
+@property(nonatomic, strong,readonly) PointFigureDataProcesser *processer;
+
+- (void)printFigure;
+
+- (UIImage *)genaralFigureImage;
+
 @end
 
 NS_ASSUME_NONNULL_END
