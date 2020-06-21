@@ -78,8 +78,8 @@
             filePath = "CoreConcept/figurepoint2/FigurePoint2ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190">
+            startingLineNumber = "193"
+            endingLineNumber = "193">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -92,39 +92,71 @@
             filePath = "CoreConcept/figurepoint2/FigurePoint2ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190">
+            startingLineNumber = "193"
+            endingLineNumber = "193">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "81A02B51-E8D0-44BA-96A1-F1CB787CD250"
+            uuid = "8900B598-DB36-49AB-8B3F-075DB8197E30"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreConcept/figurepoint2/FigurePoint2ViewController.m"
+            filePath = "CoreConcept/figurepoint2/PointFigureDataProcesser.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "-socketRequest"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "-build"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A5B66F81-51AB-4E9B-A39E-6A1B551F6671"
+            uuid = "FB684CF1-2276-47CA-8421-FB6663EF867A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreConcept/figurepoint2/FigurePoint2ViewController.m"
+            filePath = "CoreConcept/figurepoint2/PointFigureDataProcesser.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "-socketRequest"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "-fillFigure"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "97337F75-74A0-4C57-9740-1928036DF47D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreConcept/figurepoint2/HTTPTool.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "-getData:symbol:complation:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0D32A08-B6D1-4CCF-A420-ABA2ED51B14B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreConcept/figurepoint2/PointFigureDataProcesser.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "318"
+            endingLineNumber = "318"
+            landmarkName = "-buildFigurePointArray"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -27,7 +27,7 @@
 - (void)build {
     [self buildFigurePointArray];
     [self fillFigure];
-  [self reversePoint];
+    [self reversePoint];
     [self printFigure];
 }
 
@@ -47,7 +47,7 @@
 - (void)printFigure {
     //打印点数图
     for (int i = 0; i< self.figurePointArray.count; i++) {
-        printf("%d",((int)self.maxAll/self.gezhi -i) *self.gezhi);
+//        printf("%d",((int)self.maxAll/self.gezhi -i) *self.gezhi);
         NSMutableArray *lineArray = self.figurePointArray[i];
         for (int j  = 0; j<lineArray.count ; j++) {
             FigurePoint *figurePoint = lineArray[j];
@@ -67,7 +67,7 @@
     int depth = 0;//向右的深度
     CGFloat lastColumnMax = 0;//上列的最大值
     CGFloat lastColumnMin = 0;//上列的最小值
-//
+    
     for (int i = 0; i<self.pointArray.count; i++) {
         KLineModel *currentEntity = self.pointArray[i];
         if (i == 0) {
@@ -138,116 +138,129 @@
 #pragma 初始化
 
 - (void)checkPointMergeFirst:(KLineModel *)currentEntity depath:(int)depth type:(int)type {
-    int minAllzheng = ((int)self.minAll/self.gezhi) *self.gezhi;
-    int minIndex = (currentEntity.low - minAllzheng)/self.gezhi;//小值向上取整
-    int maxIndex = (currentEntity.high - minAllzheng)/self.gezhi;//大值向下取整
+//    int minAllzheng = ((int)self.minAll/self.gezhi) *self.gezhi;
+//    - (NSDecimalNumber *)decimalNumberByDividingBy:(NSDecimalNumber *)decimalNumber;
+
+    NSDecimalNumber * minAllzhengDecimal =  [[self.minAllDecimal decimalNumberByDividingBy:self.gezhiDecimal] decimalNumberByMultiplyingBy:self.gezhiDecimal];
+//    ((int)self.minAll/self.gezhi) *self.gezhi;
+    NSDecimalNumber *minIndexDecimal = [[currentEntity.lowDecimal decimalNumberBySubtracting:minAllzhengDecimal] decimalNumberByDividingBy:self.gezhiDecimal];//小值向上取整
+    int minIndex = [minIndexDecimal intValue];
+    
+   
+    NSDecimalNumber *maxIndexDecimal = [[currentEntity.highDecimal decimalNumberBySubtracting:minAllzhengDecimal] decimalNumberByDividingBy:self.gezhiDecimal];//大值向下取整
+    int maxIndex = [maxIndexDecimal intValue];
     [self realFillPoint:minIndex maxZheng:maxIndex depth:depth type:type];
 }
 
 #pragma 当前是上升
 - (BOOL)checkNewHigh:(KLineModel *)currentEntity lastColumMax:(CGFloat)lastColumMax depth:(int)depth{
-    int maxchu = currentEntity.high/self.gezhi;
-    int maxzheng = self.gezhi *maxchu;
     
-    int lastColumMaxChu =lastColumMax/self.gezhi;
-    int lastColumMaxZheng = self.gezhi *lastColumMaxChu;
-    if(maxzheng > lastColumMaxZheng){
-        return YES;
-    }else{
-        return NO;
-    }
+//    int maxchu = currentEntity.high/self.gezhi;
+//    CGFloat maxzheng = self.gezhi *maxchu;
+//
+//    int lastColumMaxChu = lastColumMax/self.gezhi;
+//    CGFloat lastColumMaxZheng = self.gezhi *lastColumMaxChu;
+//    if(maxzheng > lastColumMaxZheng){
+//        return YES;
+//    }else{
+//        return NO;
+//    }
+    return NO;
 }
 
 - (void)checkPointMergeNewHigh:(KLineModel *)currentEntity lastColumMin:(CGFloat)lastColumMin depth:(int)depth type:(int)type{
-    //lastColumnMin 防止向下赋值超出
-    int minAllzheng = ((int)self.minAll/self.gezhi) *self.gezhi;
-    int minIndex = (lastColumMin - minAllzheng)/self.gezhi + 1;//小值向上取整
-    int maxIndex = (currentEntity.high - minAllzheng)/self.gezhi;//大值向下取整
-    [self realFillPoint:minIndex maxZheng:maxIndex depth:depth type:type];
+//    //lastColumnMin 防止向下赋值超出
+//    CGFloat minAllzheng = ((int)self.minAll/self.gezhi) * self.gezhi;
+//    int minIndex = (lastColumMin - minAllzheng)/self.gezhi + 1;//小值向上取整
+//    int maxIndex = (currentEntity.high - minAllzheng)/self.gezhi;//大值向下取整
+//    [self realFillPoint:minIndex maxZheng:maxIndex depth:depth type:type];
 }
 
 - (BOOL)checkUpToDown:(KLineModel *)currentEntity withLastColumnMax:(CGFloat)lastColumnMax {
     //当前的最小值，是否小于等于此高格值
-    int lastColumnCigaochu = lastColumnMax/self.gezhi;
-    int lastColumnCigaozheng = lastColumnCigaochu * self.gezhi;
-    //主要目的是能不能形成反转
-    if(currentEntity.low < lastColumnCigaozheng){
-        return YES;
-    }else{
-        return NO;
-    }
+//    int lastColumnCigaochu = lastColumnMax/self.gezhi;
+//    CGFloat lastColumnCigaozheng = lastColumnCigaochu * self.gezhi;
+//    //主要目的是能不能形成反转
+//    if(currentEntity.low < lastColumnCigaozheng){
+//        return YES;
+//    }else{
+//        return NO;
+//    }
+    return NO;
 }
 
 - (void)fillUpToDown:(KLineModel *)currentEntity withLastColumMax:(CGFloat)lastColumnMax depth:(int)depth type:(int)type {
-    int minAllzheng = ((int)self.minAll/self.gezhi) *self.gezhi;
-    
-    int lastColumnchu = lastColumnMax/self.gezhi;
-    int lastColumnzheng = lastColumnchu * self.gezhi;
-    //上次最高的次高
-    int maxIndex =  (lastColumnzheng - minAllzheng)/self.gezhi - 1;
-    
-    //最小的坐标
-    int lowchu = currentEntity.low/self.gezhi;
-    int lowzheng = lowchu *self.gezhi;
-    
-    int minIndex = (lowzheng - minAllzheng)/self.gezhi;
-    
-    //从哪到哪都包括；
-    [self realFillPoint:minIndex maxZheng:maxIndex depth:depth type:type];
+//    CGFloat minAllzheng = ((int)self.minAll/self.gezhi) *self.gezhi;
+//
+//    int lastColumnchu = lastColumnMax/self.gezhi;
+//    CGFloat lastColumnzheng = lastColumnchu * self.gezhi;
+//    //上次最高的次高
+//    int maxIndex =  (lastColumnzheng - minAllzheng)/self.gezhi - 1;
+//
+//    //最小的坐标
+//    int lowchu = currentEntity.low/self.gezhi;
+//    CGFloat lowzheng = lowchu *self.gezhi;
+//
+//    int minIndex = (lowzheng - minAllzheng)/self.gezhi;
+//
+//    //从哪到哪都包括；
+//    [self realFillPoint:minIndex maxZheng:maxIndex depth:depth type:type];
 }
 
 
 #pragma 当前是下降
 - (BOOL)checkNewLow:(KLineModel *)currentEntity lastColumMin:(CGFloat)lastColumnMin depth:(int)depth {
-    int minchu = currentEntity.low/self.gezhi;
-    int minzheng = self.gezhi *minchu;
-    
-    int lastColumMinChu =lastColumnMin/self.gezhi;
-    int lastColumMinZheng = self.gezhi *lastColumMinChu;
-    if(minzheng < lastColumMinZheng){
-        return YES;
-    }else{
-        return NO;
-    }
+//    int minchu = currentEntity.low/self.gezhi;
+//    CGFloat minzheng = self.gezhi *minchu;
+//
+//    int lastColumMinChu =lastColumnMin/self.gezhi;
+//    CGFloat lastColumMinZheng = self.gezhi *lastColumMinChu;
+//    if(minzheng < lastColumMinZheng){
+//        return YES;
+//    }else{
+//        return NO;
+//    }
+    return NO;
 }
 
 - (void)checkPointMergeNewLow:(KLineModel *)currentEntity lastColumMax:(CGFloat)lastColumMax depth:(int)depth type:(int)type{
-    //lastColumnMin 防止向下赋值超出
-    int minAllzheng = ((int)self.minAll/self.gezhi) *self.gezhi;
-    
-    int minIndex = (currentEntity.low - minAllzheng)/self.gezhi;
-    
-    int maxChu = lastColumMax/self.gezhi;
-    int maxzheng = maxChu *self.gezhi;
-    
-    int maxIndex = (maxzheng - minAllzheng)/self.gezhi -1;//大值向下取整(这里的-1表示追加的范围不能是上列的最大值，只能是二级值)
-    [self realFillPoint:minIndex maxZheng:maxIndex depth:depth type:type];
+//    //lastColumnMin 防止向下赋值超出
+//    CGFloat minAllzheng = ((int)self.minAll/self.gezhi) *self.gezhi;
+//
+//    int minIndex = (currentEntity.low - minAllzheng)/self.gezhi;
+//
+//    int maxChu = lastColumMax/self.gezhi;
+//    CGFloat maxzheng = maxChu *self.gezhi;
+//
+//    int maxIndex = (maxzheng - minAllzheng)/self.gezhi -1;//大值向下取整(这里的-1表示追加的范围不能是上列的最大值，只能是二级值)
+//    [self realFillPoint:minIndex maxZheng:maxIndex depth:depth type:type];
 }
 
 - (BOOL)checkDownToUp:(KLineModel *)currentEntity withLastColumMin:(CGFloat)lastColumnMin{
     //从下降到上升；最大值是否大于次低点；
-    CGFloat lastColumnCidi =  lastColumnMin + self.gezhi;
-    int lastColumnCidichu = lastColumnCidi/self.gezhi;
-    int lastColumnCidizheng = lastColumnCidichu *self.gezhi;
-    
-    if(currentEntity.high >= lastColumnCidizheng){
-        return YES;
-    }else{
-        return NO;
-    }
+//    CGFloat lastColumnCidi =  lastColumnMin + self.gezhi;
+//    int lastColumnCidichu = lastColumnCidi/self.gezhi;
+//    CGFloat lastColumnCidizheng = lastColumnCidichu *self.gezhi;
+//
+//    if(currentEntity.high >= lastColumnCidizheng){
+//        return YES;
+//    }else{
+//        return NO;
+//    }
+    return NO;
 }
 
 - (void)fillDownToUp:(KLineModel *)currentEntity withLastColumMin:(CGFloat)lastColumnMin depth:(int)depth type:(int)type {
-    int minAllzheng = ((int)self.minAll/self.gezhi) *self.gezhi;
-
-    //次低
-    int lastColumnchu = lastColumnMin/self.gezhi;
-    int lastColumnzheng =  lastColumnchu * self.gezhi;
-    int minIndex = (lastColumnzheng - minAllzheng)/self.gezhi + 1;
-    
-    //最高
-    int maxIndex = (currentEntity.high - minAllzheng)/self.gezhi;
-    [self realFillPoint:minIndex maxZheng:maxIndex depth:depth type:type];
+//    CGFloat minAllzheng = ((int)self.minAll/self.gezhi) *self.gezhi;
+//
+//    //次低
+//    int lastColumnchu = lastColumnMin/self.gezhi;
+//    CGFloat lastColumnzheng =  lastColumnchu * self.gezhi;
+//    int minIndex = (lastColumnzheng - minAllzheng)/self.gezhi + 1;
+//
+//    //最高
+//    int maxIndex = (currentEntity.high - minAllzheng)/self.gezhi;
+//    [self realFillPoint:minIndex maxZheng:maxIndex depth:depth type:type];
 }
 
 - (void)realFillPoint:(int)minIndex maxZheng:(int)maxIndex depth:(int)depth type:(int)type {
@@ -264,21 +277,31 @@
     //1. 找到最高点
     //2. 找到最低点
     KLineModel *firstKLineModel = self.pointArray.firstObject;
-    CGFloat max = firstKLineModel.high;
-    CGFloat min = firstKLineModel.low;
+//    CGFloat max = firstKLineModel.high;
+//    CGFloat min = firstKLineModel.low;
+    NSDecimalNumber *maxDecimal = firstKLineModel.highDecimal;
+    NSDecimalNumber *minDecimal = firstKLineModel.lowDecimal;
     for (int i = 0; i< self.pointArray.count; i++) {
         KLineModel *point = self.pointArray[i];
-        if(point.low<min){
-            min = point.low;
+        if([point.lowDecimal compare:minDecimal] == NSOrderedAscending) {
+            minDecimal = point.lowDecimal;
         }
-        if(point.high > max){
-            max = point.high;
+        if([point.highDecimal compare:maxDecimal] == NSOrderedDescending){
+            maxDecimal = point.highDecimal;
         }
+//        if(point.low<min){
+//            min = point.low;
+//        }
+//        if(point.high > max){
+//            max = point.high;
+//        }
     }
-    int maxzheng = max / self.gezhi;
-    int minzheng = min / self.gezhi;
     
-    for (int i = 0; i<= maxzheng - minzheng; i++) {
+//    CGFloat maxzheng = max / self.gezhi;
+//    CGFloat minzheng = min / self.gezhi;
+    NSDecimalNumber *maxzhengDecimal = [maxDecimal decimalNumberByDividingBy:self.gezhiDecimal];
+    NSDecimalNumber *minzhengDecimal = [minDecimal decimalNumberByDividingBy:self.gezhiDecimal];
+    for (int i = 0; i<= [[maxzhengDecimal  decimalNumberBySubtracting:minzhengDecimal] intValue]; i++) {
         NSMutableArray *oneLineArray = [[NSMutableArray alloc]init];
         for (int j = 0;j< self.pointArray.count; j++) {
             FigurePoint *figurePoint = [[FigurePoint alloc]init];
@@ -288,11 +311,13 @@
         }
         [self.figurePointArray addObject:oneLineArray];
     }
-    self.minAll = min;
-    self.maxAll = max;
+    self.minAllDecimal = minDecimal;
+    self.maxAllDecimal = maxDecimal;
+//    self.minAll = min;
+//    self.maxAll = max;
     
-    NSLog(@"最小值:%f",self.minAll);
-    NSLog(@"最大值:%f",self.maxAll);
+    NSLog(@"最小值:%f",[self.minAllDecimal floatValue]);
+    NSLog(@"最大值:%f",[self.maxAllDecimal floatValue]);
 }
 
 - (void)setPointArray:(NSArray<KLineModel *> *)pointArray {

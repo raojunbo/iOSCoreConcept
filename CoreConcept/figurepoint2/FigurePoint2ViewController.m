@@ -55,20 +55,23 @@ static int kPointFigureHeigh = 600;
     UIBarButtonItem* rightItem = [[UIBarButtonItem alloc]initWithCustomView:self.button];
     self.navigationItem.rightBarButtonItem = rightItem;
     
-    [[SocketTool tool] open];
+//    [[SocketTool tool] open];
 }
 
 - (void)requestData {
-    [self socketRequest];
-    return;
+//    [self socketRequest];
+//    return;
     
-    int gezhi = [self.gezhiTextField.text intValue];
+//    double gezhi = [self.gezhiTextField.text floatValue];
+    
+    NSDecimalNumber *gezhi = [NSDecimalNumber decimalNumberWithString:self.gezhiTextField.text];
+    
     NSString *symbol = self.symbolTextField.text;
     [[HTTPTool tool] getData:self.zhouqiStr symbol:symbol complation:^(NSArray<KLineModel *> * _Nonnull models) {
         if(models == nil){
             [self.view makeToast:@"读取数据失败"];
         }else{
-            self.figureView.processer.gezhi = gezhi;
+            self.figureView.processer.gezhiDecimal = gezhi;
             self.figureView.processer.pointArray = [models copy];
             [self.figureView printFigure];
         }
@@ -76,25 +79,25 @@ static int kPointFigureHeigh = 600;
 }
 
 - (void)socketRequest {
-    if([[SocketTool tool] isOpening]){
-        int gezhi = [self.gezhiTextField.text intValue];
-        NSString *symbol  =  self.symbolTextField.text;
-        NSDictionary *dict = @{
-            @"req": [NSString stringWithFormat:@"market.%@.kline.%@",symbol,self.zhouqiStr],
-            @"from": @(1592308800),
-            @"to": @(1592395200)
-        };
-        [[SocketTool tool] send:dict responseBlock:^(SocketKLineResponse * response) {
-            if(response == nil){
-                [self.view makeToast:@"读取数据失败"];
-            }else{
-                self.figureView.processer.gezhi = gezhi;
-                self.figureView.processer.pointArray = [response.data copy];
-                [self.figureView printFigure];
-            }
-            
-        }];
-    }
+//    if([[SocketTool tool] isOpening]){
+//        int gezhi = [self.gezhiTextField.text intValue];
+//        NSString *symbol  =  self.symbolTextField.text;
+//        NSDictionary *dict = @{
+//            @"req": [NSString stringWithFormat:@"market.%@.kline.%@",symbol,self.zhouqiStr],
+//            @"from": @(1592308800),
+//            @"to": @(1592395200)
+//        };
+//        [[SocketTool tool] send:dict responseBlock:^(SocketKLineResponse * response) {
+//            if(response == nil){
+//                [self.view makeToast:@"读取数据失败"];
+//            }else{
+//                self.figureView.processer.gezhi = gezhi;
+//                self.figureView.processer.pointArray = [response.data copy];
+//                [self.figureView printFigure];
+//            }
+//
+//        }];
+//    }
     
 }
 
@@ -124,7 +127,7 @@ static int kPointFigureHeigh = 600;
 - (UITextField *)gezhiTextField {
     if(!_gezhiTextField){
         _gezhiTextField = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, 100, 40)];
-        _gezhiTextField.text = @"50";
+        _gezhiTextField.text = @"0.1";
         _gezhiTextField.backgroundColor = [UIColor lightGrayColor];
         _gezhiTextField.keyboardType =  UIKeyboardTypeNumbersAndPunctuation;
     }
@@ -134,7 +137,7 @@ static int kPointFigureHeigh = 600;
 - (UITextField *)symbolTextField {
     if(!_symbolTextField){
         _symbolTextField = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, 120, 40)];
-        _symbolTextField.text = @"btcusdt";
+        _symbolTextField.text = @"eosusdt";
         _symbolTextField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
         _symbolTextField.backgroundColor = [UIColor lightGrayColor];
     }

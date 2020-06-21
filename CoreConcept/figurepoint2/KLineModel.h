@@ -18,6 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign) CGFloat low;
 @property(nonatomic,assign) CGFloat close;
 
+@property(nonatomic,strong) NSDecimalNumber * openDecimal;
+@property(nonatomic,strong) NSDecimalNumber * highDecimal;
+@property(nonatomic,strong) NSDecimalNumber * lowDecimal;
+@property(nonatomic,strong) NSDecimalNumber * closeDecimal;
+
 @property(nonatomic,assign) CGFloat vol;
 @property(nonatomic,assign) CGFloat amount;
 @property(nonatomic,assign) CGFloat count;

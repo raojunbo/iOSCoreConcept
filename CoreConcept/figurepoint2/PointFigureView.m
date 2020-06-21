@@ -97,8 +97,8 @@ static int kfontSize = 9;
     UILabel *zhongLabel = [[UILabel alloc]init];
     zhongLabel.textAlignment = NSTextAlignmentLeft;
     zhongLabel.font = [UIFont systemFontOfSize:kfontSize];
-    int zhongTitle = ((int)self.processer.maxAll/self.processer.gezhi -i) *self.processer.gezhi;
-    zhongLabel.text = [NSString stringWithFormat:@"%d", zhongTitle];
+//    int zhongTitle = ((int)self.processer.maxAll/self.processer.gezhi -i) *self.processer.gezhi;
+//    zhongLabel.text = [NSString stringWithFormat:@"%d", zhongTitle];
     if(leftZhong){
         zhongLabel.frame = CGRectMake(0, i * lineHeigh, kleftWeight, lineHeigh);
     }else{

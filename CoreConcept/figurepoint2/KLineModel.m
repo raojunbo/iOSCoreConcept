@@ -16,6 +16,15 @@
     };
 }
 
+
+- (BOOL)modelCustomTransformFromDictionary:(NSDictionary *)dic {
+    _openDecimal = [NSDecimalNumber decimalNumberWithString:[NSString stringWithFormat:@"%@",dic[@"open"]]];
+    _highDecimal = [NSDecimalNumber decimalNumberWithString:[NSString stringWithFormat:@"%@",dic[@"high"]]];
+    _lowDecimal = [NSDecimalNumber decimalNumberWithString:[NSString stringWithFormat:@"%@",dic[@"low"]]];
+    _closeDecimal = [NSDecimalNumber decimalNumberWithString:[NSString stringWithFormat:@"%@", dic[@"close"]]];
+    return YES;
+}
+
 - (instancetype)initWithDict:(NSDictionary *)dict
 {
     self = [super init];

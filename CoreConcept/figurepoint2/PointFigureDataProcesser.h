@@ -17,11 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface PointFigureDataProcesser : NSObject
-@property (nonatomic, assign) int gezhi;
+@property (nonatomic, strong) NSDecimalNumber *gezhiDecimal;
 @property (nonatomic,strong)NSArray<KLineModel *> *pointArray;
 @property (nonatomic, strong)NSMutableArray<NSMutableArray<FigurePoint *> *> *figurePointArray;
-@property (nonatomic, assign)CGFloat minAll;
-@property (nonatomic, assign)CGFloat maxAll;
+@property (nonatomic, strong) NSDecimalNumber *minAllDecimal;
+@property (nonatomic, strong) NSDecimalNumber *maxAllDecimal;
 
 @end
 
