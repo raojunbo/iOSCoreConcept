@@ -12,7 +12,7 @@
 #import "PointFigureDataProcesser.h"
 #import "UIView+Utils.h"
 #import "Toast.h"
-
+#import "SocketTool.h"
 static int KnavigationTop = (64 + 20);
 static int kPointFigureHeigh = 600;
 @interface FigurePoint2ViewController ()
@@ -54,10 +54,15 @@ static int kPointFigureHeigh = 600;
     
     UIBarButtonItem* rightItem = [[UIBarButtonItem alloc]initWithCustomView:self.button];
     self.navigationItem.rightBarButtonItem = rightItem;
+    
+    [[SocketTool tool] open];
 }
 
 - (void)requestData {
-    int gezhi =  [self.gezhiTextField.text intValue];
+    [self socketRequest];
+    return;
+    
+    int gezhi = [self.gezhiTextField.text intValue];
     NSString *symbol = self.symbolTextField.text;
     [[HTTPTool tool] getData:self.zhouqiStr symbol:symbol complation:^(NSArray<KLineModel *> * _Nonnull models) {
         if(models == nil){
@@ -68,6 +73,29 @@ static int kPointFigureHeigh = 600;
             [self.figureView printFigure];
         }
     }];
+}
+
+- (void)socketRequest {
+    if([[SocketTool tool] isOpening]){
+        int gezhi = [self.gezhiTextField.text intValue];
+        NSString *symbol  =  self.symbolTextField.text;
+        NSDictionary *dict = @{
+            @"req": [NSString stringWithFormat:@"market.%@.kline.%@",symbol,self.zhouqiStr],
+            @"from": @(1592308800),
+            @"to": @(1592395200)
+        };
+        [[SocketTool tool] send:dict responseBlock:^(SocketKLineResponse * response) {
+            if(response == nil){
+                [self.view makeToast:@"读取数据失败"];
+            }else{
+                self.figureView.processer.gezhi = gezhi;
+                self.figureView.processer.pointArray = [response.data copy];
+                [self.figureView printFigure];
+            }
+            
+        }];
+    }
+    
 }
 
 - (void)saveImage {

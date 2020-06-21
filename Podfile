@@ -19,4 +19,6 @@ target ‘CoreConcept’ do
     pod 'HyphenateLite'
     pod 'YYDispatchQueuePool'
     pod 'Toast', '~> 4.0.0'
+    pod 'SocketRocket'
+    pod 'GZIP', '~> 1.3.0'
 end

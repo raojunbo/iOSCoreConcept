@@ -47,7 +47,6 @@
 - (void)printFigure {
     //打印点数图
     for (int i = 0; i< self.figurePointArray.count; i++) {
-        //         printf("%d",((int)self.minAll/self.gezhi + i) *self.gezhi);
         printf("%d",((int)self.maxAll/self.gezhi -i) *self.gezhi);
         NSMutableArray *lineArray = self.figurePointArray[i];
         for (int j  = 0; j<lineArray.count ; j++) {

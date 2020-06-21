@@ -32,6 +32,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - GZIP (1.3.0)
   - HyphenateLite (3.4.2)
   - lottie-ios (2.5.0)
   - Masonry (1.1.0)
@@ -46,6 +47,7 @@ PODS:
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
+  - SocketRocket (0.5.1)
   - Toast (4.0.0)
   - YYCache (1.0.4)
   - YYDispatchQueuePool (1.0)
@@ -56,12 +58,14 @@ DEPENDENCIES:
   - AFNetworking
   - BlocksKit (~> 2.2.5)
   - FMDB
+  - GZIP (~> 1.3.0)
   - HyphenateLite
   - lottie-ios
   - Masonry
   - MJRefresh (~> 3.1.15.3)
   - ReactiveCocoa (= 2.3)
   - SDWebImage (~> 4.3.0)
+  - SocketRocket
   - Toast (~> 4.0.0)
   - YYCache (~> 1.0.4)
   - YYDispatchQueuePool
@@ -73,12 +77,14 @@ SPEC REPOS:
     - AFNetworking
     - BlocksKit
     - FMDB
+    - GZIP
     - HyphenateLite
     - lottie-ios
     - Masonry
     - MJRefresh
     - ReactiveCocoa
     - SDWebImage
+    - SocketRocket
     - Toast
     - YYCache
     - YYDispatchQueuePool
@@ -89,18 +95,20 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  GZIP: 416858efbe66b41b206895ac6dfd5493200d95b3
   HyphenateLite: 0c5d9392c30ada198ef656e179b921e38a192df3
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   ReactiveCocoa: 81ee2fb7df2dfc6bd52b5d70473662195e20ca7d
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYDispatchQueuePool: 3dfb2274bcc74207688dde8ac6f7bdd46871dd7b
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: e7700e2937806483d8d979ac8569345accebfbc9
+PODFILE CHECKSUM: 1c4f9549cbcfbed0c6610fa532b02a132134ec78
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.8.4

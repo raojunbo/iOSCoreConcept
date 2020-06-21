@@ -225,6 +225,7 @@
 		ED7B951E245446030005A744 /* SMCallTraceCore.c in Sources */ = {isa = PBXBuildFile; fileRef = ED7B950F245446030005A744 /* SMCallTraceCore.c */; };
 		ED7B951F245446030005A744 /* SMCallLib.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B9510245446030005A744 /* SMCallLib.m */; };
 		ED7B9520245446030005A744 /* SMClsCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B9512245446030005A744 /* SMClsCallViewController.m */; };
+		ED9858C1249F6FBC009DC397 /* SocketTool.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9858C0249F6FBC009DC397 /* SocketTool.m */; };
 		EDE58ED624739640003528DB /* TestDispatchPoollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE58ED524739640003528DB /* TestDispatchPoollViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -641,6 +642,8 @@
 		ED7B9510245446030005A744 /* SMCallLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallLib.m; sourceTree = "<group>"; };
 		ED7B9511245446030005A744 /* SMCallTraceTimeCostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTraceTimeCostModel.h; sourceTree = "<group>"; };
 		ED7B9512245446030005A744 /* SMClsCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMClsCallViewController.m; sourceTree = "<group>"; };
+		ED9858BF249F6FBC009DC397 /* SocketTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketTool.h; sourceTree = "<group>"; };
+		ED9858C0249F6FBC009DC397 /* SocketTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketTool.m; sourceTree = "<group>"; };
 		EDE58ED424739640003528DB /* TestDispatchPoollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDispatchPoollViewController.h; sourceTree = "<group>"; };
 		EDE58ED524739640003528DB /* TestDispatchPoollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDispatchPoollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -827,6 +830,8 @@
 				34F368212496245F00BADC3E /* kline5.json */,
 				34F3680F2496136C00BADC3E /* HTTPTool.h */,
 				34F3680E2496136C00BADC3E /* HTTPTool.m */,
+				ED9858BF249F6FBC009DC397 /* SocketTool.h */,
+				ED9858C0249F6FBC009DC397 /* SocketTool.m */,
 				34F3680D2496136C00BADC3E /* KLineModel.h */,
 				34F3680A2496136C00BADC3E /* KLineModel.m */,
 				34F3680C2496136C00BADC3E /* PointFigureDataProcesser.h */,
@@ -1756,6 +1761,7 @@
 				341190F320AFE6B700752304 /* RunTime4ViewController.m in Sources */,
 				34FDBCF91FD27378004770A3 /* ContextLineWidthView.m in Sources */,
 				34F368122496136C00BADC3E /* PointFigureView.m in Sources */,
+				ED9858C1249F6FBC009DC397 /* SocketTool.m in Sources */,
 				84B6D269223A4A6500185469 /* UIImageView+MJLAsyLoad.m in Sources */,
 				342123C920B97911007C03DC /* BlockViewController.m in Sources */,
 				3435887E1FD019F50097B18B /* TestSolidViewController.m in Sources */,

@@ -9,9 +9,9 @@
 #import "HTTPTool.h"
 #import "YYModel.h"
 #import "Toast.h"
+#import "SRWebSocket.h"
 @interface HTTPTool()
 @property(nonatomic,strong) NSURLSessionDataTask *currentDataTask;
-
 @end
 
 static HTTPTool *tool = nil;
@@ -19,17 +19,15 @@ static HTTPTool *tool = nil;
 
 +(instancetype)tool {
     static dispatch_once_t onceToken;
+    
     dispatch_once(&onceToken, ^{
         tool = [[self alloc] init];
+        
     });
     return tool;
 }
 
 -(void)getData:(NSString *)period symbol:(NSString *)symbol complation:(void(^)(NSArray<KLineModel *> *models))complationBlock  {
-//    NSArray *datas = [self getLocalData];
-//    dispatch_async(dispatch_get_main_queue(), ^{
-//        complationBlock(datas);
-//    });
      //    https://api.huobi.pro/market/history/kline?period=1min&size=300&symbol=btcusdt
     [_currentDataTask cancel];
     NSString *urls = [NSString stringWithFormat:@"https://api.huobi.pro/market/history/kline?period=%@&size=300&symbol=%@",period,symbol];
@@ -42,23 +40,13 @@ static HTTPTool *tool = nil;
             NSDictionary *dict =  [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingFragmentsAllowed error:nil];
             NSArray<NSDictionary *> *dicts = dict[@"data"];
             NSArray *lines = [NSArray yy_modelArrayWithClass:[KLineModel class] json:dicts];
-            [lines sortedArrayUsingComparator:^NSComparisonResult(KLineModel  * obj1, KLineModel  * obj2) {
-                if(obj1.ID > obj2.ID ){
-                    return NO;
-                }else{
-                    return YES;
-                }
-            }];
-//            NSMutableArray *array = [NSMutableArray arrayWithCapacity:100];
-//            for (int i = 0; i < dicts.count; i++) {
-//                NSDictionary *item = dicts[i];
-//                [array addObject:[[KLineModel alloc] initWithDict:item]];
-//            }
+            //原数据：小index为最新
+            //反转数组后：小index为最旧
+            NSArray *array = [[lines reverseObjectEnumerator] allObjects];
             dispatch_async(dispatch_get_main_queue(), ^{
-                complationBlock(lines);
+                complationBlock(array);
             });
         } else {
-            
 //            NSArray *datas = [self getLocalData];
             dispatch_async(dispatch_get_main_queue(), ^{
                 complationBlock(nil);
