@@ -46,6 +46,7 @@ PODS:
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
+  - Toast (4.0.0)
   - YYCache (1.0.4)
   - YYDispatchQueuePool (1.0)
   - YYModel (1.0.4)
@@ -61,6 +62,7 @@ DEPENDENCIES:
   - MJRefresh (~> 3.1.15.3)
   - ReactiveCocoa (= 2.3)
   - SDWebImage (~> 4.3.0)
+  - Toast (~> 4.0.0)
   - YYCache (~> 1.0.4)
   - YYDispatchQueuePool
   - YYModel (~> 1.0.4)
@@ -77,6 +79,7 @@ SPEC REPOS:
     - MJRefresh
     - ReactiveCocoa
     - SDWebImage
+    - Toast
     - YYCache
     - YYDispatchQueuePool
     - YYModel
@@ -92,11 +95,12 @@ SPEC CHECKSUMS:
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   ReactiveCocoa: 81ee2fb7df2dfc6bd52b5d70473662195e20ca7d
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYDispatchQueuePool: 3dfb2274bcc74207688dde8ac6f7bdd46871dd7b
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 82fdf2d8f26c9578c022e9a016c88cc35fcb3fd5
+PODFILE CHECKSUM: e7700e2937806483d8d979ac8569345accebfbc9
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.8.3

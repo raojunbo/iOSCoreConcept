@@ -11,6 +11,7 @@
 #import "PointFigureView.h"
 #import "PointFigureDataProcesser.h"
 #import "UIView+Utils.h"
+#import "Toast.h"
 
 static int KnavigationTop = (64 + 20);
 static int kPointFigureHeigh = 600;
@@ -59,9 +60,13 @@ static int kPointFigureHeigh = 600;
     int gezhi =  [self.gezhiTextField.text intValue];
     NSString *symbol = self.symbolTextField.text;
     [[HTTPTool tool] getData:self.zhouqiStr symbol:symbol complation:^(NSArray<KLineModel *> * _Nonnull models) {
-        self.figureView.processer.gezhi = gezhi;
-        self.figureView.processer.pointArray = [models copy];
-        [self.figureView printFigure];
+        if(models == nil){
+            [self.view makeToast:@"读取数据失败"];
+        }else{
+            self.figureView.processer.gezhi = gezhi;
+            self.figureView.processer.pointArray = [models copy];
+            [self.figureView printFigure];
+        }
     }];
 }
 
@@ -93,6 +98,7 @@ static int kPointFigureHeigh = 600;
         _gezhiTextField = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, 100, 40)];
         _gezhiTextField.text = @"50";
         _gezhiTextField.backgroundColor = [UIColor lightGrayColor];
+        _gezhiTextField.keyboardType =  UIKeyboardTypeNumbersAndPunctuation;
     }
     return _gezhiTextField;
 }
@@ -101,6 +107,7 @@ static int kPointFigureHeigh = 600;
     if(!_symbolTextField){
         _symbolTextField = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, 120, 40)];
         _symbolTextField.text = @"btcusdt";
+        _symbolTextField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
         _symbolTextField.backgroundColor = [UIColor lightGrayColor];
     }
     return _symbolTextField;

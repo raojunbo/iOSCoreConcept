@@ -27,7 +27,7 @@
 - (void)build {
     [self buildFigurePointArray];
     [self fillFigure];
-    [self reversePoint];
+  [self reversePoint];
     [self printFigure];
 }
 

@@ -7,8 +7,14 @@
 //
 
 #import "KLineModel.h"
-
+#import "NSObject+YYModel.h"
 @implementation KLineModel
+
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{
+        @"ID":@"id"
+    };
+}
 
 - (instancetype)initWithDict:(NSDictionary *)dict
 {

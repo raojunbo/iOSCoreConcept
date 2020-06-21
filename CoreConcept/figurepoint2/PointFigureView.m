@@ -100,12 +100,12 @@ static int kfontSize = 9;
     int zhongTitle = ((int)self.processer.maxAll/self.processer.gezhi -i) *self.processer.gezhi;
     zhongLabel.text = [NSString stringWithFormat:@"%d", zhongTitle];
     if(leftZhong){
-         zhongLabel.frame = CGRectMake(0, i * lineHeigh, kleftWeight, lineHeigh);
+        zhongLabel.frame = CGRectMake(0, i * lineHeigh, kleftWeight, lineHeigh);
     }else{
         
-          zhongLabel.frame = CGRectMake(self.frame.size.width - kleftWeight, i * lineHeigh, kleftWeight, lineHeigh);
+        zhongLabel.frame = CGRectMake(self.frame.size.width - kleftWeight, i * lineHeigh, kleftWeight, lineHeigh);
     }
-   
+    
     return zhongLabel;
 }
 

@@ -8,6 +8,7 @@
 
 #import "HTTPTool.h"
 #import "YYModel.h"
+#import "Toast.h"
 @interface HTTPTool()
 @property(nonatomic,strong) NSURLSessionDataTask *currentDataTask;
 
@@ -33,7 +34,7 @@ static HTTPTool *tool = nil;
     [_currentDataTask cancel];
     NSString *urls = [NSString stringWithFormat:@"https://api.huobi.pro/market/history/kline?period=%@&size=300&symbol=%@",period,symbol];
     NSURL *url = [[NSURL alloc] initWithString:urls];
-    
+    NSLog(@"这是url:%@",urls);
     NSURLRequest *requst = [[NSURLRequest alloc] initWithURL:url];
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:requst completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
@@ -41,6 +42,13 @@ static HTTPTool *tool = nil;
             NSDictionary *dict =  [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingFragmentsAllowed error:nil];
             NSArray<NSDictionary *> *dicts = dict[@"data"];
             NSArray *lines = [NSArray yy_modelArrayWithClass:[KLineModel class] json:dicts];
+            [lines sortedArrayUsingComparator:^NSComparisonResult(KLineModel  * obj1, KLineModel  * obj2) {
+                if(obj1.ID > obj2.ID ){
+                    return NO;
+                }else{
+                    return YES;
+                }
+            }];
 //            NSMutableArray *array = [NSMutableArray arrayWithCapacity:100];
 //            for (int i = 0; i < dicts.count; i++) {
 //                NSDictionary *item = dicts[i];
@@ -50,22 +58,25 @@ static HTTPTool *tool = nil;
                 complationBlock(lines);
             });
         } else {
-            NSArray *datas = [self getLocalData];
+            
+//            NSArray *datas = [self getLocalData];
             dispatch_async(dispatch_get_main_queue(), ^{
-                complationBlock(datas);
+                complationBlock(nil);
             });
         }
     }];
     [dataTask resume];
 }
 
--(NSArray<KLineModel *> *)getLocalData {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"kline5" ofType:@"json"];
-    NSDate *data = [[NSData alloc] initWithContentsOfURL: [[NSURL alloc] initFileURLWithPath:path]];
-    NSArray<NSDictionary *> *dicts = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingFragmentsAllowed error:nil];
-    NSArray *kLineModels = [NSArray yy_modelArrayWithClass:[KLineModel class] json:dicts];
-    return kLineModels;
-}
+//- (NSArray *)
+
+//-(NSArray<KLineModel *> *)getLocalData {
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"kline5" ofType:@"json"];
+//    NSDate *data = [[NSData alloc] initWithContentsOfURL: [[NSURL alloc] initFileURLWithPath:path]];
+//    NSArray<NSDictionary *> *dicts = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingFragmentsAllowed error:nil];
+//    NSArray *kLineModels = [NSArray yy_modelArrayWithClass:[KLineModel class] json:dicts];
+//    return kLineModels;
+//}
 
 
 

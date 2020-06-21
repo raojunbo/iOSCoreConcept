@@ -18,4 +18,5 @@ target ‘CoreConcept’ do
       pod 'ReactiveCocoa', '=2.3'
     pod 'HyphenateLite'
     pod 'YYDispatchQueuePool'
+    pod 'Toast', '~> 4.0.0'
 end
