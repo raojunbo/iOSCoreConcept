@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Alamofire (4.9.1)
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
   - BlocksKit/All (2.2.5):
@@ -29,14 +30,33 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - Cache (5.3.0)
+  - Differentiator (4.0.1)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - GZIP (1.3.0)
   - HyphenateLite (3.4.2)
   - lottie-ios (2.5.0)
+  - Mantle (1.5.5):
+    - Mantle/extobjc (= 1.5.5)
+  - Mantle/extobjc (1.5.5)
   - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
   - MJRefresh (3.1.15.3)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - MoyaMapper (2.0.0):
+    - MoyaMapper/Core (= 2.0.0)
+  - MoyaMapper/Core (2.0.0):
+    - Moya (>= 11.0.0)
+    - SwiftyJSON
+  - MoyaMapper/MMCache (2.0.0):
+    - Cache
+    - MoyaMapper/Core
   - ReactiveCocoa (2.3):
     - ReactiveCocoa/UI (= 2.3)
   - ReactiveCocoa/Core (2.3):
@@ -44,10 +64,23 @@ PODS:
   - ReactiveCocoa/no-arc (2.3)
   - ReactiveCocoa/UI (2.3):
     - ReactiveCocoa/Core
+  - Result (4.1.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
+  - SnapKit (4.0.1)
   - SocketRocket (0.5.1)
+  - SwiftyJSON (5.0.0)
   - Toast (4.0.0)
   - YYCache (1.0.4)
   - YYDispatchQueuePool (1.0)
@@ -61,10 +94,19 @@ DEPENDENCIES:
   - GZIP (~> 1.3.0)
   - HyphenateLite
   - lottie-ios
+  - Mantle (= 1.5.5)
   - Masonry
+  - MBProgressHUD
   - MJRefresh (~> 3.1.15.3)
+  - Moya (~> 13.0)
+  - MoyaMapper
+  - MoyaMapper/MMCache
   - ReactiveCocoa (= 2.3)
+  - RxCocoa (~> 5.0)
+  - RxDataSources (~> 4.0)
+  - RxSwift (~> 5.0)
   - SDWebImage (~> 4.3.0)
+  - SnapKit (~> 4.0.0)
   - SocketRocket
   - Toast (~> 4.0.0)
   - YYCache (~> 1.0.4)
@@ -75,16 +117,30 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - Alamofire
     - BlocksKit
+    - Cache
+    - Differentiator
     - FMDB
     - GZIP
     - HyphenateLite
     - lottie-ios
+    - Mantle
     - Masonry
+    - MBProgressHUD
     - MJRefresh
+    - Moya
+    - MoyaMapper
     - ReactiveCocoa
+    - Result
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
     - SDWebImage
+    - SnapKit
     - SocketRocket
+    - SwiftyJSON
     - Toast
     - YYCache
     - YYDispatchQueuePool
@@ -93,22 +149,36 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Cache: 48762993ec44e1d93483c4d4a13edd18452326f4
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GZIP: 416858efbe66b41b206895ac6dfd5493200d95b3
   HyphenateLite: 0c5d9392c30ada198ef656e179b921e38a192df3
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
+  Mantle: 1b29072a707453975b200a173cf77ec1e2810b75
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  MoyaMapper: 281241601a7ead437d7b36300efe2dd190fd2ee4
   ReactiveCocoa: 81ee2fb7df2dfc6bd52b5d70473662195e20ca7d
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYDispatchQueuePool: 3dfb2274bcc74207688dde8ac6f7bdd46871dd7b
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 1c4f9549cbcfbed0c6610fa532b02a132134ec78
+PODFILE CHECKSUM: ca6f17124218ea1ff64bd0e6a75cc2aada92efdc
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3

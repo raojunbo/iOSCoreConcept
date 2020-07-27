@@ -67,6 +67,9 @@
 #import "AlertNewControllerViewController.h"
 
 #import "FigurePoint2ViewController.h"
+#import "AchiveNativeViewController.h"
+#import "NativeViewController.h"
+#import "CoreConcept-Swift.h"
 
 /*
  专题写作之基础知识深入理解
@@ -99,10 +102,11 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    FigurePoint2ViewController *rootVC = [[FigurePoint2ViewController alloc]init];
+    SwiftTestViewController *rootVC = [[SwiftTestViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:rootVC];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

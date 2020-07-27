@@ -55,12 +55,12 @@ static int kPointFigureHeigh = 600;
     UIBarButtonItem* rightItem = [[UIBarButtonItem alloc]initWithCustomView:self.button];
     self.navigationItem.rightBarButtonItem = rightItem;
     
-    [[SocketTool tool] open];
+//    [[SocketTool tool] open];
 }
 
 - (void)requestData {
-    [self socketRequest];
-    return;
+//    [self socketRequest];
+//    return;
     
     int gezhi = [self.gezhiTextField.text intValue];
     NSString *symbol = self.symbolTextField.text;
@@ -165,7 +165,7 @@ static int kPointFigureHeigh = 600;
 - (void)zhouqiSetClick {
     UIAlertController *alertvc = [UIAlertController alertControllerWithTitle:@"选择周期" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"1h" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        self.zhouqiStr = @"1hour";
+        self.zhouqiStr = @"60min";
     }];
     UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"4h" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
          self.zhouqiStr = @"4hour";

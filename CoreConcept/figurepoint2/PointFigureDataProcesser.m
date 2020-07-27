@@ -139,7 +139,7 @@
 
 - (void)checkPointMergeFirst:(KLineModel *)currentEntity depath:(int)depth type:(int)type {
     int minAllzheng = ((int)self.minAll/self.gezhi) *self.gezhi;
-    int minIndex = (currentEntity.low - minAllzheng)/self.gezhi;//小值向上取整
+    int minIndex = (currentEntity.low - minAllzheng)/self.gezhi + 1;//小值向上取整
     int maxIndex = (currentEntity.high - minAllzheng)/self.gezhi;//大值向下取整
     [self realFillPoint:minIndex maxZheng:maxIndex depth:depth type:type];
 }
@@ -168,7 +168,7 @@
 
 - (BOOL)checkUpToDown:(KLineModel *)currentEntity withLastColumnMax:(CGFloat)lastColumnMax {
     //当前的最小值，是否小于等于此高格值
-    int lastColumnCigaochu = lastColumnMax/self.gezhi;
+    int lastColumnCigaochu = lastColumnMax/self.gezhi - 1;
     int lastColumnCigaozheng = lastColumnCigaochu * self.gezhi;
     //主要目的是能不能形成反转
     if(currentEntity.low < lastColumnCigaozheng){
@@ -190,7 +190,7 @@
     int lowchu = currentEntity.low/self.gezhi;
     int lowzheng = lowchu *self.gezhi;
     
-    int minIndex = (lowzheng - minAllzheng)/self.gezhi;
+    int minIndex = (lowzheng - minAllzheng)/self.gezhi + 1;
     
     //从哪到哪都包括；
     [self realFillPoint:minIndex maxZheng:maxIndex depth:depth type:type];
@@ -215,7 +215,7 @@
     //lastColumnMin 防止向下赋值超出
     int minAllzheng = ((int)self.minAll/self.gezhi) *self.gezhi;
     
-    int minIndex = (currentEntity.low - minAllzheng)/self.gezhi;
+    int minIndex = (currentEntity.low - minAllzheng)/self.gezhi + 1;
     
     int maxChu = lastColumMax/self.gezhi;
     int maxzheng = maxChu *self.gezhi;

@@ -205,12 +205,19 @@
 		C66B8B6422472A9D0037B31E /* TestYYTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66B8B6322472A9D0037B31E /* TestYYTextViewController.m */; };
 		ED03F2872484D18A0003B5E8 /* AlertNewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03F2862484D18A0003B5E8 /* AlertNewControllerViewController.m */; };
 		ED03F28D2484D8080003B5E8 /* UIView+MJLFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03F28C2484D8080003B5E8 /* UIView+MJLFindViewController.m */; };
+		ED07CD3B24BFE3150085BD44 /* MoyaTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED07CD3A24BFE3150085BD44 /* MoyaTestViewController.swift */; };
+		ED07CD3D24C07CA30085BD44 /* UserCenterHttpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED07CD3C24C07CA30085BD44 /* UserCenterHttpAPI.swift */; };
+		ED07CD4024C0917E0085BD44 /* SwiftTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED07CD3F24C0917E0085BD44 /* SwiftTestViewController.swift */; };
+		ED07CD4324C0945C0085BD44 /* AchiveNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED07CD4224C0945C0085BD44 /* AchiveNativeViewController.m */; };
 		ED1203FB247E4917009B5600 /* TestDispatchSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1203FA247E4917009B5600 /* TestDispatchSecondViewController.m */; };
 		ED181800244FE5920069B743 /* TimeMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1817FF244FE5920069B743 /* TimeMonitorViewController.m */; };
 		ED18181D244FF0390069B743 /* TimeMonitorRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED18181C244FF0390069B743 /* TimeMonitorRootViewController.m */; };
 		ED1CB9E423E85DE30096F2C4 /* EGNewCityTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1CB9E323E85DE30096F2C4 /* EGNewCityTaskManager.m */; };
+		ED20CD3224CAC2B90072D4D9 /* MOJIHttpCachePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED20CD3124CAC2B90072D4D9 /* MOJIHttpCachePlugin.swift */; };
 		ED5B6A8323EAA2CA0032A5EE /* TestCityTaskManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5B6A8223EAA2CA0032A5EE /* TestCityTaskManagerViewController.m */; };
 		ED5B6A8623EAB2200032A5EE /* EGWCityTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5B6A8523EAB2200032A5EE /* EGWCityTaskManager.m */; };
+		ED71419924C4807300E33B96 /* RxSwiftTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED71419824C4807300E33B96 /* RxSwiftTestViewModel.swift */; };
+		ED7141A224C5C95200E33B96 /* RxSwiftValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7141A124C5C95200E33B96 /* RxSwiftValidationViewController.swift */; };
 		ED7B9513245446030005A744 /* SMCallStackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B94F8245446030005A744 /* SMCallStackModel.m */; };
 		ED7B9514245446030005A744 /* SMLagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B94FB245446030005A744 /* SMLagButton.m */; };
 		ED7B9515245446030005A744 /* SMLagDB.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B94FC245446030005A744 /* SMLagDB.m */; };
@@ -226,7 +233,22 @@
 		ED7B951F245446030005A744 /* SMCallLib.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B9510245446030005A744 /* SMCallLib.m */; };
 		ED7B9520245446030005A744 /* SMClsCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7B9512245446030005A744 /* SMClsCallViewController.m */; };
 		ED9858C1249F6FBC009DC397 /* SocketTool.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9858C0249F6FBC009DC397 /* SocketTool.m */; };
+		EDB4FA9024CE7F9F00A197DF /* MOJIHttpRequestPrePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB4FA8F24CE7F9F00A197DF /* MOJIHttpRequestPrePlugin.swift */; };
+		EDB4FA9424CECB9700A197DF /* MOJIHttpProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB4FA9324CECB9700A197DF /* MOJIHttpProvider.swift */; };
+		EDB4FA9624CED2C300A197DF /* WeatherHttpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB4FA9524CED2C200A197DF /* WeatherHttpAPI.swift */; };
+		EDB4FA9A24CF0FEA00A197DF /* MOJIHttpLoadingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB4FA9924CF0FEA00A197DF /* MOJIHttpLoadingPlugin.swift */; };
+		EDE4952524C99C6000029510 /* RxSwiftTest2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE4952424C99C6000029510 /* RxSwiftTest2ViewController.swift */; };
+		EDE4952724CA915C00029510 /* PureSwiftRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE4952624CA915C00029510 /* PureSwiftRequestViewController.swift */; };
+		EDE4952A24CA94E700029510 /* UserCenterHttpInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE4952924CA94E700029510 /* UserCenterHttpInterface.swift */; };
 		EDE58ED624739640003528DB /* TestDispatchPoollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE58ED524739640003528DB /* TestDispatchPoollViewController.m */; };
+		EDEA574724C146AA006807A6 /* TestArchiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA574524C146AA006807A6 /* TestArchiveObject.m */; };
+		EDEA574A24C14973006807A6 /* NeedYYCodingCopyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA574824C14973006807A6 /* NeedYYCodingCopyObject.m */; };
+		EDEA574D24C14ED5006807A6 /* UserArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA574C24C14ED5006807A6 /* UserArchive.m */; };
+		EDEA575524C1871D006807A6 /* NativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEA575424C1871D006807A6 /* NativeViewController.m */; };
+		EDEA575724C1A5F1006807A6 /* RxSwiftTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA575624C1A5F1006807A6 /* RxSwiftTestViewController.swift */; };
+		EDEA575924C42E5E006807A6 /* LiveHttpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA575824C42E5E006807A6 /* LiveHttpAPI.swift */; };
+		EDEA575F24C43B24006807A6 /* GitHubUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA575E24C43B24006807A6 /* GitHubUserModel.swift */; };
+		EDEA576824C4690D006807A6 /* NetParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEA576724C4690D006807A6 /* NetParameter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -602,6 +624,12 @@
 		ED03F2862484D18A0003B5E8 /* AlertNewControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertNewControllerViewController.m; sourceTree = "<group>"; };
 		ED03F28B2484D8080003B5E8 /* UIView+MJLFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJLFindViewController.h"; sourceTree = "<group>"; };
 		ED03F28C2484D8080003B5E8 /* UIView+MJLFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJLFindViewController.m"; sourceTree = "<group>"; };
+		ED07CD3924BFE3140085BD44 /* CoreConcept-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreConcept-Bridging-Header.h"; sourceTree = "<group>"; };
+		ED07CD3A24BFE3150085BD44 /* MoyaTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaTestViewController.swift; sourceTree = "<group>"; };
+		ED07CD3C24C07CA30085BD44 /* UserCenterHttpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCenterHttpAPI.swift; sourceTree = "<group>"; };
+		ED07CD3F24C0917E0085BD44 /* SwiftTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestViewController.swift; sourceTree = "<group>"; };
+		ED07CD4124C0945C0085BD44 /* AchiveNativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AchiveNativeViewController.h; sourceTree = "<group>"; };
+		ED07CD4224C0945C0085BD44 /* AchiveNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AchiveNativeViewController.m; sourceTree = "<group>"; };
 		ED1203F9247E4917009B5600 /* TestDispatchSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDispatchSecondViewController.h; sourceTree = "<group>"; };
 		ED1203FA247E4917009B5600 /* TestDispatchSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDispatchSecondViewController.m; sourceTree = "<group>"; };
 		ED1817FE244FE5920069B743 /* TimeMonitorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeMonitorViewController.h; sourceTree = "<group>"; };
@@ -610,10 +638,13 @@
 		ED18181C244FF0390069B743 /* TimeMonitorRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeMonitorRootViewController.m; sourceTree = "<group>"; };
 		ED1CB9E223E85DE30096F2C4 /* EGNewCityTaskManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGNewCityTaskManager.h; sourceTree = "<group>"; };
 		ED1CB9E323E85DE30096F2C4 /* EGNewCityTaskManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGNewCityTaskManager.m; sourceTree = "<group>"; };
+		ED20CD3124CAC2B90072D4D9 /* MOJIHttpCachePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOJIHttpCachePlugin.swift; sourceTree = "<group>"; };
 		ED5B6A8123EAA2CA0032A5EE /* TestCityTaskManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCityTaskManagerViewController.h; sourceTree = "<group>"; };
 		ED5B6A8223EAA2CA0032A5EE /* TestCityTaskManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCityTaskManagerViewController.m; sourceTree = "<group>"; };
 		ED5B6A8423EAB2200032A5EE /* EGWCityTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGWCityTaskManager.h; sourceTree = "<group>"; };
 		ED5B6A8523EAB2200032A5EE /* EGWCityTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGWCityTaskManager.m; sourceTree = "<group>"; };
+		ED71419824C4807300E33B96 /* RxSwiftTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftTestViewModel.swift; sourceTree = "<group>"; };
+		ED7141A124C5C95200E33B96 /* RxSwiftValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftValidationViewController.swift; sourceTree = "<group>"; };
 		ED7B94F7245446030005A744 /* SMStackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStackCell.h; sourceTree = "<group>"; };
 		ED7B94F8245446030005A744 /* SMCallStackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallStackModel.m; sourceTree = "<group>"; };
 		ED7B94F9245446030005A744 /* SMCallTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTrace.h; sourceTree = "<group>"; };
@@ -644,8 +675,27 @@
 		ED7B9512245446030005A744 /* SMClsCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMClsCallViewController.m; sourceTree = "<group>"; };
 		ED9858BF249F6FBC009DC397 /* SocketTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketTool.h; sourceTree = "<group>"; };
 		ED9858C0249F6FBC009DC397 /* SocketTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketTool.m; sourceTree = "<group>"; };
+		EDB4FA8F24CE7F9F00A197DF /* MOJIHttpRequestPrePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOJIHttpRequestPrePlugin.swift; sourceTree = "<group>"; };
+		EDB4FA9324CECB9700A197DF /* MOJIHttpProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOJIHttpProvider.swift; sourceTree = "<group>"; };
+		EDB4FA9524CED2C200A197DF /* WeatherHttpAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherHttpAPI.swift; sourceTree = "<group>"; };
+		EDB4FA9924CF0FEA00A197DF /* MOJIHttpLoadingPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOJIHttpLoadingPlugin.swift; sourceTree = "<group>"; };
+		EDE4952424C99C6000029510 /* RxSwiftTest2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftTest2ViewController.swift; sourceTree = "<group>"; };
+		EDE4952624CA915C00029510 /* PureSwiftRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PureSwiftRequestViewController.swift; sourceTree = "<group>"; };
+		EDE4952924CA94E700029510 /* UserCenterHttpInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCenterHttpInterface.swift; sourceTree = "<group>"; };
 		EDE58ED424739640003528DB /* TestDispatchPoollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDispatchPoollViewController.h; sourceTree = "<group>"; };
 		EDE58ED524739640003528DB /* TestDispatchPoollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDispatchPoollViewController.m; sourceTree = "<group>"; };
+		EDEA574324C146A9006807A6 /* TestArchiveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestArchiveObject.h; sourceTree = "<group>"; };
+		EDEA574524C146AA006807A6 /* TestArchiveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestArchiveObject.m; sourceTree = "<group>"; };
+		EDEA574824C14973006807A6 /* NeedYYCodingCopyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeedYYCodingCopyObject.m; sourceTree = "<group>"; };
+		EDEA574924C14973006807A6 /* NeedYYCodingCopyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeedYYCodingCopyObject.h; sourceTree = "<group>"; };
+		EDEA574B24C14ED5006807A6 /* UserArchive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserArchive.h; sourceTree = "<group>"; };
+		EDEA574C24C14ED5006807A6 /* UserArchive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserArchive.m; sourceTree = "<group>"; };
+		EDEA575324C1871D006807A6 /* NativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeViewController.h; sourceTree = "<group>"; };
+		EDEA575424C1871D006807A6 /* NativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeViewController.m; sourceTree = "<group>"; };
+		EDEA575624C1A5F1006807A6 /* RxSwiftTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftTestViewController.swift; sourceTree = "<group>"; };
+		EDEA575824C42E5E006807A6 /* LiveHttpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveHttpAPI.swift; sourceTree = "<group>"; };
+		EDEA575E24C43B24006807A6 /* GitHubUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserModel.swift; sourceTree = "<group>"; };
+		EDEA576724C4690D006807A6 /* NetParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetParameter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1170,6 +1220,8 @@
 		34B6825C1F8E41B000389BF5 /* CoreConcept */ = {
 			isa = PBXGroup;
 			children = (
+				EDEA574E24C17696006807A6 /* archive */,
+				ED07CD3824BFE2D40085BD44 /* MoyaVC */,
 				ED03F2842484D1460003B5E8 /* AlertPop */,
 				EDE58ED324739615003528DB /* operationpool */,
 				ED1817D2244FE4530069B743 /* timemonitor */,
@@ -1399,6 +1451,20 @@
 			path = AlertPop;
 			sourceTree = "<group>";
 		};
+		ED07CD3824BFE2D40085BD44 /* MoyaVC */ = {
+			isa = PBXGroup;
+			children = (
+				ED07CD3924BFE3140085BD44 /* CoreConcept-Bridging-Header.h */,
+				EDE4952824CA938500029510 /* RequestDemo */,
+				ED07CD3A24BFE3150085BD44 /* MoyaTestViewController.swift */,
+				ED7141A124C5C95200E33B96 /* RxSwiftValidationViewController.swift */,
+				EDE4952424C99C6000029510 /* RxSwiftTest2ViewController.swift */,
+				ED71419824C4807300E33B96 /* RxSwiftTestViewModel.swift */,
+				EDEA576624C45393006807A6 /* Modelable */,
+			);
+			path = MoyaVC;
+			sourceTree = "<group>";
+		};
 		ED1817D2244FE4530069B743 /* timemonitor */ = {
 			isa = PBXGroup;
 			children = (
@@ -1459,6 +1525,42 @@
 			path = SMLagMonitor;
 			sourceTree = "<group>";
 		};
+		EDB4FA9724CED35200A197DF /* MOJIHttpAPI */ = {
+			isa = PBXGroup;
+			children = (
+				ED07CD3C24C07CA30085BD44 /* UserCenterHttpAPI.swift */,
+				EDEA575824C42E5E006807A6 /* LiveHttpAPI.swift */,
+				EDB4FA9524CED2C200A197DF /* WeatherHttpAPI.swift */,
+			);
+			path = MOJIHttpAPI;
+			sourceTree = "<group>";
+		};
+		EDB4FA9824CED38E00A197DF /* MOJIHttpCore */ = {
+			isa = PBXGroup;
+			children = (
+				EDB4FA9324CECB9700A197DF /* MOJIHttpProvider.swift */,
+				ED20CD3124CAC2B90072D4D9 /* MOJIHttpCachePlugin.swift */,
+				EDB4FA8F24CE7F9F00A197DF /* MOJIHttpRequestPrePlugin.swift */,
+				EDB4FA9924CF0FEA00A197DF /* MOJIHttpLoadingPlugin.swift */,
+			);
+			path = MOJIHttpCore;
+			sourceTree = "<group>";
+		};
+		EDE4952824CA938500029510 /* RequestDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EDB4FA9824CED38E00A197DF /* MOJIHttpCore */,
+				EDB4FA9724CED35200A197DF /* MOJIHttpAPI */,
+				EDE4952624CA915C00029510 /* PureSwiftRequestViewController.swift */,
+				EDE4952924CA94E700029510 /* UserCenterHttpInterface.swift */,
+				EDEA575324C1871D006807A6 /* NativeViewController.h */,
+				EDEA575424C1871D006807A6 /* NativeViewController.m */,
+				EDEA575624C1A5F1006807A6 /* RxSwiftTestViewController.swift */,
+				ED07CD3F24C0917E0085BD44 /* SwiftTestViewController.swift */,
+			);
+			path = RequestDemo;
+			sourceTree = "<group>";
+		};
 		EDE58ED324739615003528DB /* operationpool */ = {
 			isa = PBXGroup;
 			children = (
@@ -1468,6 +1570,30 @@
 				ED1203FA247E4917009B5600 /* TestDispatchSecondViewController.m */,
 			);
 			path = operationpool;
+			sourceTree = "<group>";
+		};
+		EDEA574E24C17696006807A6 /* archive */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA574324C146A9006807A6 /* TestArchiveObject.h */,
+				EDEA574524C146AA006807A6 /* TestArchiveObject.m */,
+				EDEA574B24C14ED5006807A6 /* UserArchive.h */,
+				EDEA574C24C14ED5006807A6 /* UserArchive.m */,
+				ED07CD4124C0945C0085BD44 /* AchiveNativeViewController.h */,
+				EDEA574924C14973006807A6 /* NeedYYCodingCopyObject.h */,
+				EDEA574824C14973006807A6 /* NeedYYCodingCopyObject.m */,
+				ED07CD4224C0945C0085BD44 /* AchiveNativeViewController.m */,
+			);
+			path = archive;
+			sourceTree = "<group>";
+		};
+		EDEA576624C45393006807A6 /* Modelable */ = {
+			isa = PBXGroup;
+			children = (
+				EDEA575E24C43B24006807A6 /* GitHubUserModel.swift */,
+				EDEA576724C4690D006807A6 /* NetParameter.swift */,
+			);
+			path = Modelable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1504,6 +1630,7 @@
 				TargetAttributes = {
 					34B682591F8E41B000389BF5 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1150;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -1625,6 +1752,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				345363DE20DF9B8D007C921D /* MVPViewController.m in Sources */,
+				EDEA575924C42E5E006807A6 /* LiveHttpAPI.swift in Sources */,
+				EDEA574724C146AA006807A6 /* TestArchiveObject.m in Sources */,
 				34670D8220C4F5DD004B65A1 /* RuntimeDynamicViewController.m in Sources */,
 				34C05BC421410B3D0013872D /* MutiClassC.m in Sources */,
 				3440C3D920AA56D80062A89D /* CustomOpaqueView.m in Sources */,
@@ -1644,7 +1773,9 @@
 				340E64B3201E0EFC00D9CAB7 /* MTeacher.m in Sources */,
 				34F36825249DE9C700BADC3E /* UIView+Utils.m in Sources */,
 				84B6D26C223A4A6500185469 /* UIView+AsyOperation.m in Sources */,
+				ED07CD4324C0945C0085BD44 /* AchiveNativeViewController.m in Sources */,
 				340C26DB20E3725D001BDC21 /* Dog+DogCategory.m in Sources */,
+				EDEA574A24C14973006807A6 /* NeedYYCodingCopyObject.m in Sources */,
 				ED18181D244FF0390069B743 /* TimeMonitorRootViewController.m in Sources */,
 				341190ED20AED81000752304 /* Runtime2ViewController.m in Sources */,
 				345363E420DF9F14007C921D /* UserPresenter.m in Sources */,
@@ -1672,18 +1803,25 @@
 				344A950C20F215D4000EE752 /* SwizzView.m in Sources */,
 				342B00CC20E493C500FA08CB /* DispatchIOViewController.m in Sources */,
 				342BF45420BB8EE300B3FD31 /* BlockCircleViewController.m in Sources */,
+				ED07CD4024C0917E0085BD44 /* SwiftTestViewController.swift in Sources */,
 				3408AA5920ECD856009ED572 /* PropertyDecorateViewController.m in Sources */,
 				84AB46752236B4D0002B2A60 /* YYFrameImage.m in Sources */,
 				343588611FCE96490097B18B /* TestLayerViewController.m in Sources */,
 				34FDBD001FD2A1B7004770A3 /* TestDrawImageViewController.m in Sources */,
+				EDB4FA9624CED2C300A197DF /* WeatherHttpAPI.swift in Sources */,
+				EDEA575724C1A5F1006807A6 /* RxSwiftTestViewController.swift in Sources */,
 				ED1CB9E423E85DE30096F2C4 /* EGNewCityTaskManager.m in Sources */,
 				340C26D220E370D6001BDC21 /* Dog.m in Sources */,
 				34B6825F1F8E41B000389BF5 /* AppDelegate.m in Sources */,
 				342B00C320E47F4C00FA08CB /* GCDBarrierViewController.m in Sources */,
+				ED07CD3D24C07CA30085BD44 /* UserCenterHttpAPI.swift in Sources */,
 				341A6A4A20B3E351009591F2 /* AnimationPauseViewController.m in Sources */,
+				EDE4952524C99C6000029510 /* RxSwiftTest2ViewController.swift in Sources */,
+				EDB4FA9424CECB9700A197DF /* MOJIHttpProvider.swift in Sources */,
 				3412CA7520B468850065A9C9 /* RunloopViewController4.m in Sources */,
 				ED7B9517245446030005A744 /* SMCallTraceTimeCostModel.m in Sources */,
 				342BF45720BB911700B3FD31 /* RootBlockViewController.m in Sources */,
+				EDE4952A24CA94E700029510 /* UserCenterHttpInterface.swift in Sources */,
 				84AB46742236B4D0002B2A60 /* YYImageCoder.m in Sources */,
 				341A6A4320B3931F009591F2 /* GCD4ViewController.m in Sources */,
 				3463294920B0137D0033A9BB /* Runtime6ViewController.m in Sources */,
@@ -1700,6 +1838,7 @@
 				C66B8B6422472A9D0037B31E /* TestYYTextViewController.m in Sources */,
 				34259C3F20E6354A006FF740 /* ReadSDWebViewController.m in Sources */,
 				ED7B951C245446030005A744 /* SMCallStack.m in Sources */,
+				ED20CD3224CAC2B90072D4D9 /* MOJIHttpCachePlugin.swift in Sources */,
 				3456E63E213CCE63003E8165 /* BookReviewViewController.m in Sources */,
 				34F368112496136C00BADC3E /* KLineModel.m in Sources */,
 				343588771FD0090B0097B18B /* TestPerspective2ViewController.m in Sources */,
@@ -1707,6 +1846,7 @@
 				34CD80FF20EF5371005AB4B1 /* NetDesignViewController.m in Sources */,
 				34C05BBE21410B210013872D /* MutiClassA.m in Sources */,
 				34EB66E220EE715F00D6BF81 /* InterViewMessageViewController.m in Sources */,
+				ED7141A224C5C95200E33B96 /* RxSwiftValidationViewController.swift in Sources */,
 				84AB46722236B4D0002B2A60 /* YYSpriteSheetImage.m in Sources */,
 				ED7B951A245446030005A744 /* SMStackCell.m in Sources */,
 				34670D8820C50C93004B65A1 /* NSObject+RAOKVO.m in Sources */,
@@ -1722,6 +1862,8 @@
 				342B00C020E478CB00FA08CB /* GCDDispatchGroupVc.m in Sources */,
 				34897600206285D200D20026 /* TestMasViewController.m in Sources */,
 				342123CC20B979AE007C03DC /* BlockPerson.m in Sources */,
+				ED07CD3B24BFE3150085BD44 /* MoyaTestViewController.swift in Sources */,
+				EDEA575524C1871D006807A6 /* NativeViewController.m in Sources */,
 				3440C3F320AD34140062A89D /* CustomCALayer.m in Sources */,
 				ED03F2872484D18A0003B5E8 /* AlertNewControllerViewController.m in Sources */,
 				34670D8520C50C6B004B65A1 /* RuntimeKVOCustomViewController.m in Sources */,
@@ -1731,8 +1873,10 @@
 				ED1203FB247E4917009B5600 /* TestDispatchSecondViewController.m in Sources */,
 				3456E647213CDB9C003E8165 /* Mediator3.m in Sources */,
 				342B28EF20B2B5FA00439600 /* GCD3ViewController.m in Sources */,
+				EDEA576824C4690D006807A6 /* NetParameter.swift in Sources */,
 				344A950F20F2163B000EE752 /* SwizzView+swizz.m in Sources */,
 				342E734820F42F4A00074309 /* MemoryLeakViewController.m in Sources */,
+				EDB4FA9A24CF0FEA00A197DF /* MOJIHttpLoadingPlugin.swift in Sources */,
 				342B00CF20E4B4CD00FA08CB /* DispatchSourceViewController.m in Sources */,
 				340C26D820E3724B001BDC21 /* Animal+AnimalCategory.m in Sources */,
 				34C059662140CBBC0013872D /* Dog+DogCategory2.m in Sources */,
@@ -1748,6 +1892,7 @@
 				34F3362A1FCD5BC400E6D7C1 /* TestLayerPropertyVC.m in Sources */,
 				34AA5B061FE605140053DD01 /* DrawTextViewController.m in Sources */,
 				341BCB15205DF89B005DE1F5 /* EnciryViewController.m in Sources */,
+				EDEA575F24C43B24006807A6 /* GitHubUserModel.swift in Sources */,
 				3440C3EC20AC30930062A89D /* RunLoopViewController3.m in Sources */,
 				34FDBCEA1FD1409D004770A3 /* TestContextViewController.m in Sources */,
 				340802B020D3720D00ED4BD7 /* TestConstraintsViewController.m in Sources */,
@@ -1763,6 +1908,7 @@
 				34F368122496136C00BADC3E /* PointFigureView.m in Sources */,
 				ED9858C1249F6FBC009DC397 /* SocketTool.m in Sources */,
 				84B6D269223A4A6500185469 /* UIImageView+MJLAsyLoad.m in Sources */,
+				EDB4FA9024CE7F9F00A197DF /* MOJIHttpRequestPrePlugin.swift in Sources */,
 				342123C920B97911007C03DC /* BlockViewController.m in Sources */,
 				3435887E1FD019F50097B18B /* TestSolidViewController.m in Sources */,
 				341DB5921FC64BAD00E89AD9 /* TestTimeOffsetViewController.m in Sources */,
@@ -1777,6 +1923,7 @@
 				340802B320D6552B00ED4BD7 /* TestMasLinkViewController.m in Sources */,
 				34B1DE6D1FDF8E4300EE50A6 /* CustomGestureRecognizer.m in Sources */,
 				341190E620ADA4B100752304 /* AnimationActionLayer.m in Sources */,
+				ED71419924C4807300E33B96 /* RxSwiftTestViewModel.swift in Sources */,
 				ED7B9514245446030005A744 /* SMLagButton.m in Sources */,
 				84AB46392236ADD9002B2A60 /* AsyTableViewController.m in Sources */,
 				ED7B9519245446030005A744 /* SMCallTrace.m in Sources */,
@@ -1785,6 +1932,7 @@
 				ED7B9513245446030005A744 /* SMCallStackModel.m in Sources */,
 				3408AA5620ECCD7D009ED572 /* CopyingViewController.m in Sources */,
 				341D786A24855C3D000A3970 /* FigurePoint2ViewController.m in Sources */,
+				EDE4952724CA915C00029510 /* PureSwiftRequestViewController.swift in Sources */,
 				34FDBCE61FD13305004770A3 /* TestShapeLayer2ViewController.m in Sources */,
 				340E64B0201E05C900D9CAB7 /* MethodViewController.m in Sources */,
 				ED7B9516245446030005A744 /* SMCPUMonitor.m in Sources */,
@@ -1795,6 +1943,7 @@
 				3456E638213CCDF0003E8165 /* BookDetailViewController.m in Sources */,
 				342B28DE20B17BEB00439600 /* ThreadViewController.m in Sources */,
 				ED7B9520245446030005A744 /* SMClsCallViewController.m in Sources */,
+				EDEA574D24C14ED5006807A6 /* UserArchive.m in Sources */,
 				3412CA7820B46CC80065A9C9 /* RunLoopViewController5.m in Sources */,
 				3440C3E620ABC1BB0062A89D /* RunLoopViewController.m in Sources */,
 				ED03F28D2484D8080003B5E8 /* UIView+MJLFindViewController.m in Sources */,
@@ -1867,7 +2016,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1916,7 +2065,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1928,6 +2077,7 @@
 			baseConfigurationReference = A933C1CB4F244A0BD49B54DB /* Pods-CoreConcept.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GM22SA2R34;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -1937,6 +2087,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moji.MojiWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Dev_MojiWeather;
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreConcept/MoyaVC/CoreConcept-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1946,6 +2099,7 @@
 			baseConfigurationReference = 9B7E29B981BB1CD2C04394D3 /* Pods-CoreConcept.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GM22SA2R34;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -1955,6 +2109,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moji.MojiWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Dev_MojiWeather;
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreConcept/MoyaVC/CoreConcept-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
